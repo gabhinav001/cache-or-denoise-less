@@ -1,0 +1,55 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[2026-09-22 19:01:27,108][robosuite_logs][WARNING] - No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[2026-09-22 19:01:27,108][robosuite_logs][WARNING] - It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[2026-09-22 19:01:27,108][robosuite_logs][WARNING] - To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py
+[2026-09-22 19:01:27,134][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+[2026-09-22 19:01:27,135][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-09-22 19:01:27,142][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[2026-09-22 19:01:28,719][fastwam.models.wan22.helpers.loader][INFO] - Loading Wan2.2-TI2V-5B components...
+[2026-09-22 19:01:28,719][fastwam.models.wan22.helpers.loader][INFO] - Skipping pretrained video DiT load (`skip_dit_load_from_pretrain=True`); initializing video expert randomly and expecting checkpoint override.
+[2026-09-22 19:02:48,193][fastwam.models.wan22.helpers.loader][INFO] - Finished loading Wan2.2-TI2V-5B components in 79.47 seconds.
+[2026-09-22 19:02:48,194][fastwam.models.wan22.action_dit][INFO] - Skipping ActionDiT pretrained load (`skip_dit_load_from_pretrain=True`); initializing action expert randomly and expecting checkpoint override.
+[2026-09-22 19:02:52,110][fastwam.models.wan22.mot][INFO] - Initialized MoT with experts: ['video', 'action'], num_layers=30
+[2026-09-22 19:02:52,112][fastwam.models.wan22.mot][INFO] -   Expert 'video': num_params=5.00 B
+[2026-09-22 19:02:52,113][fastwam.models.wan22.mot][INFO] -   Expert 'action': num_params=1.02 B
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[libero] suite=libero_goal tasks=10 eps=5 perturb=none configs=['c3ache_tau8']
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 0 c3ache_tau8    SR=0.80  (2.6 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 1 c3ache_tau8    SR=0.80  (3.3 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 2 c3ache_tau8    SR=1.00  (3.9 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 3 c3ache_tau8    SR=0.20  (5.0 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 4 c3ache_tau8    SR=1.00  (5.6 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 5 c3ache_tau8    SR=0.00  (6.7 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 6 c3ache_tau8    SR=0.80  (7.6 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 7 c3ache_tau8    SR=1.00  (8.1 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 8 c3ache_tau8    SR=0.40  (9.1 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 9 c3ache_tau8    SR=0.20  (10.2 min)
+
+=== success rate by config ===
+  c3ache_tau8       62.0%  (n=50)
+[libero] DONE 50 episodes in 10.2 min

@@ -1,0 +1,7 @@
+2026-10-02T23:23:55Z start (4 runners)
+2026-10-02T23:23:55Z   gpu 0 started (pid 3080)
+2026-10-02T23:24:25Z   gpu 1 started (pid 3296)
+2026-10-02T23:24:55Z   gpu 2 started (pid 3473)
+2026-10-02T23:25:25Z   gpu 3 started (pid 3649)
+2026-10-03T00:26:36Z smoke check: screen smoke check: PASS
+2026-10-03T02:18:37Z all runners done

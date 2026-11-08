@@ -1,0 +1,22 @@
+[10:05:44] instance=50613943 experiment=ceiling_beta 7 args=
+[10:05:44] waiting for setup
+[10:11:09]   ...provisioning (300s) addr=ssh://root@<rented-host>:<port>
+[10:14:15] setup done (460s)
+[10:14:15] shipping repo
+[10:14:16] starting ceiling_beta 7 detached
+launched
+[10:14:17] polling
+[10:14:20] finished: EXIT=2
+rsync: [sender] change_dir "/workspace/out" failed: No such file or directory (2)
+rsync(58281): warning: receiver has empty file list: exiting
+[10:14:22]   pull attempt 1 failed
+rsync: [sender] change_dir "/workspace/out" failed: No such file or directory (2)
+rsync(58359): warning: receiver has empty file list: exiting
+[10:14:33]   pull attempt 2 failed
+rsync: [sender] change_dir "/workspace/out" failed: No such file or directory (2)
+rsync(58465): warning: receiver has empty file list: exiting
+[10:14:44]   pull attempt 3 failed
+total 0
+drwxr-xr-x@  2 user  staff   64 11 Sep 10:14 .
+drwxr-xr-x@ 22 user  staff  704 11 Sep 10:14 ..
+[10:14:54] done. Instance 50613943 left running -- destroy it yourself.

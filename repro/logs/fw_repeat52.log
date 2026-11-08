@@ -1,0 +1,14 @@
+[14:51:32] instance=50644862 experiment=mechanism args=b
+[14:51:32] waiting for setup
+[14:51:37] setup done (20s)
+[14:51:37] shipping repo
+[14:51:39] starting mechanism detached
+launched
+[15:15:46] polling
+[15:15:51] finished: EXIT=0
+[15:15:56] pulled -> $REPO/repro/out/mechanism_sb
+total 52432
+drwxr-xr-x@  3 user  staff        96 11 Sep 15:04 .
+drwxr-xr-x@ 29 user  staff       928 11 Sep 14:28 ..
+-rw-r--r--@  1 user  staff  26844902 11 Sep 15:15 fw_families_b.npz
+[15:15:56] done. Instance 50644862 left running -- destroy it yourself.

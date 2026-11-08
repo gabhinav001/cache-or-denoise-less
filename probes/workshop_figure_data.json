@@ -1,0 +1,435 @@
+{
+  "schema_version": 2,
+  "latency_unit": "ms per cycle, averaged over post-warmup episode means",
+  "success_unit": "percent",
+  "panels": [
+    {
+      "panel": "A",
+      "seed": 42,
+      "host_tag": "ac5f9eba",
+      "commit": "ccc25c30a5603b7dba984f786c5b06dcfb3a2d03",
+      "sources": [
+        {
+          "path": "results/statescale/s2.json",
+          "sha256": "fe6e3c3b9145e554986a004b285c1c3e2eb39e0b0c62aec66ee5c365e89c4499",
+          "metadata": {
+            "suite": "libero_goal",
+            "perturb": "none",
+            "n_tasks": 10,
+            "n_episodes": 50,
+            "replan": 10,
+            "max_steps": 400,
+            "skip_cells": 30,
+            "seed": 42,
+            "initial_latent": "dbba7b13d98e9415",
+            "no_reseed": 0,
+            "rng_probe": 0,
+            "timing": 1,
+            "warmup_episodes": 1,
+            "num_inference_steps": 2,
+            "configs": [
+              "stock"
+            ],
+            "provenance": {
+              "commit": "ccc25c30a5603b7dba984f786c5b06dcfb3a2d03",
+              "dirty": null,
+              "loadavg_1_5_15": [
+                5.69677734375,
+                3.90576171875,
+                3.173828125
+              ],
+              "cpu_count": 96,
+              "ckpt": "libero_optional_idm_2cam224.pt",
+              "ckpt_sha256_16": "243491fd88cdcba0",
+              "gpu": "NVIDIA RTX A6000",
+              "host_tag": "ac5f9eba",
+              "python": "3.11.13",
+              "torch": "2.7.1+cu128",
+              "mujoco": "3.3.2",
+              "utc": "2026-09-19T23:21:32Z"
+            }
+          }
+        },
+        {
+          "path": "results/statescale/s4.json",
+          "sha256": "426f38b126f78cee6a192a7fea569f87b55f225f8051b58ba79d08fe3e16151f",
+          "metadata": {
+            "suite": "libero_goal",
+            "perturb": "none",
+            "n_tasks": 10,
+            "n_episodes": 50,
+            "replan": 10,
+            "max_steps": 400,
+            "skip_cells": 60,
+            "seed": 42,
+            "initial_latent": "dbba7b13d98e9415",
+            "no_reseed": 0,
+            "rng_probe": 0,
+            "timing": 1,
+            "warmup_episodes": 1,
+            "num_inference_steps": 4,
+            "configs": [
+              "stock",
+              "c3ache_tau4_shrink_skip"
+            ],
+            "provenance": {
+              "commit": "ccc25c30a5603b7dba984f786c5b06dcfb3a2d03",
+              "dirty": null,
+              "loadavg_1_5_15": [
+                3.9306640625,
+                3.3583984375,
+                3.171875
+              ],
+              "cpu_count": 96,
+              "ckpt": "libero_optional_idm_2cam224.pt",
+              "ckpt_sha256_16": "243491fd88cdcba0",
+              "gpu": "NVIDIA RTX A6000",
+              "host_tag": "ac5f9eba",
+              "python": "3.11.13",
+              "torch": "2.7.1+cu128",
+              "mujoco": "3.3.2",
+              "utc": "2026-09-20T01:32:28Z"
+            }
+          }
+        },
+        {
+          "path": "results/statescale/s10.json",
+          "sha256": "d766d1871e923c2b319b3045c02ec91d97f580c73d02384469827132504d9cbd",
+          "metadata": {
+            "suite": "libero_goal",
+            "perturb": "none",
+            "n_tasks": 10,
+            "n_episodes": 50,
+            "replan": 10,
+            "max_steps": 400,
+            "skip_cells": 240,
+            "seed": 42,
+            "initial_latent": "dbba7b13d98e9415",
+            "no_reseed": 0,
+            "rng_probe": 0,
+            "timing": 1,
+            "warmup_episodes": 1,
+            "num_inference_steps": 10,
+            "configs": [
+              "c3ache_tau4_shrink_skip"
+            ],
+            "provenance": {
+              "commit": "ccc25c30a5603b7dba984f786c5b06dcfb3a2d03",
+              "dirty": null,
+              "loadavg_1_5_15": [
+                3.06689453125,
+                5.53076171875,
+                7.064453125
+              ],
+              "cpu_count": 96,
+              "ckpt": "libero_optional_idm_2cam224.pt",
+              "ckpt_sha256_16": "243491fd88cdcba0",
+              "gpu": "NVIDIA RTX A6000",
+              "host_tag": "ac5f9eba",
+              "python": "3.11.13",
+              "torch": "2.7.1+cu128",
+              "mujoco": "3.3.2",
+              "utc": "2026-09-20T03:02:45Z"
+            }
+          }
+        }
+      ],
+      "ci_source": "results/canonical_numbers.json:statescale.arms.*.ci95",
+      "points": [
+        {
+          "key": "2st",
+          "steps": 2,
+          "config": "stock",
+          "cached": false,
+          "ms": 123.6273,
+          "sd_ms": 10.8104,
+          "success": 96.6,
+          "successes": 483,
+          "ci95": [
+            95.0,
+            98.0
+          ],
+          "success_episodes": 500,
+          "timed_episodes": 490
+        },
+        {
+          "key": "4st",
+          "steps": 4,
+          "config": "stock",
+          "cached": false,
+          "ms": 154.5997,
+          "sd_ms": 10.1948,
+          "success": 96.6,
+          "successes": 483,
+          "ci95": [
+            95.0,
+            98.0
+          ],
+          "success_episodes": 500,
+          "timed_episodes": 490
+        },
+        {
+          "key": "4st+cache",
+          "steps": 4,
+          "config": "c3ache_tau4_shrink_skip",
+          "cached": true,
+          "ms": 137.729,
+          "sd_ms": 3.3806,
+          "success": 95.8,
+          "successes": 479,
+          "ci95": [
+            94.0,
+            97.4
+          ],
+          "success_episodes": 500,
+          "timed_episodes": 490
+        },
+        {
+          "key": "10st+cache",
+          "steps": 10,
+          "config": "c3ache_tau4_shrink_skip",
+          "cached": true,
+          "ms": 221.7861,
+          "sd_ms": 19.5745,
+          "success": 93.6,
+          "successes": 468,
+          "ci95": [
+            91.4,
+            95.6
+          ],
+          "success_episodes": 500,
+          "timed_episodes": 490
+        }
+      ]
+    },
+    {
+      "panel": "B",
+      "seed": 7,
+      "host_tag": "74da08ee",
+      "commit": "72dc4249601401d96cb593a46ab089a31e7eb422",
+      "sources": [
+        {
+          "path": "results/statescale/s2_seed7.json",
+          "sha256": "e721c7176edd9f7f0003a2dcede9794e417dd74ab6d6f6a17dab5f0b7384796a",
+          "metadata": {
+            "suite": "libero_goal",
+            "perturb": "none",
+            "n_tasks": 10,
+            "n_episodes": 50,
+            "replan": 10,
+            "max_steps": 400,
+            "skip_cells": 30,
+            "seed": 7,
+            "initial_latent": "8d1644a05937d92e",
+            "no_reseed": 0,
+            "rng_probe": 0,
+            "timing": 1,
+            "warmup_episodes": 1,
+            "num_inference_steps": 2,
+            "configs": [
+              "stock"
+            ],
+            "provenance": {
+              "commit": "72dc4249601401d96cb593a46ab089a31e7eb422",
+              "dirty": null,
+              "loadavg_1_5_15": [
+                4.60595703125,
+                4.59765625,
+                4.39697265625
+              ],
+              "cpu_count": 96,
+              "ckpt": "libero_optional_idm_2cam224.pt",
+              "ckpt_sha256_16": "243491fd88cdcba0",
+              "gpu": "NVIDIA RTX A6000",
+              "host_tag": "74da08ee",
+              "python": "3.11.13",
+              "torch": "2.7.1+cu128",
+              "mujoco": "3.3.2",
+              "utc": "2026-09-20T05:25:01Z"
+            }
+          }
+        },
+        {
+          "path": "results/statescale/s4_seed7.json",
+          "sha256": "172ad2d4f297e81fd40f44215b025d3236ded20b0716b877e939fe8cba598c70",
+          "metadata": {
+            "suite": "libero_goal",
+            "perturb": "none",
+            "n_tasks": 10,
+            "n_episodes": 50,
+            "replan": 10,
+            "max_steps": 400,
+            "skip_cells": 60,
+            "seed": 7,
+            "initial_latent": "8d1644a05937d92e",
+            "no_reseed": 0,
+            "rng_probe": 0,
+            "timing": 1,
+            "warmup_episodes": 1,
+            "num_inference_steps": 4,
+            "configs": [
+              "stock",
+              "c3ache_tau4_shrink_skip"
+            ],
+            "provenance": {
+              "commit": "72dc4249601401d96cb593a46ab089a31e7eb422",
+              "dirty": null,
+              "loadavg_1_5_15": [
+                1.595703125,
+                1.9130859375,
+                2.0244140625
+              ],
+              "cpu_count": 96,
+              "ckpt": "libero_optional_idm_2cam224.pt",
+              "ckpt_sha256_16": "243491fd88cdcba0",
+              "gpu": "NVIDIA RTX A6000",
+              "host_tag": "74da08ee",
+              "python": "3.11.13",
+              "torch": "2.7.1+cu128",
+              "mujoco": "3.3.2",
+              "utc": "2026-09-20T07:32:12Z"
+            }
+          }
+        },
+        {
+          "path": "results/statescale/s10_seed7.json",
+          "sha256": "1cc1a9db5104b0f34e5ad6060610aaf54c4fe33006a746f7f1f0a16d8ed79ba5",
+          "metadata": {
+            "suite": "libero_goal",
+            "perturb": "none",
+            "n_tasks": 10,
+            "n_episodes": 50,
+            "replan": 10,
+            "max_steps": 400,
+            "skip_cells": 240,
+            "seed": 7,
+            "initial_latent": "8d1644a05937d92e",
+            "no_reseed": 0,
+            "rng_probe": 0,
+            "timing": 1,
+            "warmup_episodes": 1,
+            "num_inference_steps": 10,
+            "configs": [
+              "c3ache_tau4_shrink_skip"
+            ],
+            "provenance": {
+              "commit": "72dc4249601401d96cb593a46ab089a31e7eb422",
+              "dirty": null,
+              "loadavg_1_5_15": [
+                4.20263671875,
+                3.80419921875,
+                3.1708984375
+              ],
+              "cpu_count": 96,
+              "ckpt": "libero_optional_idm_2cam224.pt",
+              "ckpt_sha256_16": "243491fd88cdcba0",
+              "gpu": "NVIDIA RTX A6000",
+              "host_tag": "74da08ee",
+              "python": "3.11.13",
+              "torch": "2.7.1+cu128",
+              "mujoco": "3.3.2",
+              "utc": "2026-09-20T08:59:26Z"
+            }
+          }
+        }
+      ],
+      "ci_source": "probes/report_statescale.py:summary(seed=7), random.seed(20260919)",
+      "points": [
+        {
+          "key": "2st",
+          "steps": 2,
+          "config": "stock",
+          "cached": false,
+          "ms": 121.6086,
+          "sd_ms": 11.5019,
+          "success": 97.2,
+          "successes": 486,
+          "ci95": [
+            95.8,
+            98.6
+          ],
+          "success_episodes": 500,
+          "timed_episodes": 490
+        },
+        {
+          "key": "4st",
+          "steps": 4,
+          "config": "stock",
+          "cached": false,
+          "ms": 150.2976,
+          "sd_ms": 2.5708,
+          "success": 98.4,
+          "successes": 492,
+          "ci95": [
+            97.2,
+            99.4
+          ],
+          "success_episodes": 500,
+          "timed_episodes": 490
+        },
+        {
+          "key": "4st+cache",
+          "steps": 4,
+          "config": "c3ache_tau4_shrink_skip",
+          "cached": true,
+          "ms": 136.3665,
+          "sd_ms": 4.7685,
+          "success": 96.0,
+          "successes": 480,
+          "ci95": [
+            94.2,
+            97.6
+          ],
+          "success_episodes": 500,
+          "timed_episodes": 490
+        },
+        {
+          "key": "10st+cache",
+          "steps": 10,
+          "config": "c3ache_tau4_shrink_skip",
+          "cached": true,
+          "ms": 199.9285,
+          "sd_ms": 4.2833,
+          "success": 91.2,
+          "successes": 456,
+          "ci95": [
+            88.6,
+            93.6
+          ],
+          "success_episodes": 500,
+          "timed_episodes": 490
+        }
+      ]
+    }
+  ],
+  "protocol": {
+    "suite": "LIBERO Goal",
+    "tasks": 10,
+    "distinct_states_per_task": 50,
+    "same_states_across_all_arms_and_panels": true,
+    "sorted_state_hashes_sha256": "974b9bd88924cf258cf32b968af897e9b70d50ab20e296e7dace585930aa9af5",
+    "success_episodes_per_arm": 500,
+    "timed_episodes_per_arm": 490,
+    "warmup_episodes_per_task_per_arm": 1,
+    "executed_actions_per_chunk": 10,
+    "recording": "off in uncached arms; on during cache refresh",
+    "cache": "fitted per-cell attenuation with explicit post-block skip path",
+    "cache_refresh_interval": 4,
+    "cached_steps": "all but the final two",
+    "hardware": "NVIDIA RTX A6000",
+    "collection": "three sequential schedule invocations per panel, fixed arm order",
+    "comparison_scope": "different hosts and code revisions across panels; no cross-panel timing comparison or pooling",
+    "ci_method": "pointwise 95% percentile bootstrap over individual initial states, conditional on the evaluated tasks and policy seed; 10000 resamples; sorted indices 250 and 9749; not adjusted for multiple comparisons",
+    "ci_display": "vertical marginal success intervals only; no latency intervals"
+  },
+  "summary_sources": [
+    {
+      "path": "results/canonical_numbers.json",
+      "sha256": "99729370223b1e25875619a85637ad24a21c5ae0fc11f7ca576cceaef2348ef0"
+    },
+    {
+      "path": "probes/report_statescale.py",
+      "sha256": "6a1cbd3a4ce19f11f40e73276d51f6129aeb58a8838a4cf45de6089f75cd62cc"
+    }
+  ]
+}

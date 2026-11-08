@@ -1,0 +1,17 @@
+[23:27:22] instance=50851762 experiment=ceiling_beta args=42
+[23:27:22] waiting for setup
+[23:27:27] setup done (20s)
+[23:27:27] shipping repo
+[23:27:29] starting ceiling_beta detached
+launched
+Read from remote host <rented-host>: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+[00:44:41] polling
+[00:44:49]   [libero] task 5 full           SR=1.00  (58.0 min)
+[00:47:32]   [libero] task 5 c3ache_tau4    SR=0.50  (60.9 min)
+[01:18:35]   [libero] task 9 full           SR=1.00  (92.2 min)
+[01:34:39] finished: EXIT=0
+[01:34:41] pulled -> repro/out/ceiling_beta_s42
+       69263  ceilbeta_seed42.json
+         152  gate.json
+[01:34:41] done. Instance 50851762 left running -- destroy it yourself.

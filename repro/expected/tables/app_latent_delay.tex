@@ -1,0 +1,27 @@
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+A & B & A (\%) & B (\%) & A$-$B & Tango 90\% & $p$ \\
+\midrule
+IDM, 6 of 10 cached, episode latent & fresh noise & 96 & 82 & +14 & $[3.5, 25.4]$ & 0.065 \\
+IDM, 6 of 10 cached, episode latent & fixed latent & 96 & 96 & 0 & $[-8.1, 8.1]$ & 1.00 \\
+IDM, 8 of 10 cached, episode latent & fresh noise & 64 & 26 & +38 & $[23.3, 51.2]$ & 0.0002 \\
+IDM, 8 of 10 cached, episode latent & fixed latent & 64 & 54 & +10 & $[0.1, 20.8]$ & 0.18 \\
+\midrule
+IDM, 2 steps, delay 2 & 10 steps, delay 5 & 96 & 86 & +10 & $[1.6, 20.0]$ & 0.12 \\
+IDM, 2 steps, delay 2 & 2 steps, no delay & 96 & 94 & +2 & $[-5.1, 9.7]$ & 1.00 \\
+IDM, 10 steps, delay 5 & 10 steps, no delay & 86 & 96 & -10 & $[-20.8, -0.1]$ & 0.18 \\
+IDM, 2 steps, delay 5 & 2 steps, delay 2 & 82 & 96 & -14 & $[-24.7, -4.9]$ & 0.039 \\
+IDM, 10 steps, delay 5 & 10 steps, delay 2 & 86 & 96 & -10 & $[-19.2, -4.4]$ & 0.062 \\
+IDM, 10 steps, delay 2 & 2 steps, delay 2 & 96 & 96 & 0 & $[-6.8, 6.8]$ & 1.00 \\
+\midrule
+orig., cache $\tau{=}8$, delay 5/2 & 2 steps, delay 2 & 88 & 94 & -6 & $[-14.1, -0.6]$ & 0.25 \\
+orig., cache $\tau{=}8$, delay 5/2 & same, no delay & 88 & 92 & -4 & $[-13.4, 4.8]$ & 0.69 \\
+orig., 2 steps, delay 2 & 2 steps, no delay & 94 & 94 & 0 & $[-6.8, 6.8]$ & 1.00 \\
+\midrule
+IDM, 2 steps, delay 2 & 10 steps, delay 3 & 96 & 90 & +6 & $[0.6, 14.1]$ & 0.25 \\
+IDM, 10 steps, delay 3 & 10 steps, no delay & 90 & 96 & -6 & $[-16.0, 3.2]$ & 0.45 \\
+IDM, 10 steps, delay 4 & 10 steps, delay 2 & 94 & 96 & -2 & $[-9.7, 5.1]$ & 1.00 \\
+orig., 2 steps, delay 2 & 10 steps, delay 3 & 94 & 94 & 0 & $[-6.8, 6.8]$ & 1.00 \\
+orig., 10 steps, delay 3 & 10 steps, no delay & 94 & 94 & 0 & $[-8.1, 8.1]$ & 1.00 \\
+\bottomrule
+\end{tabular}

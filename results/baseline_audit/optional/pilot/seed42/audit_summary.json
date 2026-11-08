@@ -1,0 +1,430 @@
+{
+  "collection": "optional/pilot/seed42",
+  "variant": "optional",
+  "phase": "pilot",
+  "seed": 42,
+  "valid": true,
+  "complete_500_state_comparison": false,
+  "tasks": 10,
+  "states_per_task": 5,
+  "n_paired_states": 50,
+  "identity": {
+    "runtime": {
+      "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+      "checkpoint_sha256": "26b4efffded221b9a303ca8f2cddb9999c8b7524e2751c855c74a986242ce8b4",
+      "checkpoint_state_coverage": {
+        "verified": true,
+        "mot_keys": 1649,
+        "action_keys": 824,
+        "video_keys": 825,
+        "proprio_keys": 2
+      },
+      "dataset_stats_sha256": "30f81ad7d5076e97323e3328bce003e01a04cb21327b5bacd21bb72846768638",
+      "dataset_stats": "libero_optional_idm_2cam224_dataset_stats.json",
+      "sigma_shift_override": 1.0,
+      "effective_action_sigma_shift": 1.0,
+      "action_infer_mode": "first_frame",
+      "compile_action_infer": true,
+      "model_class": "fastwam.models.wan22.fastwam_optional_idm.FastWAMOptionalIDM",
+      "mixed_precision": "bf16"
+    },
+    "provenance": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "host_tag": "f5ba8444",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "ckpt": "libero_optional_idm_2cam224.pt"
+    },
+    "initial_latent": "dbba7b13d98e9415"
+  },
+  "provenance_by_arm": {
+    "00_stock_a": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "dirty": null,
+      "loadavg_1_5_15": [
+        1.212890625,
+        1.46484375,
+        1.3388671875
+      ],
+      "cpu_count": 48,
+      "ckpt": "libero_optional_idm_2cam224.pt",
+      "ckpt_sha256_16": "243491fd88cdcba0",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "host_tag": "f5ba8444",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "utc": "2026-09-22T18:51:28Z"
+    },
+    "01_whole_tau8": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "dirty": null,
+      "loadavg_1_5_15": [
+        1.90966796875,
+        1.57568359375,
+        1.423828125
+      ],
+      "cpu_count": 48,
+      "ckpt": "libero_optional_idm_2cam224.pt",
+      "ckpt_sha256_16": "243491fd88cdcba0",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "host_tag": "f5ba8444",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "utc": "2026-09-22T19:01:17Z"
+    },
+    "02_block_tau8": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "dirty": null,
+      "loadavg_1_5_15": [
+        1.521484375,
+        1.49169921875,
+        1.4384765625
+      ],
+      "cpu_count": 48,
+      "ckpt": "libero_optional_idm_2cam224.pt",
+      "ckpt_sha256_16": "243491fd88cdcba0",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "host_tag": "f5ba8444",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "utc": "2026-09-22T19:13:20Z"
+    },
+    "03_stock_b": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "dirty": null,
+      "loadavg_1_5_15": [
+        1.13916015625,
+        1.337890625,
+        1.38818359375
+      ],
+      "cpu_count": 48,
+      "ckpt": "libero_optional_idm_2cam224.pt",
+      "ckpt_sha256_16": "243491fd88cdcba0",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "host_tag": "f5ba8444",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "utc": "2026-09-22T19:19:43Z"
+    }
+  },
+  "sources": [
+    {
+      "file": "00_stock_a.json",
+      "sha256": "2a909c42230efb8b76ee7679d8db298d8752b60cb5e00a4706ecc9b5f3e9e499",
+      "bytes": 27118
+    },
+    {
+      "file": "01_whole_tau8.json",
+      "sha256": "010cfebd9aad9473ae8e43a5559c89d786afa9a54f77b40ac0af0ff16e80b8c1",
+      "bytes": 41720
+    },
+    {
+      "file": "02_block_tau8.json",
+      "sha256": "34901e705812184d8e7247158a6744cd261f77176c79957e29690faff06859fd",
+      "bytes": 40128
+    },
+    {
+      "file": "03_stock_b.json",
+      "sha256": "c8ff15acd6b01c2eb5e52079c3000bc11793271ea9adefad12ce96ca910ae74a",
+      "bytes": 27129
+    },
+    {
+      "file": "gate.json",
+      "sha256": "24a3291be70591fa87d9df00a9bb5fc31e98bed55133329f92760a516c435b93",
+      "bytes": 1569
+    }
+  ],
+  "gate": {
+    "identity_err": 0.0013864960633441469,
+    "stale_err": 0.05962810133324065,
+    "margin": 43.006325736995734,
+    "schema_version": 3,
+    "runtime": {
+      "sigma_shift_override": 1.0,
+      "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+      "effective_action_sigma_shift": 1.0,
+      "action_infer_mode": "first_frame",
+      "compile_action_infer": true,
+      "model_class": "fastwam.models.wan22.fastwam_optional_idm.FastWAMOptionalIDM",
+      "mixed_precision": "bf16",
+      "dataset_stats": "libero_optional_idm_2cam224_dataset_stats.json",
+      "dataset_stats_sha256": "30f81ad7d5076e97323e3328bce003e01a04cb21327b5bacd21bb72846768638",
+      "checkpoint_state_coverage": {
+        "verified": true,
+        "mot_keys": 1649,
+        "action_keys": 824,
+        "video_keys": 825,
+        "proprio_keys": 2
+      },
+      "checkpoint_sha256": "26b4efffded221b9a303ca8f2cddb9999c8b7524e2751c855c74a986242ce8b4"
+    },
+    "cache_integrity": {
+      "old_block": {
+        "entries": 240,
+        "checks": 20,
+        "unchanged": true,
+        "finite": true
+      },
+      "old_stack": {
+        "entries": 8,
+        "checks": 20,
+        "unchanged": true,
+        "finite": true
+      },
+      "fresh_block": {
+        "entries": 240,
+        "checks": 12,
+        "unchanged": true,
+        "finite": true
+      },
+      "fresh_stack": {
+        "entries": 8,
+        "checks": 12,
+        "unchanged": true,
+        "finite": true
+      }
+    },
+    "repeat_full_err": 0.0,
+    "skip_identity_err": 0.0013864960633441469,
+    "whole_identity_err": 0.0011613436477823052,
+    "whole_stale_err": 0.059542032057732,
+    "whole_identity_counts": {
+      "hits": 8,
+      "misses": 0
+    },
+    "perblock_whole_stale_difference": 0.001234766195218127,
+    "ckpt": "libero_optional_idm_2cam224.pt",
+    "compiled": true,
+    "cells": 240,
+    "pass": true,
+    "gpu": "NVIDIA RTX 6000 Ada Generation"
+  },
+  "arms": {
+    "00_stock_a": {
+      "config": "stock",
+      "label": "Stock, 10 steps",
+      "successes": 49,
+      "episodes": 50,
+      "success_pct": 98.0,
+      "success_ci95_pct": [
+        94.0,
+        100.0
+      ],
+      "latency_episode_mean_ms": 174.1311,
+      "latency_episodes": 40,
+      "latency_ci95_ms": [
+        171.64917125,
+        176.81299625
+      ],
+      "all_episodes_cycles": {
+        "episodes": 50,
+        "cycles": 605,
+        "refresh_cycles": 605,
+        "reuse_cycles": 0,
+        "refresh_cycle_mean_ms": 199.33745123966943,
+        "refresh_cycle_p95_nearest_rank_ms": 190.793,
+        "reuse_cycle_mean_ms": null,
+        "reuse_cycle_p95_nearest_rank_ms": null
+      },
+      "nonwarmup_cycles": {
+        "episodes": 40,
+        "cycles": 488,
+        "refresh_cycles": 488,
+        "reuse_cycles": 0,
+        "refresh_cycle_mean_ms": 172.6458299180328,
+        "refresh_cycle_p95_nearest_rank_ms": 190.762,
+        "reuse_cycle_mean_ms": null,
+        "reuse_cycle_p95_nearest_rank_ms": null
+      }
+    },
+    "01_whole_tau8": {
+      "config": "whole_tau8",
+      "label": "Whole-stack, tau=8",
+      "successes": 30,
+      "episodes": 50,
+      "success_pct": 60.0,
+      "success_ci95_pct": [
+        46.0,
+        74.0
+      ],
+      "latency_episode_mean_ms": 97.56957500000001,
+      "latency_episodes": 40,
+      "latency_ci95_ms": [
+        96.46566625,
+        98.70037
+      ],
+      "all_episodes_cycles": {
+        "episodes": 50,
+        "cycles": 1394,
+        "refresh_cycles": 189,
+        "reuse_cycles": 1205,
+        "refresh_cycle_mean_ms": 463.6833703703703,
+        "refresh_cycle_p95_nearest_rank_ms": 194.651,
+        "reuse_cycle_mean_ms": 93.96562074688796,
+        "reuse_cycle_p95_nearest_rank_ms": 92.094
+      },
+      "nonwarmup_cycles": {
+        "episodes": 40,
+        "cycles": 1145,
+        "refresh_cycles": 154,
+        "reuse_cycles": 991,
+        "refresh_cycle_mean_ms": 177.7945064935065,
+        "refresh_cycle_p95_nearest_rank_ms": 195.98,
+        "reuse_cycle_mean_ms": 84.82301816347125,
+        "reuse_cycle_p95_nearest_rank_ms": 92.726
+      }
+    },
+    "02_block_tau8": {
+      "config": "c3ache_tau8",
+      "label": "Blockwise, tau=8",
+      "successes": 31,
+      "episodes": 50,
+      "success_pct": 62.0,
+      "success_ci95_pct": [
+        48.0,
+        76.0
+      ],
+      "latency_episode_mean_ms": 149.30895,
+      "latency_episodes": 40,
+      "latency_ci95_ms": [
+        147.6896,
+        150.981430625
+      ],
+      "all_episodes_cycles": {
+        "episodes": 50,
+        "cycles": 1372,
+        "refresh_cycles": 188,
+        "reuse_cycles": 1184,
+        "refresh_cycle_mean_ms": 489.60417021276595,
+        "refresh_cycle_p95_nearest_rank_ms": 190.133,
+        "reuse_cycle_mean_ms": 188.78361148648648,
+        "reuse_cycle_p95_nearest_rank_ms": 160.597
+      },
+      "nonwarmup_cycles": {
+        "episodes": 40,
+        "cycles": 1128,
+        "refresh_cycles": 153,
+        "reuse_cycles": 975,
+        "refresh_cycle_mean_ms": 179.2295816993464,
+        "refresh_cycle_p95_nearest_rank_ms": 190.133,
+        "reuse_cycle_mean_ms": 144.38301333333337,
+        "reuse_cycle_p95_nearest_rank_ms": 160.773
+      }
+    },
+    "03_stock_b": {
+      "config": "stock",
+      "label": "Stock repeat",
+      "successes": 49,
+      "episodes": 50,
+      "success_pct": 98.0,
+      "success_ci95_pct": [
+        94.0,
+        100.0
+      ],
+      "latency_episode_mean_ms": 168.330175,
+      "latency_episodes": 40,
+      "latency_ci95_ms": [
+        166.69859,
+        170.19029187499999
+      ],
+      "all_episodes_cycles": {
+        "episodes": 50,
+        "cycles": 605,
+        "refresh_cycles": 605,
+        "reuse_cycles": 0,
+        "refresh_cycle_mean_ms": 194.25086776859504,
+        "refresh_cycle_p95_nearest_rank_ms": 185.201,
+        "reuse_cycle_mean_ms": null,
+        "reuse_cycle_p95_nearest_rank_ms": null
+      },
+      "nonwarmup_cycles": {
+        "episodes": 40,
+        "cycles": 488,
+        "refresh_cycles": 488,
+        "reuse_cycles": 0,
+        "refresh_cycle_mean_ms": 167.5716229508197,
+        "refresh_cycle_p95_nearest_rank_ms": 186.028,
+        "reuse_cycle_mean_ms": null,
+        "reuse_cycle_p95_nearest_rank_ms": null
+      }
+    }
+  },
+  "paired_contrasts": [
+    {
+      "left": "01_whole_tau8",
+      "right": "00_stock_a",
+      "n_paired_states": 50,
+      "success_difference_pp": -38.0,
+      "success_ci95_pp": [
+        -52.0,
+        -24.0
+      ],
+      "left_only_successes": 1,
+      "right_only_successes": 20,
+      "latency_paired_episodes": 40,
+      "latency_difference_ms": -76.56152499999999,
+      "latency_ci95_ms": [
+        -79.36765375,
+        -73.940026875
+      ]
+    },
+    {
+      "left": "02_block_tau8",
+      "right": "00_stock_a",
+      "n_paired_states": 50,
+      "success_difference_pp": -36.0,
+      "success_ci95_pp": [
+        -50.0,
+        -22.0
+      ],
+      "left_only_successes": 1,
+      "right_only_successes": 19,
+      "latency_paired_episodes": 40,
+      "latency_difference_ms": -24.82215,
+      "latency_ci95_ms": [
+        -26.996179375,
+        -22.704336250000004
+      ]
+    },
+    {
+      "left": "01_whole_tau8",
+      "right": "02_block_tau8",
+      "n_paired_states": 50,
+      "success_difference_pp": -2.0,
+      "success_ci95_pp": [
+        -10.0,
+        6.0
+      ],
+      "left_only_successes": 2,
+      "right_only_successes": 3,
+      "latency_paired_episodes": 40,
+      "latency_difference_ms": -51.739374999999995,
+      "latency_ci95_ms": [
+        -53.7689275,
+        -49.769080624999994
+      ]
+    }
+  ],
+  "stock_repeat": {
+    "pass": true,
+    "compared_fields": [
+      "success",
+      "steps",
+      "cycles",
+      "init_state",
+      "refresh_cycles",
+      "reuse_cycles"
+    ],
+    "matched_states": 50,
+    "mismatches": [],
+    "scope": "Recorded episode outcomes and lengths; not action-tensor equality."
+  },
+  "pass": true,
+  "compile_action_infer": true
+}

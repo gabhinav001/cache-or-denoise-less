@@ -1,0 +1,931 @@
+{
+  "schema_version": 1,
+  "analysis_sha256": "460617db082927af039c29858eb3a6dac155da79e4e11908d469223b7f907ea2",
+  "sources": [
+    {
+      "path": "deployfrontier/d2.json",
+      "sha256": "f7a56a51112fcbbf14a59f6e9616cc11e4096a80b8ffffcbb60d447427c80215"
+    },
+    {
+      "path": "deployfrontier/d3.json",
+      "sha256": "3b75fe4de61d1025991ed3f101028cb1bc87f5c9e9590715d4d458754c510914"
+    },
+    {
+      "path": "deployfrontier/d4.json",
+      "sha256": "bd0579942a48b3aae484ee0bab8c40d997afd01f69c3982e4cf4452de58d2ae1"
+    },
+    {
+      "path": "deployfrontier/d6.json",
+      "sha256": "0dfa8d688039d435fb1bec04f3509d3d5fe1a9d48a527ab8371bc33640307c48"
+    },
+    {
+      "path": "deployfrontier/d8.json",
+      "sha256": "7c0157a19b9cf319fefcb8e532deb8f4395a33db41de9bebcc4a41a6d1c516d6"
+    },
+    {
+      "path": "deployfrontier/d10.json",
+      "sha256": "b42fbb4f054e6d3a95e10856c2387b9a5c9aeb4af6fbe72645137804566a23c5"
+    },
+    {
+      "path": "deployfrontier/d2_seed7.json",
+      "sha256": "578c2208775a9d3a97918ada55031880782ef4b5a69f38e7e83b0fc11d05cb55"
+    },
+    {
+      "path": "deployfrontier/d3_seed7.json",
+      "sha256": "83a9eb47169d75db126bfc84e8596638bca2a01b0b0f0322826d629a926c84dc"
+    },
+    {
+      "path": "deployfrontier/d4_seed7.json",
+      "sha256": "e108854c14e9bb4668f1bc3cf484528ad45fd04b9089d5d1b82d84eec75b7ee9"
+    },
+    {
+      "path": "deployfrontier/d6_seed7.json",
+      "sha256": "25638b53aef1aff1d7712945bc7966d76dd3e4103cb413e7feb8f763fad117cd"
+    },
+    {
+      "path": "deployfrontier/d8_seed7.json",
+      "sha256": "de431be265c60efc6649b07bd4425415b3c7e3e76e186ed108455de9aa5d8d8c"
+    },
+    {
+      "path": "deployfrontier/d10_seed7.json",
+      "sha256": "2bed77def53a96b47c8ee8dee681ca1fa494e590522f0167893b16210ab5f9e7"
+    },
+    {
+      "path": "deployfrontier/d2_seed11.json",
+      "sha256": "0c545129f8c49c1fc4d0b6f6bb420c049c050ba6a48b5a2cc138ee68918e7fa5"
+    },
+    {
+      "path": "deployfrontier/d3_seed11.json",
+      "sha256": "037d758c8179c2eeb2eeb319d850468c721742a2b7a0d0c15244b7a7e614e8ec"
+    },
+    {
+      "path": "deployfrontier/d4_seed11.json",
+      "sha256": "b101047249a6a5a2ea41175f7b31ec1ff71d1efccaedb8c76b91da8ebef3fe00"
+    },
+    {
+      "path": "deployfrontier/d6_seed11.json",
+      "sha256": "9c9d81e76c3fdba13f4d923f2bd1c87228ead184b13812f872490c2fc09d926b"
+    },
+    {
+      "path": "deployfrontier/d8_seed11.json",
+      "sha256": "26dabee6047ca9d9f415322b850c5c2cba8a8352fd546e3b5fddb79e1df29c75"
+    },
+    {
+      "path": "deployfrontier/d10_seed11.json",
+      "sha256": "76142402721407108a04758a76fcfde1f895ab398cbee5d64bf96d5d3f85ed2c"
+    },
+    {
+      "path": "statescale/s2.json",
+      "sha256": "fe6e3c3b9145e554986a004b285c1c3e2eb39e0b0c62aec66ee5c365e89c4499"
+    },
+    {
+      "path": "statescale/s4.json",
+      "sha256": "426f38b126f78cee6a192a7fea569f87b55f225f8051b58ba79d08fe3e16151f"
+    },
+    {
+      "path": "statescale/s10.json",
+      "sha256": "d766d1871e923c2b319b3045c02ec91d97f580c73d02384469827132504d9cbd"
+    },
+    {
+      "path": "statescale/s2_seed7.json",
+      "sha256": "e721c7176edd9f7f0003a2dcede9794e417dd74ab6d6f6a17dab5f0b7384796a"
+    },
+    {
+      "path": "statescale/s4_seed7.json",
+      "sha256": "172ad2d4f297e81fd40f44215b025d3236ded20b0716b877e939fe8cba598c70"
+    },
+    {
+      "path": "statescale/s10_seed7.json",
+      "sha256": "1cc1a9db5104b0f34e5ad6060610aaf54c4fe33006a746f7f1f0a16d8ed79ba5"
+    }
+  ],
+  "method": {
+    "resamples": 20000,
+    "rng": "PCG64; SHA256(label) first 8 bytes, big-endian",
+    "numpy": "2.4.6",
+    "ci": "pointwise 95% paired within-task percentile bootstrap; linear quantiles",
+    "estimand": "equal-weight mean of the ten task success differences",
+    "scope": "Post-hoc sensitivity analysis of historical data. Not a new experiment, prespecified holdout, task-generalization test, or published-cache reproduction.",
+    "exclusion": "30 state hashes shared by every pilot arm/seed; remaining 470 states weighted equally within each task"
+  },
+  "collections": [
+    {
+      "seed": 42,
+      "identity": {
+        "commit": "ccc25c30a5603b7dba984f786c5b06dcfb3a2d03",
+        "host_tag": "ac5f9eba",
+        "gpu": "NVIDIA RTX A6000",
+        "ckpt": "libero_optional_idm_2cam224.pt",
+        "ckpt_sha256_16": "243491fd88cdcba0",
+        "torch": "2.7.1+cu128",
+        "mujoco": "3.3.2",
+        "initial_latent": "dbba7b13d98e9415"
+      },
+      "arms": {
+        "2st": {
+          "successes": 483,
+          "states": 500,
+          "timed_episodes": 490,
+          "episode_mean_ms": 123.62733469387756
+        },
+        "4st": {
+          "successes": 483,
+          "states": 500,
+          "timed_episodes": 490,
+          "episode_mean_ms": 154.59968775510202
+        },
+        "4st+cache": {
+          "successes": 479,
+          "states": 500,
+          "timed_episodes": 490,
+          "episode_mean_ms": 137.72902040816328
+        },
+        "10st+cache": {
+          "successes": 468,
+          "states": 500,
+          "timed_episodes": 490,
+          "episode_mean_ms": 221.78613469387756
+        }
+      },
+      "contrasts": {
+        "all_500": [
+          {
+            "left": "2st",
+            "right": "10st+cache",
+            "states": 500,
+            "difference_pp_equal_task": 3.0,
+            "ci95_pp": [
+              0.7999999999999998,
+              5.4
+            ],
+            "per_task": [
+              {
+                "task": 0,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 1,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 2,
+                "worse": 1
+              },
+              {
+                "task": 2,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 3,
+                "worse": 3
+              },
+              {
+                "task": 3,
+                "states": 50,
+                "difference_pp": -4.0,
+                "better": 2,
+                "worse": 4
+              },
+              {
+                "task": 4,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 5,
+                "states": 50,
+                "difference_pp": 12.0,
+                "better": 6,
+                "worse": 0
+              },
+              {
+                "task": 6,
+                "states": 50,
+                "difference_pp": 6.0,
+                "better": 3,
+                "worse": 0
+              },
+              {
+                "task": 7,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 8,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 1,
+                "worse": 1
+              },
+              {
+                "task": 9,
+                "states": 50,
+                "difference_pp": 12.0,
+                "better": 8,
+                "worse": 2
+              }
+            ],
+            "leave_one_task_out_range_pp": [
+              2.0,
+              3.7777777777777777
+            ],
+            "tasks_positive_zero_negative": [
+              5,
+              4,
+              1
+            ]
+          },
+          {
+            "left": "4st",
+            "right": "4st+cache",
+            "states": 500,
+            "difference_pp_equal_task": 0.8,
+            "ci95_pp": [
+              -0.8000000000000002,
+              2.6
+            ],
+            "per_task": [
+              {
+                "task": 0,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 1,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 2,
+                "worse": 1
+              },
+              {
+                "task": 2,
+                "states": 50,
+                "difference_pp": -2.0,
+                "better": 2,
+                "worse": 3
+              },
+              {
+                "task": 3,
+                "states": 50,
+                "difference_pp": 10.0,
+                "better": 5,
+                "worse": 0
+              },
+              {
+                "task": 4,
+                "states": 50,
+                "difference_pp": -4.0,
+                "better": 0,
+                "worse": 2
+              },
+              {
+                "task": 5,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 6,
+                "states": 50,
+                "difference_pp": -2.0,
+                "better": 0,
+                "worse": 1
+              },
+              {
+                "task": 7,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 8,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 9,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 2,
+                "worse": 1
+              }
+            ],
+            "leave_one_task_out_range_pp": [
+              -0.2222222222222222,
+              1.3333333333333333
+            ],
+            "tasks_positive_zero_negative": [
+              4,
+              3,
+              3
+            ]
+          }
+        ],
+        "excluding_pilot_470": [
+          {
+            "left": "2st",
+            "right": "10st+cache",
+            "states": 470,
+            "difference_pp_equal_task": 3.3,
+            "ci95_pp": [
+              0.9500000000000002,
+              5.650000000000001
+            ],
+            "per_task": [
+              {
+                "task": 0,
+                "states": 40,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 1,
+                "states": 40,
+                "difference_pp": 5.0,
+                "better": 2,
+                "worse": 0
+              },
+              {
+                "task": 2,
+                "states": 40,
+                "difference_pp": 0.0,
+                "better": 2,
+                "worse": 2
+              },
+              {
+                "task": 3,
+                "states": 50,
+                "difference_pp": -4.0,
+                "better": 2,
+                "worse": 4
+              },
+              {
+                "task": 4,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 5,
+                "states": 50,
+                "difference_pp": 12.0,
+                "better": 6,
+                "worse": 0
+              },
+              {
+                "task": 6,
+                "states": 50,
+                "difference_pp": 6.0,
+                "better": 3,
+                "worse": 0
+              },
+              {
+                "task": 7,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 8,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 1,
+                "worse": 1
+              },
+              {
+                "task": 9,
+                "states": 50,
+                "difference_pp": 12.0,
+                "better": 8,
+                "worse": 2
+              }
+            ],
+            "leave_one_task_out_range_pp": [
+              2.3333333333333335,
+              4.111111111111111
+            ],
+            "tasks_positive_zero_negative": [
+              5,
+              4,
+              1
+            ]
+          },
+          {
+            "left": "4st",
+            "right": "4st+cache",
+            "states": 470,
+            "difference_pp_equal_task": 0.55,
+            "ci95_pp": [
+              -1.3,
+              2.4
+            ],
+            "per_task": [
+              {
+                "task": 0,
+                "states": 40,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 1,
+                "states": 40,
+                "difference_pp": 0.0,
+                "better": 1,
+                "worse": 1
+              },
+              {
+                "task": 2,
+                "states": 40,
+                "difference_pp": -2.5,
+                "better": 2,
+                "worse": 3
+              },
+              {
+                "task": 3,
+                "states": 50,
+                "difference_pp": 10.0,
+                "better": 5,
+                "worse": 0
+              },
+              {
+                "task": 4,
+                "states": 50,
+                "difference_pp": -4.0,
+                "better": 0,
+                "worse": 2
+              },
+              {
+                "task": 5,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 6,
+                "states": 50,
+                "difference_pp": -2.0,
+                "better": 0,
+                "worse": 1
+              },
+              {
+                "task": 7,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 8,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 9,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 2,
+                "worse": 1
+              }
+            ],
+            "leave_one_task_out_range_pp": [
+              -0.5,
+              1.0555555555555556
+            ],
+            "tasks_positive_zero_negative": [
+              3,
+              4,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "seed": 7,
+      "identity": {
+        "commit": "72dc4249601401d96cb593a46ab089a31e7eb422",
+        "host_tag": "74da08ee",
+        "gpu": "NVIDIA RTX A6000",
+        "ckpt": "libero_optional_idm_2cam224.pt",
+        "ckpt_sha256_16": "243491fd88cdcba0",
+        "torch": "2.7.1+cu128",
+        "mujoco": "3.3.2",
+        "initial_latent": "8d1644a05937d92e"
+      },
+      "arms": {
+        "2st": {
+          "successes": 486,
+          "states": 500,
+          "timed_episodes": 490,
+          "episode_mean_ms": 121.60855714285714
+        },
+        "4st": {
+          "successes": 492,
+          "states": 500,
+          "timed_episodes": 490,
+          "episode_mean_ms": 150.29762653061223
+        },
+        "4st+cache": {
+          "successes": 480,
+          "states": 500,
+          "timed_episodes": 490,
+          "episode_mean_ms": 136.36649387755102
+        },
+        "10st+cache": {
+          "successes": 456,
+          "states": 500,
+          "timed_episodes": 490,
+          "episode_mean_ms": 199.9284979591837
+        }
+      },
+      "contrasts": {
+        "all_500": [
+          {
+            "left": "2st",
+            "right": "10st+cache",
+            "states": 500,
+            "difference_pp_equal_task": 6.0,
+            "ci95_pp": [
+              3.5999999999999996,
+              8.4
+            ],
+            "per_task": [
+              {
+                "task": 0,
+                "states": 50,
+                "difference_pp": 6.0,
+                "better": 3,
+                "worse": 0
+              },
+              {
+                "task": 1,
+                "states": 50,
+                "difference_pp": -2.0,
+                "better": 0,
+                "worse": 1
+              },
+              {
+                "task": 2,
+                "states": 50,
+                "difference_pp": -6.0,
+                "better": 1,
+                "worse": 4
+              },
+              {
+                "task": 3,
+                "states": 50,
+                "difference_pp": 36.0,
+                "better": 20,
+                "worse": 2
+              },
+              {
+                "task": 4,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 1,
+                "worse": 1
+              },
+              {
+                "task": 5,
+                "states": 50,
+                "difference_pp": 8.0,
+                "better": 4,
+                "worse": 0
+              },
+              {
+                "task": 6,
+                "states": 50,
+                "difference_pp": 6.0,
+                "better": 3,
+                "worse": 0
+              },
+              {
+                "task": 7,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 8,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 9,
+                "states": 50,
+                "difference_pp": 10.0,
+                "better": 6,
+                "worse": 1
+              }
+            ],
+            "leave_one_task_out_range_pp": [
+              2.6666666666666665,
+              7.333333333333333
+            ],
+            "tasks_positive_zero_negative": [
+              6,
+              2,
+              2
+            ]
+          },
+          {
+            "left": "4st",
+            "right": "4st+cache",
+            "states": 500,
+            "difference_pp_equal_task": 2.4,
+            "ci95_pp": [
+              0.8,
+              4.0
+            ],
+            "per_task": [
+              {
+                "task": 0,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 1,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 2,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 2,
+                "worse": 1
+              },
+              {
+                "task": 3,
+                "states": 50,
+                "difference_pp": 10.0,
+                "better": 5,
+                "worse": 0
+              },
+              {
+                "task": 4,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 5,
+                "states": 50,
+                "difference_pp": -2.0,
+                "better": 1,
+                "worse": 2
+              },
+              {
+                "task": 6,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 7,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 8,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 9,
+                "states": 50,
+                "difference_pp": 8.0,
+                "better": 4,
+                "worse": 0
+              }
+            ],
+            "leave_one_task_out_range_pp": [
+              1.5555555555555556,
+              2.888888888888889
+            ],
+            "tasks_positive_zero_negative": [
+              6,
+              3,
+              1
+            ]
+          }
+        ],
+        "excluding_pilot_470": [
+          {
+            "left": "2st",
+            "right": "10st+cache",
+            "states": 470,
+            "difference_pp_equal_task": 6.2,
+            "ci95_pp": [
+              3.600000000000001,
+              8.85
+            ],
+            "per_task": [
+              {
+                "task": 0,
+                "states": 40,
+                "difference_pp": 7.5,
+                "better": 3,
+                "worse": 0
+              },
+              {
+                "task": 1,
+                "states": 40,
+                "difference_pp": -2.5,
+                "better": 0,
+                "worse": 1
+              },
+              {
+                "task": 2,
+                "states": 40,
+                "difference_pp": -5.0,
+                "better": 1,
+                "worse": 3
+              },
+              {
+                "task": 3,
+                "states": 50,
+                "difference_pp": 36.0,
+                "better": 20,
+                "worse": 2
+              },
+              {
+                "task": 4,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 1,
+                "worse": 1
+              },
+              {
+                "task": 5,
+                "states": 50,
+                "difference_pp": 8.0,
+                "better": 4,
+                "worse": 0
+              },
+              {
+                "task": 6,
+                "states": 50,
+                "difference_pp": 6.0,
+                "better": 3,
+                "worse": 0
+              },
+              {
+                "task": 7,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 8,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 9,
+                "states": 50,
+                "difference_pp": 10.0,
+                "better": 6,
+                "worse": 1
+              }
+            ],
+            "leave_one_task_out_range_pp": [
+              2.888888888888889,
+              7.444444444444445
+            ],
+            "tasks_positive_zero_negative": [
+              6,
+              2,
+              2
+            ]
+          },
+          {
+            "left": "4st",
+            "right": "4st+cache",
+            "states": 470,
+            "difference_pp_equal_task": 2.45,
+            "ci95_pp": [
+              0.8,
+              4.199999999999999
+            ],
+            "per_task": [
+              {
+                "task": 0,
+                "states": 40,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 1,
+                "states": 40,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 2,
+                "states": 40,
+                "difference_pp": 2.5,
+                "better": 2,
+                "worse": 1
+              },
+              {
+                "task": 3,
+                "states": 50,
+                "difference_pp": 10.0,
+                "better": 5,
+                "worse": 0
+              },
+              {
+                "task": 4,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 5,
+                "states": 50,
+                "difference_pp": -2.0,
+                "better": 1,
+                "worse": 2
+              },
+              {
+                "task": 6,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 7,
+                "states": 50,
+                "difference_pp": 0.0,
+                "better": 0,
+                "worse": 0
+              },
+              {
+                "task": 8,
+                "states": 50,
+                "difference_pp": 2.0,
+                "better": 1,
+                "worse": 0
+              },
+              {
+                "task": 9,
+                "states": 50,
+                "difference_pp": 8.0,
+                "better": 4,
+                "worse": 0
+              }
+            ],
+            "leave_one_task_out_range_pp": [
+              1.6111111111111112,
+              2.9444444444444446
+            ],
+            "tasks_positive_zero_negative": [
+              6,
+              3,
+              1
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

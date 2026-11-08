@@ -1,0 +1,142 @@
+[
+ {
+  "episode": 0,
+  "chunk": 0,
+  "length": 237,
+  "task": "Pick up the blue ring from the table and put it in the wooden tray",
+  "fps": 15
+ },
+ {
+  "episode": 2994,
+  "chunk": 2,
+  "length": 308,
+  "task": "Turn on the white extension cable",
+  "fps": 15
+ },
+ {
+  "episode": 6026,
+  "chunk": 6,
+  "length": 350,
+  "task": "Use the spoon to move some of the brown objects to the other bowl",
+  "fps": 15
+ },
+ {
+  "episode": 8935,
+  "chunk": 8,
+  "length": 206,
+  "task": "Take the masking tape and move it to the right",
+  "fps": 15
+ },
+ {
+  "episode": 11742,
+  "chunk": 11,
+  "length": 381,
+  "task": "Move the sneakers and the books slightly to the left then place the sneaker on the right on the books",
+  "fps": 15
+ },
+ {
+  "episode": 14696,
+  "chunk": 14,
+  "length": 370,
+  "task": "Remove the lid",
+  "fps": 15
+ },
+ {
+  "episode": 17628,
+  "chunk": 17,
+  "length": 391,
+  "task": "Use the towel to wipe in the white bowl",
+  "fps": 15
+ },
+ {
+  "episode": 20542,
+  "chunk": 20,
+  "length": 294,
+  "task": "Move the keys to the left",
+  "fps": 15
+ },
+ {
+  "episode": 23438,
+  "chunk": 23,
+  "length": 259,
+  "task": "Remove the glass container from the black lid, put it on the table and then put the black lid on the container",
+  "fps": 15
+ },
+ {
+  "episode": 26363,
+  "chunk": 26,
+  "length": 236,
+  "task": "Use the wooden fork to stir the pot and put it back",
+  "fps": 15
+ },
+ {
+  "episode": 29278,
+  "chunk": 29,
+  "length": 202,
+  "task": "Pull the zipper closed",
+  "fps": 15
+ },
+ {
+  "episode": 32029,
+  "chunk": 32,
+  "length": 268,
+  "task": "Move the eyeglass case to the left",
+  "fps": 15
+ },
+ {
+  "episode": 34905,
+  "chunk": 34,
+  "length": 382,
+  "task": "Put the orange, the apple, the yellow container and the strawberry in the plastic",
+  "fps": 15
+ },
+ {
+  "episode": 37708,
+  "chunk": 37,
+  "length": 216,
+  "task": "Pick up the mug on the plate and put it on the table",
+  "fps": 15
+ },
+ {
+  "episode": 40532,
+  "chunk": 40,
+  "length": 252,
+  "task": "Take one spoon from the cup and place it on the table",
+  "fps": 15
+ },
+ {
+  "episode": 43365,
+  "chunk": 43,
+  "length": 431,
+  "task": "Touch the faucet handle then pick up the fork and put it into the dish rack",
+  "fps": 15
+ },
+ {
+  "episode": 46230,
+  "chunk": 46,
+  "length": 246,
+  "task": "Put the shirt on the black chair on the brown chair",
+  "fps": 15
+ },
+ {
+  "episode": 49116,
+  "chunk": 49,
+  "length": 278,
+  "task": "Remove the green bottle from top fridge door shelf and place it on the middle fridge door shelf",
+  "fps": 15
+ },
+ {
+  "episode": 52062,
+  "chunk": 52,
+  "length": 287,
+  "task": "Remove one straw from the open drawer and put it on the countertop, close the open drawer",
+  "fps": 15
+ },
+ {
+  "episode": 54953,
+  "chunk": 54,
+  "length": 218,
+  "task": "Put the silver spoon in the blue bowl.",
+  "fps": 15
+ }
+]

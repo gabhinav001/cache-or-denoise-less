@@ -1,0 +1,295 @@
+[22:16:02] host <rented-host>:<port>
+[22:16:02] waiting for setup
+[22:16:05] setup done
+[22:16:07] shipping repo
+[22:16:10] running generalize seeds=light:0.50 cam:0.005 bright:0.05 noise:0.05
+[05:16:11] checking this host
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+  torch                  2.7.1+cu128
+  cuda                   NVIDIA RTX 6000 Ada Generation (51 GB)
+  egl                    initialised
+  mujoco                 3.3.2
+  robosuite              1.4.1
+  libero                 importable
+  fastwam                importable
+[05:16:16] host OK
+[05:16:16] installing probes into /w/probes (hydra needs them beside configs/)
+[05:16:16] cache identity gate
+[2026-09-11 05:16:19,486][robosuite_logs][WARNING] - No private macro file found!
+[2026-09-11 05:16:19,486][robosuite_logs][WARNING] - It is recommended to use a private macro file
+[2026-09-11 05:16:19,486][robosuite_logs][WARNING] - To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[2026-09-11 05:16:19,540][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+[2026-09-11 05:16:19,542][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-09-11 05:16:19,553][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[2026-09-11 05:16:21,902][fastwam.models.wan22.helpers.loader][INFO] - Loading Wan2.2-TI2V-5B components...
+[2026-09-11 05:16:21,902][fastwam.models.wan22.helpers.loader][INFO] - Skipping pretrained video DiT load (`skip_dit_load_from_pretrain=True`); initializing video expert randomly and expecting checkpoint override.
+[2026-09-11 05:18:30,247][fastwam.models.wan22.helpers.loader][INFO] - Finished loading Wan2.2-TI2V-5B components in 128.35 seconds.
+[2026-09-11 05:18:30,248][fastwam.models.wan22.action_dit][INFO] - Skipping ActionDiT pretrained load (`skip_dit_load_from_pretrain=True`); initializing action expert randomly and expecting checkpoint override.
+[2026-09-11 05:18:36,609][fastwam.models.wan22.mot][INFO] - Initialized MoT with experts: ['video', 'action'], num_layers=30
+[2026-09-11 05:18:36,611][fastwam.models.wan22.mot][INFO] -   Expert 'video': num_params=5.00 B
+[2026-09-11 05:18:36,613][fastwam.models.wan22.mot][INFO] -   Expert 'action': num_params=1.02 B
+[2026-09-11 05:18:46,723][root][INFO] - Loaded checkpoint via model.load_checkpoint: /workspace/ckpt/libero_optional_idm_2cam224.pt
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+
+=== cache identity gate ===
+  cells substituted     240 of 300
+  identity error        1.386e-03   (must be < 5e-03)
+  stale-cache control   5.963e-02   (4 cycles old)
+  margin                43x        (must be > 20x)
+
+  PASS -- cached residuals survive the call that produced them.
+
+[05:22:06] Robustness of the correction under observation shift
+[05:22:06] seeds: light:0.50 cam:0.005 bright:0.05 noise:0.05 | episodes/arm/task: 6 | out: /workspace/out
+[05:22:06] --- seed light:0.50 ---
+[2026-09-11 05:22:09,657][robosuite_logs][WARNING] - No private macro file found!
+[2026-09-11 05:22:09,657][robosuite_logs][WARNING] - It is recommended to use a private macro file
+[2026-09-11 05:22:09,657][robosuite_logs][WARNING] - To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py
+[2026-09-11 05:22:09,716][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+[2026-09-11 05:22:09,718][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-09-11 05:22:09,728][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[2026-09-11 05:22:11,917][fastwam.models.wan22.helpers.loader][INFO] - Loading Wan2.2-TI2V-5B components...
+[2026-09-11 05:22:11,917][fastwam.models.wan22.helpers.loader][INFO] - Skipping pretrained video DiT load (`skip_dit_load_from_pretrain=True`); initializing video expert randomly and expecting checkpoint override.
+[2026-09-11 05:24:11,887][fastwam.models.wan22.helpers.loader][INFO] - Finished loading Wan2.2-TI2V-5B components in 119.97 seconds.
+[2026-09-11 05:24:11,887][fastwam.models.wan22.action_dit][INFO] - Skipping ActionDiT pretrained load (`skip_dit_load_from_pretrain=True`); initializing action expert randomly and expecting checkpoint override.
+[2026-09-11 05:24:31,095][fastwam.models.wan22.mot][INFO] - Initialized MoT with experts: ['video', 'action'], num_layers=30
+[2026-09-11 05:24:31,097][fastwam.models.wan22.mot][INFO] -   Expert 'video': num_params=5.00 B
+[2026-09-11 05:24:31,099][fastwam.models.wan22.mot][INFO] -   Expert 'action': num_params=1.02 B
+[2026-09-11 05:24:40,735][root][INFO] - Loaded checkpoint via model.load_checkpoint: /workspace/ckpt/libero_optional_idm_2cam224.pt
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[libero] loaded 300 coefficients, median 0.717
+[libero] suite=libero_goal tasks=10 eps=6 perturb=light:0.50 configs=['full', 'c3ache_tau4', 'c3ache_tau4_shrink']
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 0 full           SR=1.00  (2.2 min)
+[libero] task 0 c3ache_tau4    SR=1.00  (4.3 min)
+[libero] task 0 c3ache_tau4_shrink SR=1.00  (6.2 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 1 full           SR=1.00  (6.9 min)
+[libero] task 1 c3ache_tau4    SR=0.83  (7.9 min)
+[libero] task 1 c3ache_tau4_shrink SR=1.00  (8.8 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 2 full           SR=0.83  (9.9 min)
+[libero] task 2 c3ache_tau4    SR=1.00  (10.8 min)
+[libero] task 2 c3ache_tau4_shrink SR=0.67  (12.1 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 3 full           SR=1.00  (13.5 min)
+[libero] task 3 c3ache_tau4    SR=0.50  (15.4 min)
+[libero] task 3 c3ache_tau4_shrink SR=0.67  (16.9 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 4 full           SR=1.00  (17.9 min)
+[libero] task 4 c3ache_tau4    SR=1.00  (18.9 min)
+[libero] task 4 c3ache_tau4_shrink SR=1.00  (19.7 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 5 full           SR=1.00  (20.7 min)
+[libero] task 5 c3ache_tau4    SR=0.50  (22.2 min)
+[libero] task 5 c3ache_tau4_shrink SR=0.83  (23.5 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 6 full           SR=1.00  (24.4 min)
+[libero] task 6 c3ache_tau4    SR=1.00  (25.5 min)
+[libero] task 6 c3ache_tau4_shrink SR=1.00  (26.5 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 7 full           SR=1.00  (27.2 min)
+[libero] task 7 c3ache_tau4    SR=1.00  (28.0 min)
+[libero] task 7 c3ache_tau4_shrink SR=1.00  (29.0 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 8 full           SR=1.00  (29.7 min)
+[libero] task 8 c3ache_tau4    SR=1.00  (31.0 min)
+[libero] task 8 c3ache_tau4_shrink SR=1.00  (31.8 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 9 full           SR=1.00  (32.9 min)
+[libero] task 9 c3ache_tau4    SR=1.00  (34.3 min)
+[libero] task 9 c3ache_tau4_shrink SR=0.83  (35.8 min)
+
+=== success rate by config ===
+  full              98.3%  (n=60)
+  c3ache_tau4       88.3%  (n=60)
+  c3ache_tau4_shrink  90.0%  (n=60)
+[libero] DONE 180 episodes in 35.9 min
+[06:00:42] --- seed cam:0.005 ---
+[2026-09-11 06:00:45,726][robosuite_logs][WARNING] - No private macro file found!
+[2026-09-11 06:00:45,726][robosuite_logs][WARNING] - It is recommended to use a private macro file
+[2026-09-11 06:00:45,726][robosuite_logs][WARNING] - To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py
+[2026-09-11 06:00:45,762][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+[2026-09-11 06:00:45,764][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-09-11 06:00:45,774][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[2026-09-11 06:00:47,996][fastwam.models.wan22.helpers.loader][INFO] - Loading Wan2.2-TI2V-5B components...
+[2026-09-11 06:00:47,996][fastwam.models.wan22.helpers.loader][INFO] - Skipping pretrained video DiT load (`skip_dit_load_from_pretrain=True`); initializing video expert randomly and expecting checkpoint override.
+[2026-09-11 06:03:22,803][fastwam.models.wan22.helpers.loader][INFO] - Finished loading Wan2.2-TI2V-5B components in 154.81 seconds.
+[2026-09-11 06:03:22,804][fastwam.models.wan22.action_dit][INFO] - Skipping ActionDiT pretrained load (`skip_dit_load_from_pretrain=True`); initializing action expert randomly and expecting checkpoint override.
+[2026-09-11 06:03:29,102][fastwam.models.wan22.mot][INFO] - Initialized MoT with experts: ['video', 'action'], num_layers=30
+[2026-09-11 06:03:29,104][fastwam.models.wan22.mot][INFO] -   Expert 'video': num_params=5.00 B
+[2026-09-11 06:03:29,106][fastwam.models.wan22.mot][INFO] -   Expert 'action': num_params=1.02 B
+[2026-09-11 06:03:38,565][root][INFO] - Loaded checkpoint via model.load_checkpoint: /workspace/ckpt/libero_optional_idm_2cam224.pt
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[libero] loaded 300 coefficients, median 0.717
+[libero] suite=libero_goal tasks=10 eps=6 perturb=cam:0.005 configs=['full', 'c3ache_tau4', 'c3ache_tau4_shrink']
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 0 full           SR=0.83  (2.4 min)
+[libero] task 0 c3ache_tau4    SR=0.50  (5.3 min)
+[libero] task 0 c3ache_tau4_shrink SR=0.83  (7.5 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 1 full           SR=1.00  (8.3 min)
+[libero] task 1 c3ache_tau4    SR=0.83  (9.5 min)
+[libero] task 1 c3ache_tau4_shrink SR=0.67  (10.9 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 2 full           SR=1.00  (11.7 min)
+[libero] task 2 c3ache_tau4    SR=1.00  (12.8 min)
+[libero] task 2 c3ache_tau4_shrink SR=0.83  (14.1 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 3 full           SR=1.00  (15.6 min)
+[libero] task 3 c3ache_tau4    SR=0.50  (17.6 min)
+[libero] task 3 c3ache_tau4_shrink SR=0.67  (19.4 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 4 full           SR=1.00  (20.3 min)
+[libero] task 4 c3ache_tau4    SR=1.00  (21.2 min)
+[libero] task 4 c3ache_tau4_shrink SR=1.00  (22.2 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 5 full           SR=1.00  (23.1 min)
+[libero] task 5 c3ache_tau4    SR=0.50  (24.8 min)
+[libero] task 5 c3ache_tau4_shrink SR=0.67  (26.2 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 6 full           SR=1.00  (27.0 min)
+[libero] task 6 c3ache_tau4    SR=0.67  (28.4 min)
+[libero] task 6 c3ache_tau4_shrink SR=0.67  (30.0 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 7 full           SR=0.83  (31.3 min)
+[libero] task 7 c3ache_tau4    SR=1.00  (32.3 min)
+[libero] task 7 c3ache_tau4_shrink SR=0.83  (33.4 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 8 full           SR=0.83  (34.4 min)
+[libero] task 8 c3ache_tau4    SR=0.67  (35.8 min)
+[libero] task 8 c3ache_tau4_shrink SR=0.83  (36.9 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 9 full           SR=0.67  (38.5 min)
+[libero] task 9 c3ache_tau4    SR=0.83  (40.0 min)
+[libero] task 9 c3ache_tau4_shrink SR=0.67  (41.5 min)
+
+=== success rate by config ===
+  full              91.7%  (n=60)
+  c3ache_tau4       75.0%  (n=60)
+  c3ache_tau4_shrink  76.7%  (n=60)
+[libero] DONE 180 episodes in 41.5 min
+[06:45:17] --- seed bright:0.05 ---
+[2026-09-11 06:45:20,539][robosuite_logs][WARNING] - No private macro file found!
+[2026-09-11 06:45:20,539][robosuite_logs][WARNING] - It is recommended to use a private macro file
+[2026-09-11 06:45:20,539][robosuite_logs][WARNING] - To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[2026-09-11 06:45:20,593][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+[2026-09-11 06:45:20,594][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-09-11 06:45:20,604][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[2026-09-11 06:45:22,845][fastwam.models.wan22.helpers.loader][INFO] - Loading Wan2.2-TI2V-5B components...
+[2026-09-11 06:45:22,846][fastwam.models.wan22.helpers.loader][INFO] - Skipping pretrained video DiT load (`skip_dit_load_from_pretrain=True`); initializing video expert randomly and expecting checkpoint override.
+[2026-09-11 06:47:26,417][fastwam.models.wan22.helpers.loader][INFO] - Finished loading Wan2.2-TI2V-5B components in 123.57 seconds.
+[2026-09-11 06:47:26,418][fastwam.models.wan22.action_dit][INFO] - Skipping ActionDiT pretrained load (`skip_dit_load_from_pretrain=True`); initializing action expert randomly and expecting checkpoint override.
+[2026-09-11 06:47:32,620][fastwam.models.wan22.mot][INFO] - Initialized MoT with experts: ['video', 'action'], num_layers=30
+[2026-09-11 06:47:32,622][fastwam.models.wan22.mot][INFO] -   Expert 'video': num_params=5.00 B
+[2026-09-11 06:47:32,624][fastwam.models.wan22.mot][INFO] -   Expert 'action': num_params=1.02 B
+[2026-09-11 06:47:42,260][root][INFO] - Loaded checkpoint via model.load_checkpoint: /workspace/ckpt/libero_optional_idm_2cam224.pt
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[libero] loaded 300 coefficients, median 0.717
+[libero] suite=libero_goal tasks=10 eps=6 perturb=bright:0.05 configs=['full', 'c3ache_tau4', 'c3ache_tau4_shrink']
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 0 full           SR=1.00  (2.3 min)
+[libero] task 0 c3ache_tau4    SR=1.00  (4.6 min)
+[libero] task 0 c3ache_tau4_shrink SR=1.00  (6.5 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 1 full           SR=1.00  (7.3 min)
+[libero] task 1 c3ache_tau4    SR=0.67  (8.5 min)
+[libero] task 1 c3ache_tau4_shrink SR=1.00  (9.5 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 2 full           SR=0.83  (10.5 min)
+[libero] task 2 c3ache_tau4    SR=1.00  (11.6 min)
+[libero] task 2 c3ache_tau4_shrink SR=1.00  (12.7 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 3 full           SR=1.00  (13.9 min)
+[libero] task 3 c3ache_tau4    SR=0.67  (15.7 min)
+[libero] task 3 c3ache_tau4_shrink SR=1.00  (17.0 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 4 full           SR=1.00  (17.8 min)
+[libero] task 4 c3ache_tau4    SR=1.00  (18.9 min)
+[libero] task 4 c3ache_tau4_shrink SR=1.00  (19.7 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 5 full           SR=1.00  (20.7 min)
+[libero] task 5 c3ache_tau4    SR=0.67  (22.3 min)
+[libero] task 5 c3ache_tau4_shrink SR=1.00  (23.4 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 6 full           SR=1.00  (24.4 min)
+[libero] task 6 c3ache_tau4    SR=0.67  (25.7 min)
+[libero] task 6 c3ache_tau4_shrink SR=1.00  (26.7 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 7 full           SR=1.00  (27.4 min)
+[libero] task 7 c3ache_tau4    SR=1.00  (28.5 min)
+[libero] task 7 c3ache_tau4_shrink SR=1.00  (29.4 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 8 full           SR=0.83  (30.5 min)
+[libero] task 8 c3ache_tau4    SR=0.83  (31.8 min)
+[libero] task 8 c3ache_tau4_shrink SR=1.00  (32.4 min)
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 9 full           SR=1.00  (33.6 min)
+[libero] task 9 c3ache_tau4    SR=1.00  (35.1 min)
+Read from remote host <rented-host>: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+[00:33:48] run exited 255; pulling artefacts
+-rw-r--r--@  1 user  staff  30871 11 Sep 00:24 gen_bright_0_05.json
+-rw-r--r--@  1 user  staff  30895 10 Sep 23:45 gen_cam_0_005.json
+-rw-r--r--@  1 user  staff  30870 10 Sep 22:06 gen_light_0_10.json
+-rw-r--r--@  1 user  staff  30874 10 Sep 23:00 gen_light_0_50.json
+-rw-r--r--@  1 user  staff  30866 10 Sep 21:27 gen_none.json
+[00:33:50] done (instance 50546224 still running -- destroy it yourself when finished)

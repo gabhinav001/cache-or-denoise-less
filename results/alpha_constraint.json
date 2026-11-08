@@ -1,0 +1,77 @@
+[
+ {
+  "label": "Fast-WAM",
+  "cells": 300,
+  "observations": 190800,
+  "held_out_rel_l2": {
+   "hold": 0.653,
+   "alpha": 0.6451,
+   "beta": 0.6025,
+   "two_tap": 0.6001
+  },
+  "two_tap_coeff_sum": {
+   "median": 0.731,
+   "share_below_one": 1.0
+  },
+  "norm_ratio": {
+   "wanted_by_least_squares": 0.8,
+   "best_the_family_can_reach": 0.945,
+   "taken_at_error_optimal_alpha": 0.979
+  },
+  "pct_gain_over_hold": {
+   "alpha": 1.21,
+   "beta": 7.73,
+   "two_tap": 8.1
+  }
+ },
+ {
+  "label": "pi0.5",
+  "cells": 180,
+  "observations": 171720,
+  "held_out_rel_l2": {
+   "hold": 0.7565,
+   "alpha": 0.7238,
+   "beta": 0.6754,
+   "two_tap": 0.6673
+  },
+  "two_tap_coeff_sum": {
+   "median": 0.767,
+   "share_below_one": 1.0
+  },
+  "norm_ratio": {
+   "wanted_by_least_squares": 0.737,
+   "best_the_family_can_reach": 0.921,
+   "taken_at_error_optimal_alpha": 0.961
+  },
+  "pct_gain_over_hold": {
+   "alpha": 4.33,
+   "beta": 10.73,
+   "two_tap": 11.8
+  }
+ },
+ {
+  "label": "DreamZero",
+  "cells": 90,
+  "observations": 36000,
+  "held_out_rel_l2": {
+   "hold": 0.7079,
+   "alpha": 0.6484,
+   "beta": 0.6429,
+   "two_tap": 0.6179
+  },
+  "two_tap_coeff_sum": {
+   "median": 0.794,
+   "share_below_one": 1.0
+  },
+  "norm_ratio": {
+   "wanted_by_least_squares": 0.737,
+   "best_the_family_can_reach": 0.936,
+   "taken_at_error_optimal_alpha": 0.941
+  },
+  "pct_gain_over_hold": {
+   "alpha": 8.4,
+   "beta": 9.18,
+   "two_tap": 12.71
+  }
+ }
+]

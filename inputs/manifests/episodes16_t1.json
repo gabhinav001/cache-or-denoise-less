@@ -1,0 +1,146 @@
+[
+ {
+  "suite": "libero_goal_no_noops_lerobot",
+  "episode": 18,
+  "fps": 20.0,
+  "from_ts": 125.35,
+  "to_ts": 134.7,
+  "length": 187,
+  "task": "open the middle drawer of the cabinet"
+ },
+ {
+  "suite": "libero_goal_no_noops_lerobot",
+  "episode": 152,
+  "fps": 20.0,
+  "from_ts": 1099.6000000000001,
+  "to_ts": 1105.9,
+  "length": 126,
+  "task": "put the bowl on the plate"
+ },
+ {
+  "suite": "libero_goal_no_noops_lerobot",
+  "episode": 51,
+  "fps": 20.0,
+  "from_ts": 382.30000000000007,
+  "to_ts": 396.50000000000006,
+  "length": 284,
+  "task": "open the top drawer and put the bowl inside"
+ },
+ {
+  "suite": "libero_goal_no_noops_lerobot",
+  "episode": 177,
+  "fps": 20.0,
+  "from_ts": 1223.0500000000004,
+  "to_ts": 1229.0000000000005,
+  "length": 119,
+  "task": "put the bowl on the stove"
+ },
+ {
+  "suite": "libero_goal_no_noops_lerobot",
+  "episode": 83,
+  "fps": 20.0,
+  "from_ts": 688.7,
+  "to_ts": 699.0,
+  "length": 206,
+  "task": "push the plate to the front of the stove"
+ },
+ {
+  "suite": "libero_spatial_no_noops_lerobot",
+  "episode": 111,
+  "fps": 20.0,
+  "from_ts": 642.15,
+  "to_ts": 651.65,
+  "length": 190,
+  "task": "pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate"
+ },
+ {
+  "suite": "libero_spatial_no_noops_lerobot",
+  "episode": 79,
+  "fps": 20.0,
+  "from_ts": 422.0,
+  "to_ts": 428.9,
+  "length": 138,
+  "task": "pick up the black bowl from table center and place it on the plate"
+ },
+ {
+  "suite": "libero_spatial_no_noops_lerobot",
+  "episode": 40,
+  "fps": 20.0,
+  "from_ts": 200.00000000000003,
+  "to_ts": 206.70000000000002,
+  "length": 134,
+  "task": "pick up the black bowl between the plate and the ramekin and place it on the plate"
+ },
+ {
+  "suite": "libero_spatial_no_noops_lerobot",
+  "episode": 148,
+  "fps": 20.0,
+  "from_ts": 899.3,
+  "to_ts": 906.5999999999999,
+  "length": 146,
+  "task": "pick up the black bowl next to the cookie box and place it on the plate"
+ },
+ {
+  "suite": "libero_object_no_noops_lerobot",
+  "episode": 51,
+  "fps": 20.0,
+  "from_ts": 395.15000000000003,
+  "to_ts": 406.20000000000005,
+  "length": 221,
+  "task": "pick up the bbq sauce and place it in the basket"
+ },
+ {
+  "suite": "libero_object_no_noops_lerobot",
+  "episode": 80,
+  "fps": 20.0,
+  "from_ts": 605.4500000000002,
+  "to_ts": 614.3000000000002,
+  "length": 177,
+  "task": "pick up the bbq sauce and place it in the basket"
+ },
+ {
+  "suite": "libero_object_no_noops_lerobot",
+  "episode": 47,
+  "fps": 20.0,
+  "from_ts": 366.20000000000005,
+  "to_ts": 374.95000000000005,
+  "length": 175,
+  "task": "pick up the bbq sauce and place it in the basket"
+ },
+ {
+  "suite": "libero_object_no_noops_lerobot",
+  "episode": 79,
+  "fps": 20.0,
+  "from_ts": 596.7500000000001,
+  "to_ts": 605.4500000000002,
+  "length": 174,
+  "task": "pick up the bbq sauce and place it in the basket"
+ },
+ {
+  "suite": "libero_10_no_noops_lerobot",
+  "episode": 64,
+  "fps": 20.0,
+  "from_ts": 819.7500000000001,
+  "to_ts": 835.6000000000001,
+  "length": 317,
+  "task": "put the black bowl in the bottom drawer of the cabinet and close it"
+ },
+ {
+  "suite": "libero_10_no_noops_lerobot",
+  "episode": 62,
+  "fps": 20.0,
+  "from_ts": 792.7000000000002,
+  "to_ts": 808.0000000000001,
+  "length": 306,
+  "task": "put the black bowl in the bottom drawer of the cabinet and close it"
+ },
+ {
+  "suite": "libero_10_no_noops_lerobot",
+  "episode": 71,
+  "fps": 20.0,
+  "from_ts": 909.2500000000002,
+  "to_ts": 923.8000000000002,
+  "length": 291,
+  "task": "put the black bowl in the bottom drawer of the cabinet and close it"
+ }
+]

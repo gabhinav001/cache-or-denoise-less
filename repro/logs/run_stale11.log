@@ -1,0 +1,14 @@
+[10:39:34] instance=50613972 experiment=staleness args=11
+[10:39:34] waiting for setup
+[10:39:39] setup done (20s)
+[10:39:39] shipping repo
+[10:39:42] starting staleness detached
+launched
+[13:03:34] polling
+[13:03:40] finished: EXIT=0
+[13:03:43] pulled -> $REPO/repro/out/staleness_s11
+drwxr-xr-x@ 27 user  staff    864 11 Sep 13:03 ..
+-rw-r--r--@  1 user  staff    172 11 Sep 10:53 gate.json
+-rw-r--r--@  1 user  staff  51293 11 Sep 13:03 stale_aware_seed11.json
+-rw-r--r--@  1 user  staff  51308 11 Sep 11:47 stale_fixed_seed11.json
+[13:03:43] done. Instance 50613972 left running -- destroy it yourself.

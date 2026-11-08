@@ -1,0 +1,21 @@
+2026-09-28T18:24:56Z phase B start: jitter arms side by side
+2026-09-28T18:24:57Z   gpu 0: cam0015n250_idm_stock10 (pid 4577)
+2026-09-28T18:25:42Z   gpu 1: cam0015n250_idm_stock2 (pid 4821)
+2026-09-28T18:26:27Z   gpu 2: cam0015n250_uncond_stock10 (pid 5058)
+2026-09-28T18:27:12Z   gpu 3: cam0015n250_uncond_stock2 (pid 5232)
+2026-09-28T19:14:02Z phase B: sharding the Optional-IDM arms onto GPUs 4-7
+2026-09-28T19:14:02Z   shard gpu 4: cam0015n250_idm_stock10 tasks 4-5 (pid 11157)
+2026-09-28T19:14:02Z   shard gpu 5: cam0015n250_idm_stock10 tasks 6-7 (pid 11159)
+2026-09-28T19:14:02Z   shard gpu 6: cam0015n250_idm_stock10 tasks 8-9 (pid 11161)
+2026-09-28T19:14:02Z   shard gpu 7: cam0015n250_idm_stock2 tasks 7-9 (pid 11163)
+2026-09-28T19:36:04Z   cut Optional-IDM 10 steps after task 3 (rows for tasks 0-3 kept)
+2026-09-28T19:36:04Z   pid 4577 exited 0
+2026-09-28T19:39:44Z   cut Optional-IDM 2 steps after task 6 (rows for tasks 0-6 kept)
+2026-09-28T19:39:44Z   Optional-IDM shards done (any failed: 0)
+2026-09-28T19:39:44Z   cut original checkpoint, 10 steps (budget)
+2026-09-28T19:39:44Z   cut original checkpoint, 2 steps (budget)
+2026-09-28T19:39:45Z   pid 4821 exited 0
+2026-09-28T19:39:45Z   pid 5058 exited 0
+2026-09-28T19:39:45Z   pid 5232 exited 0
+2026-09-28T19:39:45Z phase B done
+2026-09-28T19:40:46Z phase A start: timing rounds alone on GPU 0

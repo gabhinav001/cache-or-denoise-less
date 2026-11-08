@@ -1,0 +1,430 @@
+{
+  "collection": "original/smoke/seed42",
+  "variant": "original",
+  "phase": "smoke",
+  "seed": 42,
+  "valid": true,
+  "complete_500_state_comparison": false,
+  "tasks": 1,
+  "states_per_task": 2,
+  "n_paired_states": 2,
+  "identity": {
+    "runtime": {
+      "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+      "checkpoint_sha256": "1000437cfcf55c000094f79a2600634c502bcb5b492476b94bf8509883a49579",
+      "checkpoint_state_coverage": {
+        "verified": true,
+        "mot_keys": 1649,
+        "action_keys": 824,
+        "video_keys": 825,
+        "proprio_keys": 2
+      },
+      "dataset_stats_sha256": "30f81ad7d5076e97323e3328bce003e01a04cb21327b5bacd21bb72846768638",
+      "dataset_stats": "libero_uncond_2cam224_dataset_stats.json",
+      "sigma_shift_override": 5.0,
+      "effective_action_sigma_shift": 5.0,
+      "action_infer_mode": "first_frame",
+      "compile_action_infer": false,
+      "model_class": "fastwam.models.wan22.fastwam.FastWAM",
+      "mixed_precision": "bf16"
+    },
+    "provenance": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "host_tag": "f5ba8444",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "ckpt": "libero_uncond_2cam224.pt"
+    },
+    "initial_latent": "dbba7b13d98e9415"
+  },
+  "provenance_by_arm": {
+    "00_stock_a": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "dirty": null,
+      "loadavg_1_5_15": [
+        1.42041015625,
+        2.228515625,
+        2.17626953125
+      ],
+      "cpu_count": 48,
+      "ckpt": "libero_uncond_2cam224.pt",
+      "ckpt_sha256_16": "1c59ae80d1371089",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "host_tag": "f5ba8444",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "utc": "2026-09-22T17:26:16Z"
+    },
+    "01_whole_tau8": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "dirty": null,
+      "loadavg_1_5_15": [
+        1.66357421875,
+        2.0751953125,
+        2.126953125
+      ],
+      "cpu_count": 48,
+      "ckpt": "libero_uncond_2cam224.pt",
+      "ckpt_sha256_16": "1c59ae80d1371089",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "host_tag": "f5ba8444",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "utc": "2026-09-22T17:28:14Z"
+    },
+    "02_block_tau8": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "dirty": null,
+      "loadavg_1_5_15": [
+        1.56787109375,
+        1.86572265625,
+        2.0380859375
+      ],
+      "cpu_count": 48,
+      "ckpt": "libero_uncond_2cam224.pt",
+      "ckpt_sha256_16": "1c59ae80d1371089",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "host_tag": "f5ba8444",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "utc": "2026-09-22T17:30:16Z"
+    },
+    "03_stock_b": {
+      "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "dirty": null,
+      "loadavg_1_5_15": [
+        1.4091796875,
+        1.71484375,
+        1.9580078125
+      ],
+      "cpu_count": 48,
+      "ckpt": "libero_uncond_2cam224.pt",
+      "ckpt_sha256_16": "1c59ae80d1371089",
+      "gpu": "NVIDIA RTX 6000 Ada Generation",
+      "host_tag": "f5ba8444",
+      "python": "3.11.13",
+      "torch": "2.7.1+cu128",
+      "mujoco": "3.3.2",
+      "utc": "2026-09-22T17:32:18Z"
+    }
+  },
+  "sources": [
+    {
+      "file": "00_stock_a.json",
+      "sha256": "f4e1abb0031675fa130148995cb83be2c184aa372a204031a60dfe9f9ea32913",
+      "bytes": 2434
+    },
+    {
+      "file": "01_whole_tau8.json",
+      "sha256": "2f83e1b7276598f0c5df92bb6868aac47c8126ffccd8ca87a871ea7f270a4de0",
+      "bytes": 2566
+    },
+    {
+      "file": "02_block_tau8.json",
+      "sha256": "eb1c8ff457cb528e8f17055856077bb515bdc121cf82f9298a6bd98b4b42b373",
+      "bytes": 2473
+    },
+    {
+      "file": "03_stock_b.json",
+      "sha256": "b7bdd2b6ccaca782daad0a4d9bc459c26bfd73241d3bba749b490472c4fd98bb",
+      "bytes": 2432
+    },
+    {
+      "file": "gate.json",
+      "sha256": "1a829c926c2b4e7c9c1eb51706861c37d7f0cc55e104d6b8704d483edd6a242b",
+      "bytes": 1539
+    }
+  ],
+  "gate": {
+    "identity_err": 0.0026374156485995076,
+    "stale_err": 0.004316370847067599,
+    "margin": 1.6365910505458752,
+    "schema_version": 3,
+    "runtime": {
+      "sigma_shift_override": 5.0,
+      "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+      "effective_action_sigma_shift": 5.0,
+      "action_infer_mode": "first_frame",
+      "compile_action_infer": false,
+      "model_class": "fastwam.models.wan22.fastwam.FastWAM",
+      "mixed_precision": "bf16",
+      "dataset_stats": "libero_uncond_2cam224_dataset_stats.json",
+      "dataset_stats_sha256": "30f81ad7d5076e97323e3328bce003e01a04cb21327b5bacd21bb72846768638",
+      "checkpoint_state_coverage": {
+        "verified": true,
+        "mot_keys": 1649,
+        "action_keys": 824,
+        "video_keys": 825,
+        "proprio_keys": 2
+      },
+      "checkpoint_sha256": "1000437cfcf55c000094f79a2600634c502bcb5b492476b94bf8509883a49579"
+    },
+    "cache_integrity": {
+      "old_block": {
+        "entries": 240,
+        "checks": 20,
+        "unchanged": true,
+        "finite": true
+      },
+      "old_stack": {
+        "entries": 8,
+        "checks": 20,
+        "unchanged": true,
+        "finite": true
+      },
+      "fresh_block": {
+        "entries": 240,
+        "checks": 12,
+        "unchanged": true,
+        "finite": true
+      },
+      "fresh_stack": {
+        "entries": 8,
+        "checks": 12,
+        "unchanged": true,
+        "finite": true
+      }
+    },
+    "repeat_full_err": 0.0,
+    "skip_identity_err": 0.0026374156485995076,
+    "whole_identity_err": 0.002584348776016414,
+    "whole_stale_err": 0.004468651010564392,
+    "whole_identity_counts": {
+      "hits": 8,
+      "misses": 0
+    },
+    "perblock_whole_stale_difference": 0.0018094367000675883,
+    "ckpt": "libero_uncond_2cam224.pt",
+    "compiled": false,
+    "cells": 240,
+    "pass": true,
+    "gpu": "NVIDIA RTX 6000 Ada Generation"
+  },
+  "arms": {
+    "00_stock_a": {
+      "config": "stock",
+      "label": "Stock, 10 steps",
+      "successes": 2,
+      "episodes": 2,
+      "success_pct": 100.0,
+      "success_ci95_pct": [
+        100.0,
+        100.0
+      ],
+      "latency_episode_mean_ms": 412.35,
+      "latency_episodes": 1,
+      "latency_ci95_ms": [
+        412.35,
+        412.35
+      ],
+      "all_episodes_cycles": {
+        "episodes": 2,
+        "cycles": 24,
+        "refresh_cycles": 24,
+        "reuse_cycles": 0,
+        "refresh_cycle_mean_ms": 415.95062499999995,
+        "refresh_cycle_p95_nearest_rank_ms": 420.452,
+        "reuse_cycle_mean_ms": null,
+        "reuse_cycle_p95_nearest_rank_ms": null
+      },
+      "nonwarmup_cycles": {
+        "episodes": 1,
+        "cycles": 12,
+        "refresh_cycles": 12,
+        "reuse_cycles": 0,
+        "refresh_cycle_mean_ms": 412.34983333333327,
+        "refresh_cycle_p95_nearest_rank_ms": 420.452,
+        "reuse_cycle_mean_ms": null,
+        "reuse_cycle_p95_nearest_rank_ms": null
+      }
+    },
+    "01_whole_tau8": {
+      "config": "whole_tau8",
+      "label": "Whole-stack, tau=8",
+      "successes": 2,
+      "episodes": 2,
+      "success_pct": 100.0,
+      "success_ci95_pct": [
+        100.0,
+        100.0
+      ],
+      "latency_episode_mean_ms": 177.435,
+      "latency_episodes": 1,
+      "latency_ci95_ms": [
+        177.435,
+        177.435
+      ],
+      "all_episodes_cycles": {
+        "episodes": 2,
+        "cycles": 24,
+        "refresh_cycles": 4,
+        "reuse_cycles": 20,
+        "refresh_cycle_mean_ms": 448.437,
+        "refresh_cycle_p95_nearest_rank_ms": 639.957,
+        "reuse_cycle_mean_ms": 135.944,
+        "reuse_cycle_p95_nearest_rank_ms": 136.963
+      },
+      "nonwarmup_cycles": {
+        "episodes": 1,
+        "cycles": 12,
+        "refresh_cycles": 2,
+        "reuse_cycles": 10,
+        "refresh_cycle_mean_ms": 384.427,
+        "refresh_cycle_p95_nearest_rank_ms": 384.698,
+        "reuse_cycle_mean_ms": 136.0362,
+        "reuse_cycle_p95_nearest_rank_ms": 136.963
+      }
+    },
+    "02_block_tau8": {
+      "config": "c3ache_tau8",
+      "label": "Blockwise, tau=8",
+      "successes": 2,
+      "episodes": 2,
+      "success_pct": 100.0,
+      "success_ci95_pct": [
+        100.0,
+        100.0
+      ],
+      "latency_episode_mean_ms": 386.845,
+      "latency_episodes": 1,
+      "latency_ci95_ms": [
+        386.845,
+        386.845
+      ],
+      "all_episodes_cycles": {
+        "episodes": 2,
+        "cycles": 24,
+        "refresh_cycles": 4,
+        "reuse_cycles": 20,
+        "refresh_cycle_mean_ms": 453.175,
+        "refresh_cycle_p95_nearest_rank_ms": 633.448,
+        "reuse_cycle_mean_ms": 385.2211,
+        "reuse_cycle_p95_nearest_rank_ms": 386.884
+      },
+      "nonwarmup_cycles": {
+        "episodes": 1,
+        "cycles": 12,
+        "refresh_cycles": 2,
+        "reuse_cycles": 10,
+        "refresh_cycle_mean_ms": 393.461,
+        "refresh_cycle_p95_nearest_rank_ms": 394.503,
+        "reuse_cycle_mean_ms": 385.5215,
+        "reuse_cycle_p95_nearest_rank_ms": 387.46
+      }
+    },
+    "03_stock_b": {
+      "config": "stock",
+      "label": "Stock repeat",
+      "successes": 2,
+      "episodes": 2,
+      "success_pct": 100.0,
+      "success_ci95_pct": [
+        100.0,
+        100.0
+      ],
+      "latency_episode_mean_ms": 381.974,
+      "latency_episodes": 1,
+      "latency_ci95_ms": [
+        381.974,
+        381.974
+      ],
+      "all_episodes_cycles": {
+        "episodes": 2,
+        "cycles": 24,
+        "refresh_cycles": 24,
+        "reuse_cycles": 0,
+        "refresh_cycle_mean_ms": 396.7606666666666,
+        "refresh_cycle_p95_nearest_rank_ms": 405.542,
+        "reuse_cycle_mean_ms": null,
+        "reuse_cycle_p95_nearest_rank_ms": null
+      },
+      "nonwarmup_cycles": {
+        "episodes": 1,
+        "cycles": 12,
+        "refresh_cycles": 12,
+        "reuse_cycles": 0,
+        "refresh_cycle_mean_ms": 381.9736666666667,
+        "refresh_cycle_p95_nearest_rank_ms": 382.92,
+        "reuse_cycle_mean_ms": null,
+        "reuse_cycle_p95_nearest_rank_ms": null
+      }
+    }
+  },
+  "paired_contrasts": [
+    {
+      "left": "01_whole_tau8",
+      "right": "00_stock_a",
+      "n_paired_states": 2,
+      "success_difference_pp": 0.0,
+      "success_ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "left_only_successes": 0,
+      "right_only_successes": 0,
+      "latency_paired_episodes": 1,
+      "latency_difference_ms": -234.91500000000002,
+      "latency_ci95_ms": [
+        -234.91500000000002,
+        -234.91500000000002
+      ]
+    },
+    {
+      "left": "02_block_tau8",
+      "right": "00_stock_a",
+      "n_paired_states": 2,
+      "success_difference_pp": 0.0,
+      "success_ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "left_only_successes": 0,
+      "right_only_successes": 0,
+      "latency_paired_episodes": 1,
+      "latency_difference_ms": -25.504999999999995,
+      "latency_ci95_ms": [
+        -25.504999999999995,
+        -25.504999999999995
+      ]
+    },
+    {
+      "left": "01_whole_tau8",
+      "right": "02_block_tau8",
+      "n_paired_states": 2,
+      "success_difference_pp": 0.0,
+      "success_ci95_pp": [
+        0.0,
+        0.0
+      ],
+      "left_only_successes": 0,
+      "right_only_successes": 0,
+      "latency_paired_episodes": 1,
+      "latency_difference_ms": -209.41000000000003,
+      "latency_ci95_ms": [
+        -209.41000000000003,
+        -209.41000000000003
+      ]
+    }
+  ],
+  "stock_repeat": {
+    "pass": true,
+    "compared_fields": [
+      "success",
+      "steps",
+      "cycles",
+      "init_state",
+      "refresh_cycles",
+      "reuse_cycles"
+    ],
+    "matched_states": 2,
+    "mismatches": [],
+    "scope": "Recorded episode outcomes and lengths; not action-tensor equality."
+  },
+  "pass": true,
+  "compile_action_infer": false
+}

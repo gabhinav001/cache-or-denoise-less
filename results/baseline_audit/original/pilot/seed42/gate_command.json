@@ -1,0 +1,28 @@
+{
+  "utc": "2026-09-22T17:32:22.162244+00:00",
+  "argv": [
+    "python",
+    "probes/gate_cache.py",
+    "task=libero_uncond_2cam224_1e-4",
+    "ckpt=/workspace/ckpt/libero_uncond_2cam224.pt",
+    "model.redirect_common_files=false",
+    "mixed_precision=bf16",
+    "seed=42",
+    "EVALUATION.dataset_stats_path=/workspace/ckpt/libero_uncond_2cam224_dataset_stats.json",
+    "EVALUATION.sigma_shift=5.0",
+    "EVALUATION.num_inference_steps=10",
+    "EVALUATION.action_horizon=32",
+    "EVALUATION.replan_steps=10",
+    "EVALUATION.num_steps_wait=30",
+    "EVALUATION.env_num=1",
+    "EVALUATION.binarize_gripper=true",
+    "EVALUATION.use_action_ensembler=false",
+    "EVALUATION.visualize_future_video=false",
+    "EVALUATION.rand_device=cpu",
+    "EVALUATION.text_cfg_scale=1.0",
+    "EVALUATION.compile_action_infer=true",
+    "+PROBE.suite=libero_goal",
+    "+PROBE.task=0",
+    "+PROBE.out=/workspace/out/baseline_audit/original/pilot/seed42/gate.json"
+  ]
+}

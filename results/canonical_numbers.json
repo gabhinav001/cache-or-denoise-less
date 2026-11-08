@@ -1,0 +1,2158 @@
+{
+ "scale": {
+  "closed_loop_episodes": 40624,
+  "closed_loop_runs": 138,
+  "residual_observations": 398520,
+  "backbones": 3
+ },
+ "geometry": {
+  "fw": {
+   "episodes": 52,
+   "observations": 190800,
+   "cosine": 0.8035,
+   "angle_deg": 36.5,
+   "magnitude": 0.9975,
+   "beta": 0.7997,
+   "share_below_1_pct": 95.3
+  },
+  "fw_repeat": {
+   "episodes": 52,
+   "observations": 190800,
+   "cosine": 0.8053,
+   "angle_deg": 36.4,
+   "magnitude": 0.9975,
+   "beta": 0.8019,
+   "share_below_1_pct": 95.2
+  },
+  "fw_repeat_16ep": {
+   "episodes": 16,
+   "observations": 54900,
+   "cosine": 0.7938,
+   "angle_deg": 37.5,
+   "magnitude": 0.997,
+   "beta": 0.7915,
+   "share_below_1_pct": 95.5
+  },
+  "pi05": {
+   "episodes": 52,
+   "observations": 171720,
+   "cosine": 0.7453,
+   "angle_deg": 41.8,
+   "magnitude": 0.9983,
+   "beta": 0.7368,
+   "share_below_1_pct": 97.0
+  },
+  "pi05_repeat": {
+   "episodes": 52,
+   "observations": 171720,
+   "cosine": 0.745,
+   "angle_deg": 41.8,
+   "magnitude": 0.9984,
+   "beta": 0.7359,
+   "share_below_1_pct": 97.0
+  },
+  "dz": {
+   "episodes": 20,
+   "observations": 36000,
+   "cosine": 0.7413,
+   "angle_deg": 42.2,
+   "magnitude": 0.9973,
+   "beta": 0.7374,
+   "share_below_1_pct": 95.6
+  },
+  "dz_repeat": {
+   "episodes": 20,
+   "observations": 36000,
+   "cosine": 0.7411,
+   "angle_deg": 42.2,
+   "magnitude": 0.9974,
+   "beta": 0.7371,
+   "share_below_1_pct": 95.6
+  }
+ },
+ "global_beta_curve": {
+  "fw": {
+   "beta_0": 1.0,
+   "beta_1": 0.6604,
+   "beta_0.8": 0.6295
+  },
+  "pi05": {
+   "beta_0": 1.0,
+   "beta_1": 0.7533,
+   "beta_0.8": 0.7053
+  },
+  "dz": {
+   "beta_0": 1.0,
+   "beta_1": 0.7046,
+   "beta_0.8": 0.6712
+  }
+ },
+ "tau8_attenuation": {
+  "runs": 9,
+  "per_run": [
+   {
+    "file": "q_libero10_seed7.json",
+    "full": 98.0,
+    "cached": 67.0,
+    "attenuated": 79.0,
+    "delta": 12.0,
+    "delta_exact": 12.0,
+    "rescued": 23,
+    "broken": 11,
+    "p": 0.0576
+   },
+   {
+    "file": "q_object_seed7.json",
+    "full": 100.0,
+    "cached": 55.0,
+    "attenuated": 94.0,
+    "delta": 39.0,
+    "delta_exact": 39.0,
+    "rescued": 42,
+    "broken": 3,
+    "p": 8.65e-10
+   },
+   {
+    "file": "q_spatial_seed7.json",
+    "full": 98.0,
+    "cached": 65.0,
+    "attenuated": 79.0,
+    "delta": 14.0,
+    "delta_exact": 14.0,
+    "rescued": 20,
+    "broken": 6,
+    "p": 0.00936
+   },
+   {
+    "file": "suite_libero10_n300.json",
+    "full": 97.0,
+    "cached": 72.3,
+    "attenuated": 81.7,
+    "delta": 9.3,
+    "delta_exact": 9.333333333333343,
+    "rescued": 46,
+    "broken": 18,
+    "p": 0.000617
+   },
+   {
+    "file": "suite_object.json",
+    "full": 98.0,
+    "cached": 71.0,
+    "attenuated": 93.0,
+    "delta": 22.0,
+    "delta_exact": 22.0,
+    "rescued": 26,
+    "broken": 4,
+    "p": 5.95e-05
+   },
+   {
+    "file": "suite_spatial.json",
+    "full": 100.0,
+    "cached": 75.0,
+    "attenuated": 89.0,
+    "delta": 14.0,
+    "delta_exact": 14.0,
+    "rescued": 22,
+    "broken": 8,
+    "p": 0.0161
+   },
+   {
+    "file": "t2_seed11.json",
+    "full": 97.5,
+    "cached": 73.0,
+    "attenuated": 85.5,
+    "delta": 12.5,
+    "delta_exact": 12.5,
+    "rescued": 40,
+    "broken": 15,
+    "p": 0.00102
+   },
+   {
+    "file": "t2_seed7.json",
+    "full": 97.0,
+    "cached": 72.0,
+    "attenuated": 80.5,
+    "delta": 8.5,
+    "delta_exact": 8.5,
+    "rescued": 30,
+    "broken": 13,
+    "p": 0.0137
+   },
+   {
+    "file": "tau48.json",
+    "full": 98.0,
+    "cached": 67.5,
+    "attenuated": 80.5,
+    "delta": 13.0,
+    "delta_exact": 13.0,
+    "rescued": 38,
+    "broken": 12,
+    "p": 0.000306
+   }
+  ],
+  "mean_full": 98.2,
+  "mean_cached": 68.6,
+  "mean_attenuated": 84.7,
+  "mean_delta": 16.0,
+  "pooled_rescued": 287,
+  "pooled_broken": 90,
+  "pooled_p": 4.4e-25,
+  "seed_level": {
+   "runs": 9,
+   "mean_delta": 16.04,
+   "sd": 9.43,
+   "ci95": [
+    8.79,
+    23.28
+   ],
+   "t_crit": 2.306,
+   "positive": 9,
+   "negative": 0,
+   "sign_test_p": 0.00391,
+   "note": "unit of replication is the run, not the episode"
+  }
+ },
+ "tau4_frontier_set": {
+  "runs": 5,
+  "per_run": [
+   {
+    "file": "frontier_seed11.json",
+    "full": 97.0,
+    "cached": 91.0,
+    "attenuated": 94.0,
+    "delta": 3.0,
+    "delta_exact": 3.0,
+    "rescued": 9,
+    "broken": 6,
+    "p": 0.607
+   },
+   {
+    "file": "frontier_seed23.json",
+    "full": 95.0,
+    "cached": 92.0,
+    "attenuated": 97.0,
+    "delta": 5.0,
+    "delta_exact": 5.0,
+    "rescued": 8,
+    "broken": 3,
+    "p": 0.227
+   },
+   {
+    "file": "frontier_seed3.json",
+    "full": 98.0,
+    "cached": 86.0,
+    "attenuated": 88.0,
+    "delta": 2.0,
+    "delta_exact": 2.0,
+    "rescued": 8,
+    "broken": 6,
+    "p": 0.791
+   },
+   {
+    "file": "frontier_seed42.json",
+    "full": 99.0,
+    "cached": 84.0,
+    "attenuated": 94.0,
+    "delta": 10.0,
+    "delta_exact": 10.0,
+    "rescued": 14,
+    "broken": 4,
+    "p": 0.0309
+   },
+   {
+    "file": "frontier_seed7.json",
+    "full": 98.0,
+    "cached": 86.0,
+    "attenuated": 89.0,
+    "delta": 3.0,
+    "delta_exact": 3.0,
+    "rescued": 8,
+    "broken": 5,
+    "p": 0.581
+   }
+  ],
+  "mean_full": 97.4,
+  "mean_cached": 87.8,
+  "mean_attenuated": 92.4,
+  "mean_delta": 4.6,
+  "pooled_rescued": 47,
+  "pooled_broken": 24,
+  "pooled_p": 0.00855,
+  "seed_level": {
+   "runs": 5,
+   "mean_delta": 4.6,
+   "sd": 3.21,
+   "ci95": [
+    0.62,
+    8.58
+   ],
+   "t_crit": 2.776,
+   "positive": 5,
+   "negative": 0,
+   "sign_test_p": 0.0625,
+   "note": "unit of replication is the run, not the episode"
+  }
+ },
+ "tau2_frontier_set": {
+  "runs": 5,
+  "per_run": [
+   {
+    "file": "frontier_seed11.json",
+    "full": 97.0,
+    "cached": 95.0,
+    "attenuated": 95.0,
+    "delta": 0.0,
+    "delta_exact": 0.0,
+    "rescued": 3,
+    "broken": 3,
+    "p": 1.0
+   },
+   {
+    "file": "frontier_seed23.json",
+    "full": 95.0,
+    "cached": 95.0,
+    "attenuated": 95.0,
+    "delta": 0.0,
+    "delta_exact": 0.0,
+    "rescued": 3,
+    "broken": 3,
+    "p": 1.0
+   },
+   {
+    "file": "frontier_seed3.json",
+    "full": 98.0,
+    "cached": 94.0,
+    "attenuated": 95.0,
+    "delta": 1.0,
+    "delta_exact": 1.0,
+    "rescued": 4,
+    "broken": 3,
+    "p": 1.0
+   },
+   {
+    "file": "frontier_seed42.json",
+    "full": 99.0,
+    "cached": 95.0,
+    "attenuated": 93.0,
+    "delta": -2.0,
+    "delta_exact": -2.0,
+    "rescued": 2,
+    "broken": 4,
+    "p": 0.688
+   },
+   {
+    "file": "frontier_seed7.json",
+    "full": 98.0,
+    "cached": 97.0,
+    "attenuated": 92.0,
+    "delta": -5.0,
+    "delta_exact": -5.0,
+    "rescued": 3,
+    "broken": 8,
+    "p": 0.227
+   }
+  ],
+  "mean_full": 97.4,
+  "mean_cached": 95.2,
+  "mean_attenuated": 94.0,
+  "mean_delta": -1.2,
+  "pooled_rescued": 15,
+  "pooled_broken": 21,
+  "pooled_p": 0.405,
+  "seed_level": {
+   "runs": 5,
+   "mean_delta": -1.2,
+   "sd": 2.39,
+   "ci95": [
+    -4.16,
+    1.76
+   ],
+   "t_crit": 2.776,
+   "positive": 1,
+   "negative": 2,
+   "sign_test_p": 1.0,
+   "note": "unit of replication is the run, not the episode"
+  }
+ },
+ "tau8_replication": {
+  "runs": 5,
+  "per_run": [
+   {
+    "file": "seed11.json",
+    "full": 94.0,
+    "cached": 69.0,
+    "attenuated": 80.0,
+    "delta": 11.0,
+    "delta_exact": 11.0,
+    "rescued": 20,
+    "broken": 9,
+    "p": 0.0614
+   },
+   {
+    "file": "seed23.json",
+    "full": 95.0,
+    "cached": 65.0,
+    "attenuated": 84.0,
+    "delta": 19.0,
+    "delta_exact": 19.0,
+    "rescued": 23,
+    "broken": 4,
+    "p": 0.000311
+   },
+   {
+    "file": "seed3.json",
+    "full": 94.0,
+    "cached": 66.0,
+    "attenuated": 85.0,
+    "delta": 19.0,
+    "delta_exact": 19.0,
+    "rescued": 21,
+    "broken": 2,
+    "p": 6.6e-05
+   },
+   {
+    "file": "seed42.json",
+    "full": 96.0,
+    "cached": 68.0,
+    "attenuated": 80.0,
+    "delta": 12.0,
+    "delta_exact": 12.0,
+    "rescued": 21,
+    "broken": 9,
+    "p": 0.0428
+   },
+   {
+    "file": "seed7.json",
+    "full": 95.0,
+    "cached": 70.0,
+    "attenuated": 85.0,
+    "delta": 15.0,
+    "delta_exact": 15.0,
+    "rescued": 20,
+    "broken": 5,
+    "p": 0.00408
+   }
+  ],
+  "mean_full": 94.8,
+  "mean_cached": 67.6,
+  "mean_attenuated": 82.8,
+  "mean_delta": 15.2,
+  "pooled_rescued": 105,
+  "pooled_broken": 29,
+  "pooled_p": 2.62e-11,
+  "seed_level": {
+   "runs": 5,
+   "mean_delta": 15.2,
+   "sd": 3.77,
+   "ci95": [
+    10.52,
+    19.88
+   ],
+   "t_crit": 2.776,
+   "positive": 5,
+   "negative": 0,
+   "sign_test_p": 0.0625,
+   "note": "unit of replication is the run, not the episode"
+  }
+ },
+ "frontier": {
+  "seeds": 5,
+  "per_seed": [
+   {
+    "file": "frontier_seed11.json",
+    "plain_tau2": 95.0,
+    "attenuated_tau4": 94.0,
+    "delta": -1.0,
+    "better": 4,
+    "worse": 5
+   },
+   {
+    "file": "frontier_seed23.json",
+    "plain_tau2": 95.0,
+    "attenuated_tau4": 97.0,
+    "delta": 2.0,
+    "better": 5,
+    "worse": 3
+   },
+   {
+    "file": "frontier_seed3.json",
+    "plain_tau2": 94.0,
+    "attenuated_tau4": 88.0,
+    "delta": -6.0,
+    "better": 3,
+    "worse": 9
+   },
+   {
+    "file": "frontier_seed42.json",
+    "plain_tau2": 95.0,
+    "attenuated_tau4": 94.0,
+    "delta": -1.0,
+    "better": 3,
+    "worse": 4
+   },
+   {
+    "file": "frontier_seed7.json",
+    "plain_tau2": 97.0,
+    "attenuated_tau4": 89.0,
+    "delta": -8.0,
+    "better": 3,
+    "worse": 11
+   }
+  ],
+  "mean_plain_tau2": 95.2,
+  "mean_attenuated_tau4": 92.4,
+  "mean_delta": -2.8,
+  "pooled_better": 18,
+  "pooled_worse": 32,
+  "pooled_p": 0.0649
+ },
+ "oracle_ceiling": {
+  "seeds": 2,
+  "per_seed": [
+   {
+    "file": "ceilbeta_seed42.json",
+    "full": 98.0,
+    "tau4": 85.0,
+    "fitted": 93.0,
+    "oracle": 94.0,
+    "caching_costs": 13.0,
+    "oracle_recovers": 9.0,
+    "oracle_vs_fitted": 1.0,
+    "better": 3,
+    "worse": 2
+   },
+   {
+    "file": "ceilbeta_seed7.json",
+    "full": 99.0,
+    "tau4": 85.0,
+    "fitted": 89.0,
+    "oracle": 89.0,
+    "caching_costs": 14.0,
+    "oracle_recovers": 4.0,
+    "oracle_vs_fitted": 0.0,
+    "better": 6,
+    "worse": 6
+   }
+  ],
+  "pooled_oracle_better": 9,
+  "pooled_oracle_worse": 8,
+  "pooled_p": 1.0,
+  "fraction_of_loss_recoverable_pct": 48,
+  "oracle_minus_fitted_pts": 0.5,
+  "ci95": [
+   -3.5,
+   4.5
+  ],
+  "n_paired": 200,
+  "interpretation": "a failure to reject, not an equivalence: the interval admits an oracle advantage comparable to the tau=4 effect itself"
+ },
+ "staleness_closed_loop": {
+  "seeds": 3,
+  "per_seed": [
+   {
+    "seed": 7,
+    "fixed_full": 98.0,
+    "fixed_tau4": 83.0,
+    "fixed": 88.0,
+    "aware_full": 98.0,
+    "aware_tau4": 83.0,
+    "aware": 87.0,
+    "difference": -1.0,
+    "plain_arms_identical": true
+   },
+   {
+    "seed": 11,
+    "fixed_full": 95.0,
+    "fixed_tau4": 85.0,
+    "fixed": 90.0,
+    "aware_full": 95.0,
+    "aware_tau4": 85.0,
+    "aware": 89.0,
+    "difference": -1.0,
+    "plain_arms_identical": true
+   },
+   {
+    "seed": 42,
+    "fixed_full": 98.0,
+    "fixed_tau4": 85.0,
+    "fixed": 93.0,
+    "aware_full": 98.0,
+    "aware_tau4": 85.0,
+    "aware": 95.0,
+    "difference": 2.0,
+    "plain_arms_identical": true
+   }
+  ],
+  "mean_difference": 0.0,
+  "better": 1,
+  "worse": 2
+ },
+ "robustness": {
+  "arms": [
+   {
+    "perturbation": "bright:0.05",
+    "full": 96.7,
+    "cached": 85.0,
+    "attenuated": 98.3,
+    "delta": 13.3,
+    "rescued": 9,
+    "broken": 1,
+    "p": 0.0215,
+    "full_compute_drop": 1.7,
+    "real_shift": true
+   },
+   {
+    "perturbation": "cam:0.005",
+    "full": 91.7,
+    "cached": 75.0,
+    "attenuated": 76.7,
+    "delta": 1.7,
+    "rescued": 5,
+    "broken": 4,
+    "p": 1.0,
+    "full_compute_drop": 6.7,
+    "real_shift": true
+   },
+   {
+    "perturbation": "light:0.10",
+    "full": 100.0,
+    "cached": 86.7,
+    "attenuated": 90.0,
+    "delta": 3.3,
+    "rescued": 8,
+    "broken": 6,
+    "p": 0.791,
+    "full_compute_drop": -1.7,
+    "real_shift": false
+   },
+   {
+    "perturbation": "light:0.50",
+    "full": 98.3,
+    "cached": 88.3,
+    "attenuated": 90.0,
+    "delta": 1.7,
+    "rescued": 6,
+    "broken": 5,
+    "p": 1.0,
+    "full_compute_drop": 0.0,
+    "real_shift": false
+   },
+   {
+    "perturbation": "none",
+    "full": 98.3,
+    "cached": 83.3,
+    "attenuated": 91.7,
+    "delta": 8.3,
+    "rescued": 10,
+    "broken": 5,
+    "p": 0.302
+   }
+  ],
+  "genuine_shifts": 2,
+  "pooled_rescued": 14,
+  "pooled_broken": 5,
+  "pooled_p": 0.0636,
+  "dissociation": {
+   "compared": [
+    "bright:0.05",
+    "cam:0.005"
+   ],
+   "delta_difference_pts": 11.7,
+   "ci95": [
+    -1.7,
+    25.0
+   ],
+   "n_per_arm": [
+    60,
+    60
+   ],
+   "positive_control_unperturbed": {
+    "delta_pts": 8.3,
+    "p": 0.302,
+    "n": 60
+   },
+   "interpretation": "the difference between the two shifts is not itself significant; with the unperturbed control also non-significant, the experiment cannot support a qualitative dissociation"
+  }
+ },
+ "pi05_beta_sweep": {
+  "per_beta": [
+   {
+    "beta": 0.0,
+    "full": 97.5,
+    "cached": 76.5,
+    "delta_vs_beta1": -1.5,
+    "n_paired": 200,
+    "better": 29,
+    "worse": 32,
+    "p": 0.798
+   },
+   {
+    "beta": 0.25,
+    "full": 97.5,
+    "cached": 86.5,
+    "delta_vs_beta1": 8.5,
+    "n_paired": 200,
+    "better": 22,
+    "worse": 5,
+    "p": 0.00151
+   },
+   {
+    "beta": 0.5,
+    "full": 98.0,
+    "cached": 78.0,
+    "delta_vs_beta1": 0.0,
+    "n_paired": 200,
+    "better": 10,
+    "worse": 10,
+    "p": 1.0
+   },
+   {
+    "beta": 0.75,
+    "full": 97.5,
+    "cached": 80.0,
+    "delta_vs_beta1": 2.0,
+    "n_paired": 200,
+    "better": 8,
+    "worse": 4,
+    "p": 0.388
+   },
+   {
+    "beta": 1.0,
+    "full": 98.0,
+    "cached": 78.0,
+    "delta_vs_beta1": 0.0,
+    "n_paired": 200,
+    "better": 0,
+    "worse": 0,
+    "p": 1.0
+   }
+  ],
+  "full_compute_spread": 0.5,
+  "best": {
+   "beta": 0.25,
+   "delta_vs_beta1": 8.5,
+   "better": 22,
+   "worse": 5,
+   "p": 0.00151
+  },
+  "bonferroni_p": 0.00755,
+  "note": "paired on (task, episode) against beta=1.00, the published method. A marginal-rate reading of the same runs reported no effect. bonferroni_p corrects the best beta for the five tested."
+ },
+ "arm_shift": {
+  "a": "frontier",
+  "b": "tau8",
+  "per_seed": [
+   {
+    "seed": 3,
+    "a": 98.0,
+    "b": 94.0,
+    "diff": -4.0,
+    "n": 100,
+    "seed_recorded_both": true,
+    "gpu_a": "NVIDIA RTX A6000",
+    "gpu_b": "NVIDIA A100-PCIE-40GB",
+    "same_gpu": false
+   },
+   {
+    "seed": 7,
+    "a": 98.0,
+    "b": 95.0,
+    "diff": -3.0,
+    "n": 100,
+    "seed_recorded_both": false,
+    "gpu_a": "unrecorded",
+    "gpu_b": "NVIDIA A100-PCIE-40GB",
+    "same_gpu": false
+   },
+   {
+    "seed": 11,
+    "a": 97.0,
+    "b": 94.0,
+    "diff": -3.0,
+    "n": 100,
+    "seed_recorded_both": false,
+    "gpu_a": "unrecorded",
+    "gpu_b": "NVIDIA A100-PCIE-40GB",
+    "same_gpu": false
+   },
+   {
+    "seed": 23,
+    "a": 95.0,
+    "b": 95.0,
+    "diff": 0.0,
+    "n": 100,
+    "seed_recorded_both": false,
+    "gpu_a": "unrecorded",
+    "gpu_b": "NVIDIA A100-PCIE-40GB",
+    "same_gpu": false
+   },
+   {
+    "seed": 42,
+    "a": 99.0,
+    "b": 96.0,
+    "diff": -3.0,
+    "n": 100,
+    "seed_recorded_both": false,
+    "gpu_a": "unrecorded",
+    "gpu_b": "NVIDIA A100-PCIE-40GB",
+    "same_gpu": false
+   }
+  ],
+  "verified": null,
+  "verified_n": 1,
+  "verified_single": -4.0,
+  "with_filename_seeds": {
+   "runs": 5,
+   "mean": -2.6,
+   "sd": 1.52,
+   "ci95": [
+    -4.48,
+    -0.72
+   ],
+   "t_crit": 2.776
+  },
+  "confounded_by_gpu": true,
+  "attributable_to_arm_order": false,
+  "note": "CONFOUNDED: the two collections differ in GPU as well as arm list, so this isolates neither. full is position 1 in both, and the same-machine control in results/rngdrift/ shows a position-1 arm is bit-identical (20/20 outcomes, 20/20 steps), so arm order predicts no change here. Treat as a collection-level caveat. Separately, only seeds recorded on BOTH sides are a measurement; the rest rest on a filename."
+ },
+ "cache_age_taps7": {
+  "beta_by_age": {
+   "1": 0.7369,
+   "2": 0.5222,
+   "3": 0.4174,
+   "4": 0.3919,
+   "5": 0.3703,
+   "6": 0.3708,
+   "7": 0.3706
+  },
+  "ages": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "geometric_by_age": {
+   "1": 0.7369,
+   "2": 0.543,
+   "3": 0.4002,
+   "4": 0.2949,
+   "5": 0.2173,
+   "6": 0.1601,
+   "7": 0.118
+  },
+  "geometric_error_pct_at_max_age": 59.8,
+  "geometric_error_pct_at_max_age_of_medians": 68.2,
+  "geometric_error_is": "median over cells of |beta_1^k - beta_k| / |beta_k|; NOT |median(beta_1^k) - median(beta_k)| / median(beta_k)",
+  "plateau_spread": 0.022,
+  "note": "The optimal weight PLATEAUS rather than decaying: about 0.37 from age 4 through 7, where a geometric beta_1^k model predicts 0.118 at age 7 and errs by 60% per cell at the median (the ratio of the two medians is 68%). A residual 7 cycles stale therefore retains far more usable signal than the one-cycle diagnostic extrapolates, and because the optimum is nearly flat across the ages tau=8 reuses -- it spans only 0.022 over ages 4-7 -- one constant weight is close to the best a per-age schedule could do over most of that window. Collected on the deployment checkpoint and the committed 24-episode manifest. It does NOT reproduce the earlier fw_families_idm collection: every recorded setting matches and the residuals still differ by 9% at the median, which the model version -- recorded by neither artefact until now -- is the only remaining candidate for."
+ },
+ "cache_age_deployment_ckpt": {
+  "beta_by_age": {
+   "1": 0.7159,
+   "2": 0.4906,
+   "3": 0.3696,
+   "4": 0.3415
+  },
+  "shipped_constant_gain_pct": 12.97,
+  "per_age_gain_pct": 16.62,
+  "metric_warning": "These two percentages POOL error as a ratio of sums, whereas global_beta_curve and report_families.py average per-observation relative errors. The functionals do not coincide, so these must not be quoted beside those held-out columns. Both were withdrawn from all three write-ups for exactly this reason; they are kept here because they are real values, not because they are usable.",
+  "note": "Optimal weight falls from 0.716 at one cycle of lag to 0.341 at four, so the shipped constant weight UNDER-attenuates a stale cache. It still reduces held-out error 12.97% against unit-weight reuse averaged over ages 1-4, because the gap between beta=1 and any weight below one is far larger than the gap between 0.716 and the age-specific optimum. That is the mechanism connecting a one-cycle diagnostic to the tau=8 result."
+ },
+ "deployfrontier": {
+  "arms": {
+   "10st": {
+    "steps": 10,
+    "cached": false,
+    "ms": 375.4,
+    "sd": 22.4,
+    "success_pct": 96.7,
+    "episodes": 30,
+    "refresh_ms": 374.1,
+    "reuse_ms": null,
+    "p50": 363.5,
+    "p95": 449.9,
+    "max": 783.1,
+    "loadavg1": 6.49,
+    "cpus": 48
+   },
+   "10st+tau2": {
+    "steps": 10,
+    "cached": true,
+    "ms": 345.5,
+    "sd": 22.9,
+    "success_pct": 93.3,
+    "episodes": 30,
+    "refresh_ms": 397.7,
+    "reuse_ms": 284.6,
+    "p50": 360.6,
+    "p95": 434.2,
+    "max": 706.0,
+    "loadavg1": 6.49,
+    "cpus": 48
+   },
+   "10st+tau4": {
+    "steps": 10,
+    "cached": true,
+    "ms": 306.6,
+    "sd": 22.4,
+    "success_pct": 100.0,
+    "episodes": 30,
+    "refresh_ms": 394.2,
+    "reuse_ms": 270.7,
+    "p50": 280.5,
+    "p95": 426.3,
+    "max": 645.5,
+    "loadavg1": 6.49,
+    "cpus": 48
+   },
+   "10st+tau8": {
+    "steps": 10,
+    "cached": true,
+    "ms": 284.8,
+    "sd": 11.2,
+    "success_pct": 96.7,
+    "episodes": 30,
+    "refresh_ms": 389.1,
+    "reuse_ms": 264.7,
+    "p50": 268.8,
+    "p95": 393.6,
+    "max": 523.9,
+    "loadavg1": 6.49,
+    "cpus": 48
+   },
+   "2st": {
+    "steps": 2,
+    "cached": false,
+    "ms": 170.7,
+    "sd": 23.6,
+    "success_pct": 96.7,
+    "episodes": 30,
+    "refresh_ms": 170.3,
+    "reuse_ms": null,
+    "p50": 163.7,
+    "p95": 199.8,
+    "max": 467.8,
+    "loadavg1": 6.73,
+    "cpus": 48
+   },
+   "3st": {
+    "steps": 3,
+    "cached": false,
+    "ms": 192.5,
+    "sd": 16.3,
+    "success_pct": 100.0,
+    "episodes": 30,
+    "refresh_ms": 192.2,
+    "reuse_ms": null,
+    "p50": 187.2,
+    "p95": 216.9,
+    "max": 384.8,
+    "loadavg1": 5.72,
+    "cpus": 48
+   },
+   "4st": {
+    "steps": 4,
+    "cached": false,
+    "ms": 214.8,
+    "sd": 10.5,
+    "success_pct": 100.0,
+    "episodes": 30,
+    "refresh_ms": 214.5,
+    "reuse_ms": null,
+    "p50": 209.5,
+    "p95": 243.2,
+    "max": 440.3,
+    "loadavg1": 6.43,
+    "cpus": 48
+   },
+   "4st+tau4": {
+    "steps": 4,
+    "cached": true,
+    "ms": 207.7,
+    "sd": 11.4,
+    "success_pct": 100.0,
+    "episodes": 30,
+    "refresh_ms": 233.5,
+    "reuse_ms": 195.5,
+    "p50": 201.5,
+    "p95": 251.1,
+    "max": 382.2,
+    "loadavg1": 6.43,
+    "cpus": 48
+   },
+   "6st": {
+    "steps": 6,
+    "cached": false,
+    "ms": 272.7,
+    "sd": 25.7,
+    "success_pct": 96.7,
+    "episodes": 30,
+    "refresh_ms": 269.9,
+    "reuse_ms": null,
+    "p50": 263.6,
+    "p95": 297.8,
+    "max": 868.6,
+    "loadavg1": 8.63,
+    "cpus": 48
+   },
+   "6st+tau4": {
+    "steps": 6,
+    "cached": true,
+    "ms": 236.6,
+    "sd": 10.8,
+    "success_pct": 100.0,
+    "episodes": 30,
+    "refresh_ms": 282.8,
+    "reuse_ms": 216.6,
+    "p50": 222.3,
+    "p95": 306.3,
+    "max": 489.1,
+    "loadavg1": 8.63,
+    "cpus": 48
+   },
+   "8st": {
+    "steps": 8,
+    "cached": false,
+    "ms": 316.4,
+    "sd": 19.7,
+    "success_pct": 93.3,
+    "episodes": 30,
+    "refresh_ms": 316.3,
+    "reuse_ms": null,
+    "p50": 310.6,
+    "p95": 370.2,
+    "max": 956.4,
+    "loadavg1": 10.42,
+    "cpus": 48
+   }
+  },
+  "frontier": [
+   "2st",
+   "3st"
+  ],
+  "cached_on_frontier": [],
+  "n_arms": 11,
+  "illustrative_budget_ms": 500.0,
+  "arms_over_budget": {
+   "10st": {
+    "over": 6,
+    "calls": 367
+   },
+   "10st+tau4": {
+    "over": 3,
+    "calls": 366
+   }
+  },
+  "budget_note": "LIBERO runs at 20 Hz and the policy replans every 10 environment steps, so one chunk prediction has 500 ms. 6/367 uncached ten-step calls and 3/366 ten-step tau=4 calls exceed it, while every mean sits comfortably inside -- which is what per-cycle recording is for, since the amortised mean hides them. NOT called a deadline met or missed: these are measured inference times, and the simulator never tests a controller's response to a late action, so an over-budget call is not an observed control failure.",
+  "note": "One host, one run, uncached arms with recording OFF. Two-step inference had never been collected before and dominates most of the table, including the four-step cached point earlier reported as a faster operating point. 30 episodes per arm: the LATENCY is precise (sd 2.5-8 ms on the short arms) and the SUCCESS column is not, so the frontier ordering rests on success differences this sample cannot resolve. Success for the 4- and 6-step comparison comes from cachesteps at 100 episodes on two seeds.",
+  "fragility": {
+   "fastest": "2st",
+   "n_arms": 11,
+   "episodes": 30,
+   "dominates_as_measured": 9,
+   "dominates_min": 4,
+   "dominates_max": 10,
+   "any_paired_separates": false,
+   "smallest_paired_p": 0.688,
+   "episodes_needed_per_arm": 670,
+   "factor_more_episodes": 22,
+   "note": "The dominance count is a description of this collection, not an estimate: moving a single episode in a single arm moves it between 4 and 10 of 11. No paired comparison separates any two arms. The latency half of every dominance relation is solid; the success half is not resolved at 30 episodes."
+  },
+  "seeds": {
+   "seeds": [
+    7,
+    11,
+    42
+   ],
+   "episodes_per_arm_per_seed": 30,
+   "observations_per_arm": 90,
+   "independent_units_per_arm": 30,
+   "fastest_arm_every_seed": true,
+   "fastest_arm": "2st",
+   "dominance_by_seed": {
+    "7": 5,
+    "11": 9,
+    "42": 9
+   },
+   "dominance_min": 5,
+   "dominance_max": 9,
+   "cached_arms": 5,
+   "sign_flips": [
+    "10st+tau4",
+    "4st+tau4",
+    "6st+tau4"
+   ],
+   "n_sign_flips": 3,
+   "pooled_success_pct": {
+    "10st": 95.6,
+    "10st+tau2": 94.4,
+    "10st+tau4": 96.7,
+    "10st+tau8": 92.2,
+    "2st": 95.6,
+    "3st": 95.6,
+    "4st": 96.7,
+    "4st+tau4": 95.6,
+    "6st": 94.4,
+    "6st+tau4": 95.6,
+    "8st": 93.3
+   },
+   "initial_states": 30,
+   "repeats_per_state": 3,
+   "states_shared_across_seeds": true,
+   "pairs_tested": 55,
+   "pairs_significant": 0,
+   "smallest_state_signtest_p": 0.25,
+   "pct_state_arm_cells_unanimous": 87.0,
+   "two_step_ms_range": [
+    165.6,
+    170.7
+   ],
+   "fastest_cache_ms_range": [
+    187.9,
+    207.7
+   ],
+   "two_step_lowest_latency_every_seed": true,
+   "note": "Repeated seeds on the one same-host collection, which is what the reviewers asked for. Two-step is the fastest arm at every seed, so the latency half of every dominance relation replicates. The success half does not: the dominance count is 5 at seed 7, 9 at seed 11, 9 at seed 42, and 3 of 5 cached arms change sign against two-step across seeds -- including the one arm that survived the single-seed frontier. Pooled to 90 episodes per arm every arm lies between 92.2% and 96.7% with overlapping intervals. The ordering is therefore not a property of the configurations."
+  }
+ },
+ "statescale": {
+  "n_states": 500,
+  "n_arms": 4,
+  "commit": "ccc25c30a5603b7dba984f786c5b06dcfb3a2d03",
+  "gpu": "NVIDIA RTX A6000",
+  "arms": {
+   "2st": {
+    "success_pct": 96.6,
+    "ci95": [
+     95.0,
+     98.0
+    ],
+    "k": 483,
+    "n": 500,
+    "ms": 123.6
+   },
+   "4st": {
+    "success_pct": 96.6,
+    "ci95": [
+     95.0,
+     98.0
+    ],
+    "k": 483,
+    "n": 500,
+    "ms": 154.6
+   },
+   "4st+cache": {
+    "success_pct": 95.8,
+    "ci95": [
+     94.0,
+     97.4
+    ],
+    "k": 479,
+    "n": 500,
+    "ms": 137.7
+   },
+   "10st+cache": {
+    "success_pct": 93.6,
+    "ci95": [
+     91.4,
+     95.6
+    ],
+    "k": 468,
+    "n": 500,
+    "ms": 221.8
+   }
+  },
+  "pairs": {
+   "2st-4st": {
+    "diff_pts": 0.0,
+    "discordant": 22,
+    "ci95": [
+     -1.8,
+     1.8
+    ],
+    "sign_p": 1.0,
+    "separated": false
+   },
+   "2st-4st+cache": {
+    "diff_pts": 0.8,
+    "discordant": 22,
+    "ci95": [
+     -1.0,
+     2.6
+    ],
+    "sign_p": 0.5235,
+    "separated": false
+   },
+   "2st-10st+cache": {
+    "diff_pts": 3.0,
+    "discordant": 37,
+    "ci95": [
+     0.8,
+     5.4
+    ],
+    "sign_p": 0.0201,
+    "separated": true
+   },
+   "4st-4st+cache": {
+    "diff_pts": 0.8,
+    "discordant": 20,
+    "ci95": [
+     -1.0,
+     2.6
+    ],
+    "sign_p": 0.5034,
+    "separated": false
+   },
+   "4st-10st+cache": {
+    "diff_pts": 3.0,
+    "discordant": 41,
+    "ci95": [
+     0.6,
+     5.6
+    ],
+    "sign_p": 0.0275,
+    "separated": true
+   },
+   "4st+cache-10st+cache": {
+    "diff_pts": 2.2,
+    "discordant": 43,
+    "ci95": [
+     -0.4,
+     4.8
+    ],
+    "sign_p": 0.1263,
+    "separated": false
+   }
+  },
+  "separated_pairs": [
+   "2st-10st+cache",
+   "4st-10st+cache"
+  ],
+  "note": "Four arms on 500 DISTINCT LIBERO Goal initial states, one host, one run, commit recorded. This is the comparison the seed repeats could not make: those revisited the same 30 states and disagreed on about 1, while real states raise the discordance a paired test spends -- 2st against 10st+cache disagrees on 37 of 500. Two-step is both faster (123.6 vs 221.8 ms) and MORE successful than the ten-step cache by 3.0 points with an interval excluding zero, so the ten-step cache that survived every single-seed frontier loses here. The four-step cache is bounded within 3 points of both uncached arms rather than separated: a cost too small for 500 states to resolve, not an absence of cost.",
+  "replication": {
+   "seeds": [
+    7,
+    42
+   ],
+   "per_seed": {
+    "7": {
+     "n_states": 500,
+     "diff_pts": 6.0,
+     "discordant": 48,
+     "ci95": [
+      3.4,
+      8.8
+     ],
+     "sign_p": 0.0,
+     "separated": true,
+     "arms": {
+      "10st+cache": 91.2,
+      "2st": 97.2,
+      "4st": 98.4,
+      "4st+cache": 96.0
+     }
+    },
+    "42": {
+     "n_states": 500,
+     "diff_pts": 3.0,
+     "discordant": 37,
+     "ci95": [
+      0.6,
+      5.4
+     ],
+     "sign_p": 0.0201,
+     "separated": true,
+     "arms": {
+      "10st+cache": 93.6,
+      "2st": 96.6,
+      "4st": 96.6,
+      "4st+cache": 95.8
+     }
+    }
+   },
+   "pair": "2st-10st+cache",
+   "replicates": true,
+   "note": "Two policy seeds on the SAME 500 states, estimated separately and never pooled: sharing states makes this a replication test, not additional independent evidence. Both seeds separate with the same sign, so the headline comparison replicates. Per-arm the seed moves every schedule by under a point except the aggressive ten-step cache, which is the seed-sensitive component."
+  }
+ },
+ "matrix": {
+  "n_states": 500,
+  "n_arms": 6,
+  "commit": "cf0db75a7b63787e5ef3504f3dccfa56ae7e8a24",
+  "gpu": "NVIDIA RTX A6000",
+  "arms": {
+   "10st full": {
+    "success_pct": 96.4,
+    "ms": 463.5,
+    "collection": "matrix"
+   },
+   "10st global": {
+    "success_pct": 91.4,
+    "ms": 349.6,
+    "collection": "matrix"
+   },
+   "10st per-cell": {
+    "success_pct": 93.6,
+    "ms": 336.2,
+    "collection": "matrix"
+   },
+   "10st plain": {
+    "success_pct": 88.4,
+    "ms": 344.5,
+    "collection": "matrix"
+   },
+   "2st": {
+    "success_pct": 96.6,
+    "ms": 123.6,
+    "collection": "state-scale"
+   },
+   "4st": {
+    "success_pct": 95.8,
+    "ms": 146.2,
+    "collection": "state-scale"
+   }
+  },
+  "pairs": {
+   "attenuation_percell": {
+    "diff": 5.2,
+    "disc": 66,
+    "ci95": [
+     2.0,
+     8.4
+    ],
+    "p": 0.0019,
+    "sep": true
+   },
+   "attenuation_global": {
+    "diff": 3.0,
+    "disc": 61,
+    "ci95": [
+     0.0,
+     6.0
+    ],
+    "p": 0.0722,
+    "sep": false
+   },
+   "percell_vs_pooled_global": {
+    "diff": 2.2,
+    "disc": 53,
+    "ci95": [
+     -0.6,
+     5.0
+    ],
+    "p": 0.169,
+    "sep": false
+   },
+   "cache_below_full": {
+    "diff": 2.8,
+    "disc": 36,
+    "ci95": [
+     0.6,
+     5.2
+    ],
+    "p": 0.0288,
+    "sep": true
+   },
+   "full_vs_twostep": {
+    "diff": -0.2,
+    "disc": 21,
+    "ci95": [
+     -2.0,
+     1.6
+    ],
+    "p": 1.0,
+    "sep": false
+   },
+   "twostep_vs_cache": {
+    "diff": 3.0,
+    "disc": 37,
+    "ci95": [
+     0.6,
+     5.4
+    ],
+    "p": 0.0201,
+    "sep": true
+   }
+  },
+  "note": "Four ten-step arms on ONE host and the same 500 states, so every comparison among them is within-collection. Attenuation contributes measurably over plain beta=1 reuse (+5.2 points, interval excluding zero), which is the first direct measurement of what the correction buys at benchmark scale. Per-cell is NOT separable from a correctly fitted global scalar (+2.2, interval spanning zero): the reviewer was right that the earlier median-based arm could not settle this, and with the pooled fit it still cannot. Ten-step full compute is not measurably better than two-step (-0.2, bounded within 3 points) at 3.7x the latency, so the policy is over-provisioned in denoising steps for this suite. Latency is NOT pooled across collections."
+ },
+ "tails": {
+  "budget_ms": 500.0,
+  "arms": {
+   "10st": {
+    "calls": 367,
+    "mean": 402.6,
+    "p50": 394.4,
+    "p95": 479.9,
+    "max": 518.0,
+    "over_budget": 6,
+    "refresh_mean": 402.6,
+    "reuse_mean": null
+   },
+   "10st+tau2": {
+    "calls": 368,
+    "mean": 330.5,
+    "p50": 383.8,
+    "p95": 423.9,
+    "max": 459.9,
+    "over_budget": 0,
+    "refresh_mean": 404.0,
+    "reuse_mean": 250.3
+   },
+   "10st+tau4": {
+    "calls": 366,
+    "mean": 305.6,
+    "p50": 266.4,
+    "p95": 451.9,
+    "max": 505.7,
+    "over_budget": 3,
+    "refresh_mean": 418.5,
+    "reuse_mean": 259.6
+   },
+   "10st+tau8": {
+    "calls": 528,
+    "mean": 291.0,
+    "p50": 279.5,
+    "p95": 449.1,
+    "max": 492.8,
+    "over_budget": 0,
+    "refresh_mean": 429.2,
+    "reuse_mean": 268.5
+   },
+   "2st": {
+    "calls": 332,
+    "mean": 165.8,
+    "p50": 164.4,
+    "p95": 176.6,
+    "max": 183.6,
+    "over_budget": 0,
+    "refresh_mean": 165.8,
+    "reuse_mean": null
+   },
+   "3st": {
+    "calls": 334,
+    "mean": 179.7,
+    "p50": 178.6,
+    "p95": 185.8,
+    "max": 205.4,
+    "over_budget": 0,
+    "refresh_mean": 179.7,
+    "reuse_mean": null
+   },
+   "4st": {
+    "calls": 334,
+    "mean": 208.3,
+    "p50": 205.5,
+    "p95": 228.5,
+    "max": 259.1,
+    "over_budget": 0,
+    "refresh_mean": 208.3,
+    "reuse_mean": null
+   },
+   "4st+tau4": {
+    "calls": 368,
+    "mean": 187.8,
+    "p50": 181.3,
+    "p95": 224.3,
+    "max": 238.8,
+    "over_budget": 0,
+    "refresh_mean": 216.0,
+    "reuse_mean": 176.7
+   },
+   "6st": {
+    "calls": 335,
+    "mean": 278.0,
+    "p50": 275.8,
+    "p95": 294.1,
+    "max": 319.1,
+    "over_budget": 0,
+    "refresh_mean": 278.0,
+    "reuse_mean": null
+   },
+   "6st+tau4": {
+    "calls": 353,
+    "mean": 226.7,
+    "p50": 205.3,
+    "p95": 290.1,
+    "max": 333.8,
+    "over_budget": 0,
+    "refresh_mean": 284.5,
+    "reuse_mean": 202.9
+   },
+   "8st": {
+    "calls": 336,
+    "mean": 330.5,
+    "p50": 323.0,
+    "p95": 411.5,
+    "max": 441.3,
+    "over_budget": 0,
+    "refresh_mean": 330.5,
+    "reuse_mean": null
+   }
+  },
+  "total_calls": 4021,
+  "arms_over_budget": [
+   "10st",
+   "10st+tau4"
+  ],
+  "lowest_tail_arm": "2st",
+  "note": "Every arm of the same-host collection, 4021 recorded calls, against an illustrative 500 ms budget. Only 10st, 10st+tau4 exceed it; every short uncached schedule stays inside on every call. The lowest tail belongs to 2st, which is also the fastest arm, so under a deadline the short schedule wins on the tail as well as the mean. Measured inference times, not observed control failures."
+ },
+ "stockquiet": {
+  "runs": {
+   "q_ffirst": {
+    "first_arm": "full",
+    "steps": 10,
+    "ms": {
+     "full": 209.26,
+     "stock": 200.46,
+     "c3ache_tau8_shrink_skip": 147.67
+    },
+    "full_minus_stock_ms": 8.8,
+    "se": 0.81,
+    "t": 10.86,
+    "n": 27,
+    "outcomes_identical": true,
+    "loadavg1": 5.0,
+    "cpus": 48
+   },
+   "q_sfirst": {
+    "first_arm": "stock",
+    "steps": 10,
+    "ms": {
+     "stock": 199.31,
+     "full": 210.87,
+     "c3ache_tau8_shrink_skip": 146.98
+    },
+    "full_minus_stock_ms": 11.56,
+    "se": 0.66,
+    "t": 17.57,
+    "n": 27,
+    "outcomes_identical": true,
+    "loadavg1": 4.7,
+    "cpus": 48
+   }
+  },
+  "order_averaged_overhead_ms": 10.18,
+  "overhead_pct_of_stock": 5.1,
+  "both_orders_same_sign": true,
+  "measurable": true,
+  "mean_ms": {
+   "full": 210.1,
+   "stock": 199.9,
+   "c3ache_tau8_shrink_skip": 147.3
+  },
+  "speedup_vs_full": {
+   "c3ache_tau8_shrink_skip": 1.426
+  },
+  "speedup_vs_stock": {
+   "c3ache_tau8_shrink_skip": 1.357
+  },
+  "ratios_shrink_by_pct": 4.8,
+  "note": "MEASURED, where stocktime.sh could not. The difference is the host: the stock arm's sd is 1.2 ms here on a 48-core box at load 4 against 217 ms on a 36-core box at load 63. Both arm orders agree in sign, so this is recording and not arm position. Outcomes are identical in every run, confirming recording is a detached read. Consequence: a speedup quoted against `full` overstates what a deployment sees, because the baseline carries instrumentation the cache arms carry less of."
+ },
+ "cachesteps": {
+  "runs": {
+   "cs4": {
+    "seed": 42,
+    "steps": 4,
+    "cells_cached": 60,
+    "full": 95.0,
+    "cached": 92.0,
+    "delta": -3.0,
+    "rescued": 1,
+    "broken": 4,
+    "n": 100,
+    "mcnemar_p": 0.375,
+    "ms_full": 124.1,
+    "ms_cached": 110.7,
+    "speedup": 1.12,
+    "boot_ci95": [
+     -8.0,
+     1.0
+    ]
+   },
+   "cs4_seed7": {
+    "seed": 7,
+    "steps": 4,
+    "cells_cached": 60,
+    "full": 99.0,
+    "cached": 96.0,
+    "delta": -3.0,
+    "rescued": 0,
+    "broken": 3,
+    "n": 100,
+    "mcnemar_p": 0.25,
+    "ms_full": 227.1,
+    "ms_cached": 199.0,
+    "speedup": 1.14,
+    "boot_ci95": [
+     -7.0,
+     0.0
+    ]
+   },
+   "cs6": {
+    "seed": 42,
+    "steps": 6,
+    "cells_cached": 120,
+    "full": 96.0,
+    "cached": 93.0,
+    "delta": -3.0,
+    "rescued": 2,
+    "broken": 5,
+    "n": 100,
+    "mcnemar_p": 0.453,
+    "ms_full": 152.0,
+    "ms_cached": 127.7,
+    "speedup": 1.19,
+    "boot_ci95": [
+     -8.0,
+     2.0
+    ]
+   },
+   "cs6_seed7": {
+    "seed": 7,
+    "steps": 6,
+    "cells_cached": 120,
+    "full": 97.0,
+    "cached": 98.0,
+    "delta": 1.0,
+    "rescued": 2,
+    "broken": 1,
+    "n": 100,
+    "mcnemar_p": 1.0,
+    "ms_full": 312.1,
+    "ms_cached": 246.7,
+    "speedup": 1.27,
+    "boot_ci95": [
+     -2.0,
+     5.0
+    ]
+   }
+  },
+  "by_steps": {
+   "4": {
+    "per_seed": {
+     "7": -3.0,
+     "42": -3.0
+    },
+    "replicates": true
+   },
+   "6": {
+    "per_seed": {
+     "7": 1.0,
+     "42": -3.0
+    },
+    "replicates": false
+   }
+  },
+  "paired_ci": {
+   "cs4": {
+    "delta": -3.0,
+    "boot_ci95": [
+     -8.0,
+     1.0
+    ],
+    "exact_ci95": [
+     -4.95,
+     2.16
+    ],
+    "n_pairs": 100,
+    "spans_zero": true
+   },
+   "cs4_seed7": {
+    "delta": -3.0,
+    "boot_ci95": [
+     -7.0,
+     0.0
+    ],
+    "exact_ci95": [
+     -3.0,
+     1.25
+    ],
+    "n_pairs": 100,
+    "spans_zero": true
+   },
+   "cs6": {
+    "delta": -3.0,
+    "boot_ci95": [
+     -8.0,
+     2.0
+    ],
+    "exact_ci95": [
+     -6.49,
+     2.93
+    ],
+    "n_pairs": 100,
+    "spans_zero": true
+   },
+   "cs6_seed7": {
+    "delta": 1.0,
+    "boot_ci95": [
+     -2.0,
+     5.0
+    ],
+    "exact_ci95": [
+     -2.43,
+     2.95
+    ],
+    "n_pairs": 100,
+    "spans_zero": true
+   }
+  },
+  "all_intervals_span_zero": true,
+  "ci_note": "Paired bootstrap over episode pairs matched on initial state, 10k resamples, seed 20260919. All four intervals span zero. The sign of the four-step cost replicates across seeds but its magnitude does not survive as a deployment recommendation at 100 episodes -- the interval is about +/-5 points wide. The exact conditional interval, which inverts the exact McNemar test already reported, is carried alongside as a cross-check and is narrower by construction because it holds the discordant count fixed.",
+  "helps_anywhere": true,
+  "note": "Caching on top of a reduced-step schedule, the comparator the review named as missing. TWO CAVEATS TRAVEL WITH THESE NUMBERS. The per-cell weights were fit from Gram statistics at TEN denoising steps and are applied here unrefit, so each cell's least-squares weight is wrong for this schedule -- a null with refit weights would be stronger evidence, and refitting needs a Gram collection per step count. And a short schedule caches all but its last two steps, so it caches 50% of cells at 4 steps against 80% at 10 and is a less aggressive cache by construction."
+ },
+ "refimpl": {
+  "replan10": {
+   "replan": 10,
+   "full": 96.0,
+   "plain": 61.5,
+   "attenuated": 83.0,
+   "delta": 21.5,
+   "better": 52,
+   "worse": 9,
+   "n": 200,
+   "mcnemar_p": 1.8e-08
+  },
+  "replan32": {
+   "replan": 32,
+   "full": 95.0,
+   "plain": 39.5,
+   "attenuated": 61.5,
+   "delta": 22.0,
+   "better": 51,
+   "worse": 7,
+   "n": 200,
+   "mcnemar_p": 2.4e-09
+  },
+  "published_c3ache_libero_goal": {
+   "full": 96.4,
+   "cached_steps0_7_tau8": 96.4,
+   "episodes_per_suite": 500,
+   "suites": 4,
+   "source": "Table 1, LIBERO Goal column; aggregate across suites is 96.90/97.00"
+  },
+  "horizon_moves_plain_by": -22.0,
+  "horizon_explains_gap": false,
+  "note": "Matching the published executed horizon moves the cached arm the WRONG way: the gap to 96.4 widens from 34.9 to 56.9 points. Full compute barely moves, so the policy is unaffected and only the cache degrades -- which is what the staleness argument predicts, our cache at replan=10 being at most 80 env steps old against ~256 at replan=32. TWO SUSPECTS CLOSED BY READING THE PUBLISHED DESCRIPTION, not by experiment. (a) tau indexes INFERENCE CHUNKS: the cached residual for denoising step k is reused for chunks c..c+tau-1 and refreshed at c+tau, which is exactly this repository's cycle%tau schedule, so tau semantics are not a candidate. (b) The cached STEPS are [0,7] of 10, which is this repository's c3ache placement; they also report [0,6], which we have not tested. ONE SUSPECT PROMOTED. Granularity was previously called excluded because per-block residuals telescope to the whole-stack residual. The published method caches R = h_L - h_0 and SKIPS ALL BLOCKS; ours records 30 residuals and adds 30. The identity holds in exact arithmetic and the model is BF16, so this is a CONFIRMED implementation difference, not an excluded one -- see probes/fw_stackdiff.py, which measures it. Remaining: the checkpoint, which is not released, and the evaluation population -- they report 500 episodes on each of four suites where the LIBERO Goal figure here rests on 100."
+ },
+ "stocktime": {
+  "runs": {
+   "ffirst10": {
+    "steps": 10,
+    "first_arm": "full",
+    "full_minus_stock_ms": -21.58,
+    "n": 27,
+    "outcomes_identical": true
+   },
+   "ffirst4": {
+    "steps": 4,
+    "first_arm": "full",
+    "full_minus_stock_ms": 28.71,
+    "n": 27,
+    "outcomes_identical": true
+   },
+   "sfirst10": {
+    "steps": 10,
+    "first_arm": "stock",
+    "full_minus_stock_ms": -17.65,
+    "n": 27,
+    "outcomes_identical": true
+   },
+   "sfirst4": {
+    "steps": 4,
+    "first_arm": "stock",
+    "full_minus_stock_ms": -38.6,
+    "n": 27,
+    "outcomes_identical": true
+   }
+  },
+  "order_averaged_ms": {
+   "10": -19.61,
+   "4": -4.95
+  },
+  "measurable": false,
+  "note": "Not measurable on this hardware. At 4 steps the sign follows the arm order, so position dominates; at 10 steps the host noise (se ~48 ms) swamps the effect. Order-averaged estimates are NEGATIVE, i.e. removing work appearing to make it slower, which is impossible and is the clearest sign this measures the host rather than the instrumentation. Outcomes are identical between stock and full in every run, confirming recording is a detached read -- and incidentally that arm order moves wall clock but not results."
+ },
+ "frontier_timing": {
+  "arms": {
+   "full@10": {
+    "ms": 355.9,
+    "sd": 39.4,
+    "n": 27,
+    "steps": 10,
+    "loadavg1": 3.2,
+    "cpus": 36,
+    "speedup_vs_full10": 1.0
+   },
+   "c3ache_tau2_shrink_skip@10": {
+    "ms": 300.1,
+    "sd": 46.2,
+    "n": 27,
+    "steps": 10,
+    "loadavg1": 3.2,
+    "cpus": 36,
+    "speedup_vs_full10": 1.186
+   },
+   "c3ache_tau4_shrink_skip@10": {
+    "ms": 279.9,
+    "sd": 48.7,
+    "n": 27,
+    "steps": 10,
+    "loadavg1": 3.2,
+    "cpus": 36,
+    "speedup_vs_full10": 1.272
+   },
+   "c3ache_tau8_shrink_skip@10": {
+    "ms": 256.8,
+    "sd": 43.1,
+    "n": 27,
+    "steps": 10,
+    "loadavg1": 3.2,
+    "cpus": 36,
+    "speedup_vs_full10": 1.386
+   },
+   "full@4": {
+    "ms": 203.1,
+    "sd": 22.5,
+    "n": 27,
+    "steps": 4,
+    "loadavg1": 7.8,
+    "cpus": 36,
+    "speedup_vs_full10": 1.752
+   },
+   "full@6": {
+    "ms": 255.4,
+    "sd": 18.1,
+    "n": 27,
+    "steps": 6,
+    "loadavg1": 4.7,
+    "cpus": 36,
+    "speedup_vs_full10": 1.394
+   },
+   "full@8": {
+    "ms": 307.0,
+    "sd": 25.1,
+    "n": 27,
+    "steps": 8,
+    "loadavg1": 4.0,
+    "cpus": 36,
+    "speedup_vs_full10": 1.159
+   }
+  },
+  "baseline_full10_ms": 355.9,
+  "note": "One quiet collection (load 3-8 on 36 CPUs), shared by every seed because an arm's ms/cycle does not depend on which initial states it visits. Collected apart from success because the two fail differently: during the seed-7 run the host went from load 63 to 1.8 and one arm read 5722 ms/cycle on one task against 360 on another, while its success rate was unaffected. Relative sd here is still up to 17%, against 1-2% on the host that produced results/latency/, so ratios are not quotable to three digits."
+ },
+ "latency_curve": {
+  "baseline_ms_per_cycle": 470.4,
+  "baseline_is_compiled": true,
+  "arms": {
+   "full": {
+    "ms_per_cycle": 470.4,
+    "sd": 8.7,
+    "episodes": 27,
+    "success_pct": 96.7,
+    "speedup": 1.0,
+    "time_saved_pct": 0.0
+   },
+   "c3ache_tau2_shrink_skip": {
+    "ms_per_cycle": 391.8,
+    "sd": 8.4,
+    "episodes": 27,
+    "success_pct": 93.3,
+    "speedup": 1.201,
+    "time_saved_pct": 16.7,
+    "blocks_saved_pct": 40.0,
+    "realised_fraction": 0.417
+   },
+   "c3ache_tau4_shrink_skip": {
+    "ms_per_cycle": 345.7,
+    "sd": 5.2,
+    "episodes": 27,
+    "success_pct": 93.3,
+    "speedup": 1.361,
+    "time_saved_pct": 26.5,
+    "blocks_saved_pct": 60.0,
+    "realised_fraction": 0.442
+   },
+   "c3ache_tau8_shrink_skip": {
+    "ms_per_cycle": 322.4,
+    "sd": 6.2,
+    "episodes": 27,
+    "success_pct": 90.0,
+    "speedup": 1.459,
+    "time_saved_pct": 31.5,
+    "blocks_saved_pct": 70.0,
+    "realised_fraction": 0.45
+   }
+  },
+  "note": "blocks_saved_pct is the schedule's block count -- the figure this study quoted as 'compute saved'. time_saved_pct is measured wall clock on the same episodes. realised_fraction is how much of the first shows up as the second."
+ },
+ "latency_equiv": {
+  "baseline_ms_per_cycle": 502.6,
+  "baseline_is_compiled": true,
+  "arms": {
+   "full": {
+    "ms_per_cycle": 502.6,
+    "sd": 58.6,
+    "episodes": 27,
+    "success_pct": 96.7,
+    "speedup": 1.0,
+    "time_saved_pct": 0.0
+   },
+   "c3ache_tau4": {
+    "ms_per_cycle": 371.4,
+    "sd": 41.1,
+    "episodes": 27,
+    "success_pct": 96.7,
+    "speedup": 1.353,
+    "time_saved_pct": 26.1,
+    "blocks_saved_pct": 60.0,
+    "realised_fraction": 0.435
+   },
+   "c3ache_tau4_skip": {
+    "ms_per_cycle": 344.0,
+    "sd": 13.8,
+    "episodes": 27,
+    "success_pct": 100.0,
+    "speedup": 1.461,
+    "time_saved_pct": 31.6,
+    "blocks_saved_pct": 60.0,
+    "realised_fraction": 0.527
+   },
+   "c3ache_tau4_shrink": {
+    "ms_per_cycle": 380.3,
+    "sd": 36.8,
+    "episodes": 27,
+    "success_pct": 93.3,
+    "speedup": 1.322,
+    "time_saved_pct": 24.3,
+    "blocks_saved_pct": 60.0,
+    "realised_fraction": 0.405
+   },
+   "c3ache_tau4_shrink_skip": {
+    "ms_per_cycle": 347.2,
+    "sd": 8.0,
+    "episodes": 27,
+    "success_pct": 100.0,
+    "speedup": 1.448,
+    "time_saved_pct": 30.9,
+    "blocks_saved_pct": 60.0,
+    "realised_fraction": 0.515
+   }
+  },
+  "note": "blocks_saved_pct is the schedule's block count -- the figure this study quoted as 'compute saved'. time_saved_pct is measured wall clock on the same episodes. realised_fraction is how much of the first shows up as the second."
+ },
+ "baselines": {
+  "by_seed": {
+   "7": {
+    "arms": {
+     "cache_seed7:full_10steps": {
+      "ms_per_cycle": 884.1,
+      "success_pct": 93.0,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 0.518
+     },
+     "cache_seed7:c3ache_tau2_shrink_skip": {
+      "ms_per_cycle": 386.8,
+      "success_pct": 94.0,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.183
+     },
+     "cache_seed7:c3ache_tau4_shrink_skip": {
+      "ms_per_cycle": 274.4,
+      "success_pct": 89.5,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.668
+     },
+     "cache_seed7:c3ache_tau8_shrink_skip": {
+      "ms_per_cycle": 244.7,
+      "success_pct": 87.5,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.87
+     },
+     "globalbeta_seed7:full_10steps": {
+      "ms_per_cycle": 382.2,
+      "success_pct": 93.0,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.198
+     },
+     "globalbeta_seed7:c3ache_tau4_shrink_skip": {
+      "ms_per_cycle": 296.1,
+      "success_pct": 87.5,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.546
+     },
+     "steps4_seed7:full_4steps": {
+      "ms_per_cycle": 506.3,
+      "success_pct": 97.5,
+      "episodes": 200,
+      "denoise_steps": 4,
+      "speedup": 0.904
+     },
+     "steps6_seed7:full_6steps": {
+      "ms_per_cycle": 596.8,
+      "success_pct": 95.5,
+      "episodes": 200,
+      "denoise_steps": 6,
+      "speedup": 0.767
+     },
+     "steps8_seed7:full_8steps": {
+      "ms_per_cycle": 1845.3,
+      "success_pct": 95.0,
+      "episodes": 200,
+      "denoise_steps": 8,
+      "speedup": 0.248
+     }
+    },
+    "baseline_arm": "cache_seed7:full_10steps",
+    "baseline_ms_per_cycle": 884.1,
+    "fastest": "cache_seed7:c3ache_tau8_shrink_skip",
+    "most_successful": "steps4_seed7:full_4steps"
+   },
+   "42": {
+    "arms": {
+     "cache:full_10steps": {
+      "ms_per_cycle": 457.7,
+      "success_pct": 96.0,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.0
+     },
+     "cache:c3ache_tau2_shrink_skip": {
+      "ms_per_cycle": 373.0,
+      "success_pct": 96.0,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.227
+     },
+     "cache:c3ache_tau4_shrink_skip": {
+      "ms_per_cycle": 339.4,
+      "success_pct": 94.5,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.349
+     },
+     "cache:c3ache_tau8_shrink_skip": {
+      "ms_per_cycle": 309.3,
+      "success_pct": 83.0,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.48
+     },
+     "globalbeta:full_10steps": {
+      "ms_per_cycle": 449.8,
+      "success_pct": 96.0,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.018
+     },
+     "globalbeta:c3ache_tau4_shrink_skip": {
+      "ms_per_cycle": 331.8,
+      "success_pct": 91.5,
+      "episodes": 200,
+      "denoise_steps": 10,
+      "speedup": 1.379
+     },
+     "steps4:full_4steps": {
+      "ms_per_cycle": 254.1,
+      "success_pct": 96.5,
+      "episodes": 200,
+      "denoise_steps": 4,
+      "speedup": 1.801
+     },
+     "steps6:full_6steps": {
+      "ms_per_cycle": 318.1,
+      "success_pct": 97.0,
+      "episodes": 200,
+      "denoise_steps": 6,
+      "speedup": 1.439
+     },
+     "steps8:full_8steps": {
+      "ms_per_cycle": 396.6,
+      "success_pct": 95.5,
+      "episodes": 200,
+      "denoise_steps": 8,
+      "speedup": 1.154
+     }
+    },
+    "baseline_arm": "cache:full_10steps",
+    "baseline_ms_per_cycle": 457.7,
+    "fastest": "steps4:full_4steps",
+    "most_successful": "steps6:full_6steps"
+   }
+  },
+  "seeds": [
+   7,
+   42
+  ],
+  "note": "200 episodes per arm per seed, libero_goal. Cache arms genuinely skip the block. Dominance is a point-estimate relation -- strictly faster AND at least as successful -- not 'faster and not significantly worse', which would let an undetected difference pass for an equal one. SEEDS ARE NEVER POOLED. The ms/cycle here is each run's own timing and is load-contaminated; the frontier in probes/report_baselines.py uses results/frontier_timing/ instead, one quiet collection shared across seeds."
+ },
+ "pi05_confirmation": {
+  "per_seed": [
+   {
+    "seed": 7,
+    "full": 96.7,
+    "beta_1.00": 67.3,
+    "beta_0.25": 73.3,
+    "delta": 6.0,
+    "delta_exact": 6.0,
+    "better": 24,
+    "worse": 15,
+    "paired_episodes": 150
+   },
+   {
+    "seed": 23,
+    "full": 93.3,
+    "beta_1.00": 74.7,
+    "beta_0.25": 84.7,
+    "delta": 10.0,
+    "delta_exact": 10.0,
+    "better": 26,
+    "worse": 11,
+    "paired_episodes": 150
+   },
+   {
+    "seed": 42,
+    "full": 99.3,
+    "beta_1.00": 80.7,
+    "beta_0.25": 87.3,
+    "delta": 6.7,
+    "delta_exact": 6.666666666666657,
+    "better": 17,
+    "worse": 7,
+    "paired_episodes": 150
+   }
+  ],
+  "mean_delta": 7.56,
+  "sd": 2.14,
+  "ci95": [
+   2.23,
+   12.88
+  ],
+  "t_crit": 4.303,
+  "seed_level_t_p": 0.0258,
+  "seed_level_sign_p": 0.25,
+  "held_out_initial_states": false,
+  "seed_recorded_in_artefact": false,
+  "pooled_better": 67,
+  "pooled_worse": 33,
+  "pooled_mcnemar_p": 0.0008737,
+  "positive_on_all_seeds": true,
+  "verdict": "CONFIRMED",
+  "note": "pre-registered in repro/experiments/pi05_confirm.sh before the run; rule is positive on all three seeds AND pooled McNemar p<0.05. Confirms beta=0.25 against the PUBLISHED beta=1.00 -- it does not support beta=1.00, which sits far below full compute on every seed."
+ },
+ "excluded_incomplete": []
+}

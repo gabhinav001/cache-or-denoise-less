@@ -1,0 +1,24 @@
+== before any arm
+48
+Model name:                              Intel(R) Xeon(R) Gold 6248R CPU @ 3.00GHz
+0, NVIDIA RTX A6000, 0 %, 1 MiB
+1, NVIDIA RTX A6000, 0 %, 1 MiB
+2, NVIDIA RTX A6000, 0 %, 1 MiB
+3, NVIDIA RTX A6000, 0 %, 1 MiB
+4, NVIDIA RTX A6000, 0 %, 1 MiB
+5, NVIDIA RTX A6000, 0 %, 1 MiB
+6, NVIDIA RTX A6000, 0 %, 1 MiB
+7, NVIDIA RTX A6000, 0 %, 1 MiB
+compute processes: 0
+loadavg: 0.66 0.83 0.86 1/996 4575
+== before the timing rounds
+0, NVIDIA RTX A6000, 0 %, 1 MiB
+1, NVIDIA RTX A6000, 0 %, 1 MiB
+2, NVIDIA RTX A6000, 0 %, 1 MiB
+3, NVIDIA RTX A6000, 0 %, 1 MiB
+4, NVIDIA RTX A6000, 0 %, 1 MiB
+5, NVIDIA RTX A6000, 0 %, 1 MiB
+6, NVIDIA RTX A6000, 0 %, 1 MiB
+7, NVIDIA RTX A6000, 0 %, 1 MiB
+compute processes: 0
+loadavg: 1.78 6.20 8.86 1/1001 15144

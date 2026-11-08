@@ -1,0 +1,25 @@
+Regeneration report, 2026-09-28T08:00Z
+tiers: smoke
+gpu: NVIDIA RTX A6000, 595.104.02
+
+== Cache identity gates on this host (the paper: actions within 0.17%, a 0.5 MB cache)
+  smoke/gate.json: libero_optional_idm_2cam224.pt s=1.0 pass=True replay error 0.122%, cache 0.62 MiB [1, 32, 1024]
+    model: video expert 5.00B and action expert 1.02B parameters (paper: 5B + 1B), 30 action blocks (30), chunk of 32 actions (32), replanning every 10 (10), K=10 by default (10)
+
+== Every regenerated run against the shipped runs of the same configuration
+  smoke_cam0015_idm_stock2.json       1 shipped runs on 1 hosts,    10 paired states, outcomes changed 0, lengths changed 0
+  smoke_idm_s1_whole_tau8_rn.json     1 shipped runs on 1 hosts,    10 paired states, outcomes changed 0, lengths changed 0
+  smoke_idm_s3_p9_tau8.json           1 shipped runs on 1 hosts,    10 paired states, outcomes changed 0, lengths changed 0
+  smoke_idm_stock_2step.json         11 shipped runs on 8 hosts,   110 paired states, outcomes changed 0, lengths changed 0
+  smoke_idm_whole_agg_tau8.json       3 shipped runs on 3 hosts,    30 paired states, outcomes changed 0, lengths changed 0
+  smoke_idm_whole_plain_tau8.json     5 shipped runs on 5 hosts,    50 paired states, outcomes changed 0, lengths changed 0
+  smoke_lat_uncond_stock2_cg.json     2 shipped runs on 1 hosts,    20 paired states, outcomes changed 0, lengths changed 0
+  smoke_long_uncond_stock2.json       1 shipped runs on 1 hosts,    10 paired states, outcomes changed 0, lengths changed 0
+  smoke_tm_idm_comp4.json             5 shipped runs on 3 hosts,    50 paired states, outcomes changed 0, lengths changed 0
+  smoke_uncond_stock_10step.json      5 shipped runs on 4 hosts,    50 paired states, outcomes changed 0, lengths changed 0
+  smoke_uncond_whole_4step_tau4.json  4 shipped runs on 3 hosts,    40 paired states, outcomes changed 0, lengths changed 3
+11 new runs against 39 shipped runs: 390 paired states, 0 outcome changes, 3 length changes
+outcome change rate 0.00% (shipped machines among themselves: 7 of 10170, 0.07%; limit 0.50%)
+
+
+RESULT: every regenerated outcome and printed number that must reproduce did

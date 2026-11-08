@@ -1,0 +1,44 @@
+# How to regenerate every raw run behind the paper, one results directory per line.
+#
+# repro/regenerate_paper.sh reads this file; probes/check_regeneration.py checks,
+# by dry run, that each line rewrites exactly the files of its directory with the
+# configuration recorded inside the shipped runs. Hours are for one RTX A6000,
+# measured from the shipped runs' timestamps, plus about half an hour of first
+# compilation on a fresh host. Run tier "idle" with nothing else on the machine:
+# its timing rounds measure the composed cache's saving on an idle host. Tier
+# "extra" regenerates runs the analysis reads
+# for its own cross-checks but that reach no number, table or figure in the paper
+# (probes/paper_number_runs.py); tier "hosts" regenerates runs whose only role is
+# to be paired with the same configuration on another machine, in the tallies of
+# outcomes that repeat across machines (determinism, determinism_exhaustive).
+#
+# tier       | results directory              | experiment       | seeds (- = experiment defaults) | environment | hours
+frontier     | budget_shift/frontier100_a6000 | budget_shift     | @frontier100_a6000                | -           | 4.9
+frontier     | budget_shift/latency_a6000     | budget_shift     | @latency_a6000                    | -           | 1.7
+share        | budget_shift/shift_a6000       | budget_shift     | @shift_a6000                      | -           | 4.5
+share        | budget_shift/noise_a6000       | budget_shift     | @noise_a6000                      | -           | 2.3
+followup     | budget_shift/followup_a6000    | followup         | -                                 | -           | 6.8
+regimes      | budget_shift/long_a6000        | budget_shift     | @long_a6000                       | -           | 1.1
+composed     | composed2step                  | composed2step    | -                                 | -           | 0.7
+composed     | matched_composed               | matched_composed | -                                 | -           | 2.7
+idle         | budget_shift/idle_a6000        | idle_host        | -                                 | -           | 3.3
+heldout      | budget_shift/heldout_a6000     | heldout          | -                                 | -           | 1.5
+screen       | budget_shift/screen_a6000      | screen           | -                                 | -           | 8.6
+latent_delay | budget_shift/latent_delay_a6000 | latent_delay   | -                                 | -           | 2.8
+latent_delay | budget_shift/delay_graphs_a6000 | delay_graphs   | -                                 | -           | 0.8
+states500    | statescale                     | statescale       | s2:2:stock                        | -           | 3.7
+states500    | matrix                         | matrix           | m10full:10:stock                  | -           | 3.5
+checklist    | rngdrift                       | rngdrift         | arms3_reseed:full,c3ache:4,c3ache:4:s:0 arms5_reseed:full,c3ache:2,c3ache:2:s,c3ache:4,c3ache:4:s:0 | - | 0.7
+checklist    | matched50_a6000                | matched50        | idm_whole_agg_tau8:idm:10:whole:8:a idm_block_skip_tau8:idm:10:c3ache:8:sx | - | 1.0
+hosts        | matched50_a6000                | matched50        | idm_stock_1step:idm:1:stock idm_stock_2step:idm:2:stock idm_stock_4step:idm:4:stock idm_stock_10step:idm:10:stock idm_whole_plain_tau0:idm:10:whole:0 idm_whole_plain_tau2:idm:10:whole:2 idm_whole_plain_tau4:idm:10:whole:4 idm_whole_plain_tau8:idm:10:whole:8 idm_whole_4step_tau4:idm:4:whole:4 idm_block_plain_tau8:idm:10:c3ache:8 uncond_stock_1step:uncond:1:stock uncond_stock_2step:uncond:2:stock uncond_stock_4step:uncond:4:stock uncond_stock_10step:uncond:10:stock uncond_whole_tau0:uncond:10:whole:0 uncond_whole_tau2:uncond:10:whole:2 uncond_whole_tau4:uncond:10:whole:4 uncond_whole_tau8:uncond:10:whole:8 uncond_whole_4step_tau4:uncond:4:whole:4 | - | 4.8
+hosts        | matched100_a6000               | matched100       | -                                 | -           | 5.0
+hosts        | budget_shift/repeats_a6000     | budget_shift     | @repeats_a6000                    | -           | 1.0
+hosts        | statescale                     | statescale       | s10:10:c3ache:4:sx                | -           | 3.8
+hosts        | matrix                         | matrix           | m10percell:10:c3ache:4:sx         | -           | 3.5
+hosts        | tau8_fresh                     | tau8_fresh       | seed42_plain:libero_goal:42:c3ache:8 | -        | 0.5
+states500    | statescale                     | statescale       | s2:2:stock                        | WAM_SEED=7  | 3.7
+extra        | statescale                     | statescale       | s10:10:c3ache:4:sx                | WAM_SEED=7  | 3.8
+extra        | tau8_fresh                     | tau8_fresh       | seed42_attenuated:libero_goal:42:c3ache:8:s seed7_plain:libero_goal:7:c3ache:8 seed7_attenuated:libero_goal:7:c3ache:8:s | - | 1.3
+extra        | rngdrift                       | rngdrift         | arms3_drift:full,c3ache:4,c3ache:4:s:1 arms5_drift:full,c3ache:2,c3ache:2:s,c3ache:4,c3ache:4:s:1 | - | 0.7
+extra        | matched50_a6000                | matched50        | idm_whole_agg_tau4:idm:10:whole:4:a | - | 0.2
+extra        | matrix                         | matrix           | m10plain:10:c3ache:4:x            | -           | 3.5

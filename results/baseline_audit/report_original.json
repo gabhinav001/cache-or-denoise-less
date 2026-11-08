@@ -1,0 +1,1997 @@
+{
+  "schema_version": 1,
+  "analysis_script_sha256": "340fe0554d02c7849794b2c9892094a725daee4622d541d0f4a6018ea896fd83",
+  "bootstrap": {
+    "method": "paired initial-state percentile bootstrap",
+    "samples": 10000,
+    "seed": 20260921,
+    "numpy_version": "2.2.6",
+    "confidence": 0.95,
+    "quantile_method": "linear",
+    "scope": "Pointwise; conditional on each fixed benchmark collection and policy seed. No cross-seed uncertainty or published-system equivalence test."
+  },
+  "latency_estimand": "Equal-weight mean of episode cycle means; exclude first episode per task/arm. Simulator/reset excluded. Refresh/reuse means are separately cycle-pooled.",
+  "source_archive": {
+    "manifest_file": "source_manifest.json",
+    "manifest_sha256": "c57f1885defdc34f719730d48a62325f94bdc6e10529f1696ba394f793cad4d8",
+    "source_bundle_file": "source_bundle.tar.gz",
+    "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+    "archive_bytes": 464878,
+    "manifest": {
+      "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+      "release_commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+      "release_has_local_modifications": true,
+      "fastwam_commit": "7faa71108368fbb3b6885649f112af607427a2d4",
+      "libero_commit": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+      "files": [
+        {
+          "path": "inputs/manifests/dz_episodes20.json",
+          "bytes": 2831,
+          "sha256": "90851695b553de6e71fddd9564331ea87d255c37cef56d364579b3add5652b5d"
+        },
+        {
+          "path": "inputs/manifests/episodes16_t1.json",
+          "bytes": 3569,
+          "sha256": "688f90b4abe157e8639d9b6b1763f6d1500a30a84a97854d185e8fef09ccbda8"
+        },
+        {
+          "path": "inputs/manifests/episodes24_idm.json",
+          "bytes": 5245,
+          "sha256": "e186cef412e34930b17cc32644af70031179945fffcac1d96ef6fa7f08d601bf"
+        },
+        {
+          "path": "inputs/manifests/episodes50.json",
+          "bytes": 11509,
+          "sha256": "e5e5caa0a89a5d05f06423b7a89b2b891e7315b91c1536b31176f44a63304bb6"
+        },
+        {
+          "path": "inputs/weights/shrink_fw.json",
+          "bytes": 11859,
+          "sha256": "2e82d550d1af74434dde719d302cb77c61092ec220b0a631398752909d0db9cd"
+        },
+        {
+          "path": "inputs/weights/shrink_idm.json",
+          "bytes": 11739,
+          "sha256": "f893e4f9a68e326e3cc82b1dd7ff6c87335b5ad7966e0290135301709d6545e8"
+        },
+        {
+          "path": "inputs/weights/shrink_idm_k.json",
+          "bytes": 44886,
+          "sha256": "6c0950a39e06c6608ecab9945c92153a05d6692153edc4a2bb21f6ee374f077b"
+        },
+        {
+          "path": "inputs/weights/shrink_pi05.json",
+          "bytes": 7210,
+          "sha256": "b1c3ff5e6d2081d915e434aa282f2a49fa572d1836c0061ceaccce44941224ad"
+        },
+        {
+          "path": "inputs/weights/stack_shrink_idm.json",
+          "bytes": 1416,
+          "sha256": "017d253977b7c5548420229ce10fcc629b8a1d70cacb9dab182b86396840d333"
+        },
+        {
+          "path": "probes/alpha_constraint.py",
+          "bytes": 9280,
+          "sha256": "12cecbf55877a266040348dd24fcff1f0faa3946186e8f6e1135b4248ce4d3da"
+        },
+        {
+          "path": "probes/analyze_families.py",
+          "bytes": 4823,
+          "sha256": "bbcfc65e800b5eb42458668b97313f9249f823afe67e39d12e1dea85e5ed9e99"
+        },
+        {
+          "path": "probes/audit_map.py",
+          "bytes": 6732,
+          "sha256": "28d895c20be666ded870a6a23f114d72d715a94ed56add34ad19e10182f6357a"
+        },
+        {
+          "path": "probes/beta_ceiling.py",
+          "bytes": 4716,
+          "sha256": "05c7f2d6c26c5f56abfa440092bb77d99cf5cf11c3e5f8b286a92f3b9787d820"
+        },
+        {
+          "path": "probes/cache_integrity.py",
+          "bytes": 1768,
+          "sha256": "0e2a5c6f2a76277f825fad01b194f0232dd56f0e7735278c30d2f22c42ba5b71"
+        },
+        {
+          "path": "probes/calibrate_perturb.py",
+          "bytes": 3449,
+          "sha256": "b1c7e85a415a374baba4b696473eb22d5aade5e17775ba76756dc6d1689a2920"
+        },
+        {
+          "path": "probes/canonical_numbers.py",
+          "bytes": 65940,
+          "sha256": "f86b3825b865f37910685d42c1ab895b26e0d1a442ba1b9f8bf812776aba2dc5"
+        },
+        {
+          "path": "probes/check_anonymity.py",
+          "bytes": 4706,
+          "sha256": "e8cd72d48bfc3f7f682beeb761ef67e5d3cf2a1a4562c3080994a90df918aaf5"
+        },
+        {
+          "path": "probes/check_arm_position.py",
+          "bytes": 3224,
+          "sha256": "99bd334d757cd28f2dd42eba7cc902f6b80ea41802c2d616676eb2fa06d0638b"
+        },
+        {
+          "path": "probes/check_duplicates.py",
+          "bytes": 9885,
+          "sha256": "c1922fbe9205538b16869470ce72bb59bb41da4ecbbf7744a14a97e20103f6c8"
+        },
+        {
+          "path": "probes/check_figure_data.py",
+          "bytes": 10175,
+          "sha256": "d3901dc2ac3f4265cd354ccb84c798baf4f46a01060cc07b65a3090bcf51d290"
+        },
+        {
+          "path": "probes/check_paper_numbers.py",
+          "bytes": 33756,
+          "sha256": "905d05393e5df0a819e564f6ded78d79585e9cddb082bb65317a00d8125a4f13"
+        },
+        {
+          "path": "probes/check_probe_args.py",
+          "bytes": 5286,
+          "sha256": "3e810577b4520971f71f312e5be76ffe78cc1a218f007f22ebe2f542fc0ae78b"
+        },
+        {
+          "path": "probes/check_repro_map.py",
+          "bytes": 14295,
+          "sha256": "085dcb68825e084248601ef83683590ecae62946f1fe95f3bf692a4a152d29a1"
+        },
+        {
+          "path": "probes/check_seed_merge.py",
+          "bytes": 6758,
+          "sha256": "40e4b49a96dd0bd4138d324449b77c01b151794661aec52ed7796059825f1240"
+        },
+        {
+          "path": "probes/check_seed_path.py",
+          "bytes": 4973,
+          "sha256": "3fe679fee3bdc28897d6f8200c2417964181dcc859b50e6526cc55e44ace7e69"
+        },
+        {
+          "path": "probes/check_tag_purity.py",
+          "bytes": 3991,
+          "sha256": "4dfd9fee8837da4fddfdbc64c58c69f8ed953a8b94cd84e1c376c5d2d5a01f4c"
+        },
+        {
+          "path": "probes/compare_rerun.py",
+          "bytes": 3076,
+          "sha256": "a7215b2c8a3107b39d2a581501f40e9648aeba7a73f9084b8eeccc39da3cfef5"
+        },
+        {
+          "path": "probes/dz_families.py",
+          "bytes": 8637,
+          "sha256": "399088be12e744cb1851b04190239530ce5661d540fcf8959c6bd900389d1472"
+        },
+        {
+          "path": "probes/export_shrink.py",
+          "bytes": 1509,
+          "sha256": "717551e0d09efb5be10c5edb324ad7cb6e2d08dd749cee21b7d54064f5319207"
+        },
+        {
+          "path": "probes/export_shrink_k.py",
+          "bytes": 2562,
+          "sha256": "718dc27461358b2e959278e9fbc86a58474ab7dc37ce45c9386ff670dc4da5a1"
+        },
+        {
+          "path": "probes/families_summary.json",
+          "bytes": 1875,
+          "sha256": "49abeac5b722b20187d8f463804d981c5a9bebea9375eb8bcf7f685affcf90f1"
+        },
+        {
+          "path": "probes/famlib.py",
+          "bytes": 7307,
+          "sha256": "c47cedc8f8c5a9019db05febb3542b4cefbf386aa52f7c863073a1a5649b870c"
+        },
+        {
+          "path": "probes/fw_age.py",
+          "bytes": 7842,
+          "sha256": "22cb3b03bb08ce196298fc5145d43bce774ff5827aea1bafcf4680da080edf6c"
+        },
+        {
+          "path": "probes/fw_families.py",
+          "bytes": 8259,
+          "sha256": "3342214f5dad5e12da3857e8ac70650b0706f4e23112377d2004b3b7c2e67556"
+        },
+        {
+          "path": "probes/fw_libero.py",
+          "bytes": 41050,
+          "sha256": "07d599726a57ecfe8e42efff0945751e6e86ff24f82c4541139b7f8b3ddebec7"
+        },
+        {
+          "path": "probes/fw_scale.py",
+          "bytes": 10161,
+          "sha256": "479e1aa582325061e39e911ea6883586e9e7ef16a74428c23f402447df4bd1ca"
+        },
+        {
+          "path": "probes/fw_shrink_open.py",
+          "bytes": 7994,
+          "sha256": "5460fcfb462c0a06da4b8868ac13154aed9a9fdba3a5cc802a76ff37d2eef8c9"
+        },
+        {
+          "path": "probes/fw_stackbeta.py",
+          "bytes": 8754,
+          "sha256": "22964daa2f21fcdf7469fedc2a6a18d822a119010c78179e061d0ebd3635fb45"
+        },
+        {
+          "path": "probes/fw_stackdiff.py",
+          "bytes": 13310,
+          "sha256": "c4ef0caa61004ba41c0bb13cfabaf856bccac5b457a87b7f001fe7ce26a3ccc6"
+        },
+        {
+          "path": "probes/gate_cache.py",
+          "bytes": 9627,
+          "sha256": "def7f6cda9a0e16349bf420f892ab71aded76eb70101f281051e8e55714f70de"
+        },
+        {
+          "path": "probes/headroom_probe.py",
+          "bytes": 12847,
+          "sha256": "b71f913a6381e3012b00067131261af6c465afccfd667a84ead2cc46f6a34979"
+        },
+        {
+          "path": "probes/kalman_beta.py",
+          "bytes": 11077,
+          "sha256": "3cb742a6f3af39699921fe7c8fc47ff60e9840bd380c19187a713827419fa3e4"
+        },
+        {
+          "path": "probes/make_manifest.py",
+          "bytes": 3295,
+          "sha256": "85acd574d980bb6540aa83583b737354e2a4de13ad12876ec98d46575ad84550"
+        },
+        {
+          "path": "probes/merge_l10.py",
+          "bytes": 1261,
+          "sha256": "b23d15290c037d62655a4bf0dd30ef7c3fda97920958f4fda3c7d95b33c5a052"
+        },
+        {
+          "path": "probes/online_beta.py",
+          "bytes": 6402,
+          "sha256": "4fda4294d787968304cec2278ea4c6545db959582a3ecc0fb50ef3b6dd5a0d29"
+        },
+        {
+          "path": "probes/pi05_families.py",
+          "bytes": 6867,
+          "sha256": "b698bc52152c0b745e90c162f3f5edbe7d9ecfb19a4634e33cc38b750115fc78"
+        },
+        {
+          "path": "probes/pi05_libero.py",
+          "bytes": 12267,
+          "sha256": "c140b9c01080a9cdf88a730b36413a49ea6ae66c896a82d4d914f747c92035fc"
+        },
+        {
+          "path": "probes/promote_post_fix.py",
+          "bytes": 4343,
+          "sha256": "884386301afaef94df5306f3d97c989daf649981619b28dd2fc9216eeece6af5"
+        },
+        {
+          "path": "probes/provenance.py",
+          "bytes": 5998,
+          "sha256": "2ccc9cf63cb6a204f8c3e0272f4f3d9930085e715ca889956f744dacc4a56ab8"
+        },
+        {
+          "path": "probes/replication_margin.py",
+          "bytes": 13706,
+          "sha256": "b4bc9a42fd7cd827355716ce58b6c950bba112e1dc8432afb67cc8b8e3cd92ea"
+        },
+        {
+          "path": "probes/report_armorder.py",
+          "bytes": 3975,
+          "sha256": "385952fb3a11fd47dcc43dfdbef07909e631583619f89278aaff6e186bd5ea11"
+        },
+        {
+          "path": "probes/report_armshift.py",
+          "bytes": 6489,
+          "sha256": "74fdc77d8e9dd391281a5d2ae4896b9f8d9c69212ac4ffcc6027bf025d5fb11e"
+        },
+        {
+          "path": "probes/report_baseline_audit.py",
+          "bytes": 24809,
+          "sha256": "340fe0554d02c7849794b2c9892094a725daee4622d541d0f4a6018ea896fd83"
+        },
+        {
+          "path": "probes/report_baselines.py",
+          "bytes": 15963,
+          "sha256": "4d73ce77f4995f2984746c59d9d28571f697cd2e51e1835eaa5bc8125bef41ee"
+        },
+        {
+          "path": "probes/report_cachesteps.py",
+          "bytes": 6577,
+          "sha256": "5cbf6c336df70399fbefde4d60cb5d8f588530b415fb5808b4db872c1eeff5c6"
+        },
+        {
+          "path": "probes/report_cachesteps_ci.py",
+          "bytes": 5762,
+          "sha256": "e4b67ce776e2b8daa25e69276242e03e0524d8ec5047ecba6aa34f847b302d68"
+        },
+        {
+          "path": "probes/report_closedloop.py",
+          "bytes": 3329,
+          "sha256": "b6b7ec3915120fd1a49caea9c6971decc8f86c16e8c137d0e8f434768cda5e28"
+        },
+        {
+          "path": "probes/report_deployfrontier.py",
+          "bytes": 6813,
+          "sha256": "384202ce42028b8a291135fd0cad8e58a731f0aec892d01d42ac8157dd81d702"
+        },
+        {
+          "path": "probes/report_families.py",
+          "bytes": 9764,
+          "sha256": "e25b18e67d52de23a655ab3881b62017997f06cd860312acf192bba1cb72ab70"
+        },
+        {
+          "path": "probes/report_frontier_fragility.py",
+          "bytes": 9167,
+          "sha256": "87f9242556ca15fd6396fc0da77472ef2d00c360b07eaeb6f3b1e484def786f0"
+        },
+        {
+          "path": "probes/report_frontier_seeds.py",
+          "bytes": 12871,
+          "sha256": "e1118fc580f575324e16a82d2b85d207dd3c410abfdc2304c8663d4b4296f1f2"
+        },
+        {
+          "path": "probes/report_frontier_timing.py",
+          "bytes": 3765,
+          "sha256": "3ed98e4a1beadb8b5c666f5a7b3e1fe5407c7446d41d097f839657cb09132e1c"
+        },
+        {
+          "path": "probes/report_latency.py",
+          "bytes": 10547,
+          "sha256": "8adbac4abf21a970ffd5d4f4ca054e5f872fe14acf3189d4c60cf19d1396613d"
+        },
+        {
+          "path": "probes/report_matrix.py",
+          "bytes": 6675,
+          "sha256": "7899a4b39a42958c7923747157139db1a5e4c8ae6f51ed2916d629791c3b601c"
+        },
+        {
+          "path": "probes/report_pi05_confirm.py",
+          "bytes": 7281,
+          "sha256": "c65924832e9bf02d0ae86b8d72270b31d42ed2e1176d357db9b87c49bef16756"
+        },
+        {
+          "path": "probes/report_pi05_sweep.py",
+          "bytes": 3084,
+          "sha256": "845cab4aa1d7d06ed4d238aa7cc309630c9dc9a9cade4efb1d61f13e08ad7336"
+        },
+        {
+          "path": "probes/report_placement.py",
+          "bytes": 3140,
+          "sha256": "2b07694f65a1a231ed86cf5e18d719d7ff36b976e188378a56ba6ecebd902176"
+        },
+        {
+          "path": "probes/report_published.py",
+          "bytes": 6456,
+          "sha256": "95a90607d26821af4deab1b80c8212d1e086d07f6aa9095a0ba1fc9b50af72f8"
+        },
+        {
+          "path": "probes/report_refimpl.py",
+          "bytes": 4701,
+          "sha256": "1587d94360e961d0b10369f5f082bba58f70909fc7cf2c80238fcd8f8b7d49c6"
+        },
+        {
+          "path": "probes/report_rngdrift.py",
+          "bytes": 8485,
+          "sha256": "cd9584c055c0448fac3f9dbdd8e15fc2ab15a64214547788a26eed75d3080d44"
+        },
+        {
+          "path": "probes/report_schedule_sensitivity.py",
+          "bytes": 9863,
+          "sha256": "460617db082927af039c29858eb3a6dac155da79e4e11908d469223b7f907ea2"
+        },
+        {
+          "path": "probes/report_shrink_open.py",
+          "bytes": 2036,
+          "sha256": "1c2899b92577f6bc2190eec685365791aeb5c088bb9d866bf75ea59537bee61d"
+        },
+        {
+          "path": "probes/report_stackbeta.py",
+          "bytes": 1760,
+          "sha256": "ad75e67e78973bff216c9bb178cc0e1019657c71a957667707de1fcbc1898510"
+        },
+        {
+          "path": "probes/report_stackdiff.py",
+          "bytes": 2906,
+          "sha256": "aa92928721de312a195b2e174b2a73eed80063d2db51f27f97209d230db6df05"
+        },
+        {
+          "path": "probes/report_statescale.py",
+          "bytes": 11133,
+          "sha256": "6a1cbd3a4ce19f11f40e73276d51f6129aeb58a8838a4cf45de6089f75cd62cc"
+        },
+        {
+          "path": "probes/report_stocktime.py",
+          "bytes": 7636,
+          "sha256": "2d90bde0134792e9fc0c9d736d0626d1deb4df1e52c2f45e052c8101c6cd7e3d"
+        },
+        {
+          "path": "probes/report_tails.py",
+          "bytes": 5603,
+          "sha256": "5923fe77d23a5f1f0d6630c7a0ad6942aa9d3108182a69964e48e5fa27eb49aa"
+        },
+        {
+          "path": "probes/report_tau8.py",
+          "bytes": 7064,
+          "sha256": "87e15fc34d8e5dad05eef00ed196c712a5065fe86365d5c8e04c9843f48ce00e"
+        },
+        {
+          "path": "probes/report_tau8gran.py",
+          "bytes": 4513,
+          "sha256": "75b9739873a7445b43fe98a09f2e28c7105a0c71f411adb58a9b9ec8f1d7a6c4"
+        },
+        {
+          "path": "probes/report_variance.py",
+          "bytes": 32124,
+          "sha256": "0b87a4f9500a4d68c27f0e16cfaa55914366d139b601bec54e0a5edcb9b5fdeb"
+        },
+        {
+          "path": "probes/stack_probe_common.py",
+          "bytes": 9620,
+          "sha256": "4fc8ca20d67ee8e593e9e924b0adf386091bba4987cb84ca35eb626c71e9ddc4"
+        },
+        {
+          "path": "probes/step_sweep.py",
+          "bytes": 7025,
+          "sha256": "5558edefff21635c5f0862bd6c43421e06e6c4d264c1eabced95ee2364797a88"
+        },
+        {
+          "path": "probes/test_baseline_audit.py",
+          "bytes": 5126,
+          "sha256": "acd09ded701cad4eb3494ab58aae6bb7e96094e4022a046cfc4132f6d8b0e33b"
+        },
+        {
+          "path": "probes/test_cache_integrity.py",
+          "bytes": 1047,
+          "sha256": "494f8f7a7d494da7bcb3356c210577214f88756843ca4d96eb002201cd047f8a"
+        },
+        {
+          "path": "probes/test_cache_semantics.py",
+          "bytes": 21388,
+          "sha256": "5c31daefb37a99589d4960b2e47cb0d5d471c6c7be580efae0fed14f057af863"
+        },
+        {
+          "path": "probes/test_checkpoint_coverage.py",
+          "bytes": 1741,
+          "sha256": "f041e1941f745b96ac6ccaa5bf897f0495fbf0356f9d86961c41d8d0f359cf4b"
+        },
+        {
+          "path": "probes/test_famlib.py",
+          "bytes": 4922,
+          "sha256": "553ecdc6c977820abf856c6cbc6cf6cae066e6797b9b8a0f249cca745fba7711"
+        },
+        {
+          "path": "probes/test_perturb.py",
+          "bytes": 5309,
+          "sha256": "904ed3e672ff5221b447d781603cd75f00d5ddf4b59aecd8aff81069de4594d9"
+        },
+        {
+          "path": "probes/test_report_published.py",
+          "bytes": 5046,
+          "sha256": "dbdd8bf0ee37a07a548cce0a74554ce7a28cbe1dbb3afbdba6f9f926ec5be4ac"
+        },
+        {
+          "path": "probes/test_schedule_sensitivity.py",
+          "bytes": 2723,
+          "sha256": "86786824fe2fad9c757eede4676539d3b77031aabbf2dab229e8dead6ae176f4"
+        },
+        {
+          "path": "probes/test_stack_probe_audit.py",
+          "bytes": 9232,
+          "sha256": "956491a4c6d04ac892c7c86d34b95bb7527cb8f4586847c65f07510d2f0be4c6"
+        },
+        {
+          "path": "probes/tstat.py",
+          "bytes": 4067,
+          "sha256": "62c836bf7d0ab0542d22b0f55b58e0c9f498eb96df0857ec6315058a795c710b"
+        },
+        {
+          "path": "probes/workshop_figure_data.json",
+          "bytes": 13390,
+          "sha256": "c92627c0b1309abfba18db57a91419fb557273c2006f9ff3d165b6293563ad3c"
+        },
+        {
+          "path": "probes/workshop_figures.json",
+          "bytes": 1476,
+          "sha256": "38137182523bedd68586b293989e9372fb71b4fc403e58070845c3e7611ad501"
+        },
+        {
+          "path": "repro/AUDIT_MAP.md",
+          "bytes": 4671,
+          "sha256": "ca4418e8ff0713f22b8de256f9fa4f6adbf0e27c72ebee592419d4ef184bee5b"
+        },
+        {
+          "path": "repro/MANIFEST.md",
+          "bytes": 12728,
+          "sha256": "a923b0dd39e48b1baa51186af37c327c6a64963ff478f13c67723052d2829c08"
+        },
+        {
+          "path": "repro/experiments/armorder.sh",
+          "bytes": 2889,
+          "sha256": "61a26d7a1c6f59eccdc18a3fc2274fe97a9f8361c8bef2e0e9718e8438101422"
+        },
+        {
+          "path": "repro/experiments/attenuation.sh",
+          "bytes": 5618,
+          "sha256": "2b7a47efdc130f18e54434a3ec0a216a5350ad0e5f225dff6bc91a4996da9dd7"
+        },
+        {
+          "path": "repro/experiments/baseline_audit.sh",
+          "bytes": 9279,
+          "sha256": "e8dac077b56c32f0a0845b05f50a9b70aae9ca42ea10531d310c46ca0cc51373"
+        },
+        {
+          "path": "repro/experiments/baselines.sh",
+          "bytes": 6929,
+          "sha256": "e0c09dcfaaf0c8ca399385b025f7bebf3d2d2af24a6bed166f9d0bd19f4d540b"
+        },
+        {
+          "path": "repro/experiments/cachesteps.sh",
+          "bytes": 4359,
+          "sha256": "4b6b86f92f0569c7362d93744f549944434df483f457ed36da8ec045cd238783"
+        },
+        {
+          "path": "repro/experiments/ceiling.sh",
+          "bytes": 1372,
+          "sha256": "14d6a52356fff46eaf930c8087a5e38eeaedb09b442fcdc661036d13db2d893d"
+        },
+        {
+          "path": "repro/experiments/ceiling_beta.sh",
+          "bytes": 1907,
+          "sha256": "bc525dc8a2313d3f54a6ba1e0f196fc68ead83ed104c5d1cf782fc9314841aae"
+        },
+        {
+          "path": "repro/experiments/curve.sh",
+          "bytes": 2250,
+          "sha256": "184aea8e7d1755f3955b136c6b9aff7a39a1c5e96c98369b77d59bec9b022546"
+        },
+        {
+          "path": "repro/experiments/deployfrontier.sh",
+          "bytes": 3974,
+          "sha256": "ff18740e2287fb6ba4cfb5e600ae9ea4d0265d18dbd4a08f38762c6333d00a9e"
+        },
+        {
+          "path": "repro/experiments/fidelity.sh",
+          "bytes": 1574,
+          "sha256": "cfb36a467e30e7c99e594d8b333205efee45bfc30445dcd9d29151766171767b"
+        },
+        {
+          "path": "repro/experiments/frontier.sh",
+          "bytes": 1863,
+          "sha256": "229b9da1aed20120490596af6cb77cb25ef6d04c81e69e1a3fa0250a63e0b1a6"
+        },
+        {
+          "path": "repro/experiments/frontier_timing.sh",
+          "bytes": 3331,
+          "sha256": "83510f6e91468adc3c2c0686a0e5777a6012e12e2f8a48edb112d4df7ee0d23c"
+        },
+        {
+          "path": "repro/experiments/generalize.sh",
+          "bytes": 3447,
+          "sha256": "6724d007fd7ce2515161435cfe53cdfa339d9a0269546893abb0ca05cb5c24f9"
+        },
+        {
+          "path": "repro/experiments/latency.sh",
+          "bytes": 3779,
+          "sha256": "c6f8d82e87dc1edfc9dd630668075a50621c1b36a415389cc91e39f9f4a5f3a0"
+        },
+        {
+          "path": "repro/experiments/matrix.sh",
+          "bytes": 6479,
+          "sha256": "fb5b60fb21172fdde790a6701f1cbc710ab1181d53619024a67775d16045cdcc"
+        },
+        {
+          "path": "repro/experiments/mechanism.sh",
+          "bytes": 5407,
+          "sha256": "7548ae28ba8e5e9eac640a5473ec638c0dd906144596fa0c5aa9c5a3a21e6528"
+        },
+        {
+          "path": "repro/experiments/mujoco.sh",
+          "bytes": 1914,
+          "sha256": "9fde2ac83f6e7f1bfb3233b5f5de09c3562b7be85e8f6fa6ab4af8023191369f"
+        },
+        {
+          "path": "repro/experiments/pi05.sh",
+          "bytes": 3911,
+          "sha256": "38d4c64aa8a4de40ad800d515e7c5074358486a4d36c22dedeec34563ce787a2"
+        },
+        {
+          "path": "repro/experiments/pi05_confirm.sh",
+          "bytes": 7130,
+          "sha256": "b5050e435a642e2d43885d892b63a1c8085d6822259bb96f56ce1f3970293c25"
+        },
+        {
+          "path": "repro/experiments/placement.sh",
+          "bytes": 2648,
+          "sha256": "7b32cf480b00855e817f1d36784a9d05b2077d194dc5a46d761a9b253af5bed2"
+        },
+        {
+          "path": "repro/experiments/published.sh",
+          "bytes": 3496,
+          "sha256": "a5bae4e6655ac084c3c0de67334d7082a1c1c1197c23b5609870cd2420f35028"
+        },
+        {
+          "path": "repro/experiments/refimpl.sh",
+          "bytes": 2347,
+          "sha256": "7dbfdd5971f472fe5b1295455aa903917b0408a5b777dffe5ed4177c621acdb0"
+        },
+        {
+          "path": "repro/experiments/rngdrift.sh",
+          "bytes": 2930,
+          "sha256": "3e472e908f6f7167ee1a23c960f414c70316b399679085da9c1cbd172eac1a0e"
+        },
+        {
+          "path": "repro/experiments/stackbeta.sh",
+          "bytes": 1714,
+          "sha256": "20dea1d8527b56fa7a448e1cfeb3592ad4ee91ecff2d9beb67bb5f0a4f4f7f49"
+        },
+        {
+          "path": "repro/experiments/stackdiff.sh",
+          "bytes": 3011,
+          "sha256": "f5f836e5e77cf83df0bee59041373d9792004f1c5bd2f9390aa8c3421d2f08cc"
+        },
+        {
+          "path": "repro/experiments/staleness.sh",
+          "bytes": 2723,
+          "sha256": "b0e8b5bc9d652e91f8f704cb52f7555a03940dafc3b0ca93df67386e01a72e78"
+        },
+        {
+          "path": "repro/experiments/statescale.sh",
+          "bytes": 5653,
+          "sha256": "f4d6834f9a7349669da317be8ddf35832e19efb0ad91bde2dce1a57da9274f96"
+        },
+        {
+          "path": "repro/experiments/stockquiet.sh",
+          "bytes": 3440,
+          "sha256": "8f71310ca3bd97e17343987da66fdeb0404eba48050787b3ef719ac9398f64dc"
+        },
+        {
+          "path": "repro/experiments/stocktime.sh",
+          "bytes": 4512,
+          "sha256": "e8b1c7988c2f07d71478456c03d92fc204c925aa138861aecfdf90c48b23316a"
+        },
+        {
+          "path": "repro/experiments/tau8.sh",
+          "bytes": 4061,
+          "sha256": "1a22a25f278aa975d1adfaff6573302251e956679ce29bb4fe113a5a863ce218"
+        },
+        {
+          "path": "repro/experiments/tau8gran.sh",
+          "bytes": 3955,
+          "sha256": "319c647b65942268a7c216ecbf61186fa0ebf53ec7282b94abc0dd011b8a7342"
+        },
+        {
+          "path": "repro/experiments/weights.sh",
+          "bytes": 1734,
+          "sha256": "05669ae486de75c45f03745b760652eb85a40cb608ba27fbefa3a10b2eb41335"
+        },
+        {
+          "path": "repro/run_experiment.sh",
+          "bytes": 17367,
+          "sha256": "31f6ab30d21f6207a56decc788fbdabdf73d65fecbe2f487da4e83011bb5b6e3"
+        },
+        {
+          "path": "repro/verify.sh",
+          "bytes": 13927,
+          "sha256": "54a8869332cdd83969b28097107bd0064ca1905075b7524378dfc3ba81e6e8ba"
+        },
+        {
+          "path": "repro/verify_workshop.sh",
+          "bytes": 1413,
+          "sha256": "e053a7178e814f652aee2588c55e5a615824436dbefe7ff3f82859757773c5e3"
+        },
+        {
+          "path": "setup/HOST_REQUIREMENTS.md",
+          "bytes": 4910,
+          "sha256": "951cbc782bbcf876941bf2d00084652f78063a6ec2772d354d4b2cfeefef3566"
+        },
+        {
+          "path": "setup/LIBERO_RECIPE.md",
+          "bytes": 2901,
+          "sha256": "4254bf920f33c59415f0c38beb6da72320a5ddf16a438fd8b1583c47c42f50e1"
+        },
+        {
+          "path": "setup/onstart_dz_families.sh",
+          "bytes": 1658,
+          "sha256": "6f66ba31ee2d8fed0e038d3b4dd693c95de7355fbb739976022c516d427f6f2c"
+        },
+        {
+          "path": "setup/onstart_fw_families.sh",
+          "bytes": 4146,
+          "sha256": "d937aed7d8c91106eaaafad3f2c9e3420b5e5fb412fb6e7ccd5f4ad7285a9438"
+        },
+        {
+          "path": "setup/onstart_fw_replay.sh",
+          "bytes": 2021,
+          "sha256": "388692aef290df71d7354f162a8a61ad2670d08f0c9cc88f601057f285abbeb2"
+        },
+        {
+          "path": "setup/onstart_libero_shrink.sh",
+          "bytes": 8605,
+          "sha256": "4a2b1d2ee1cc5d762a5590ffbda672063e49e9d961b2765dc6c641a21138c90e"
+        },
+        {
+          "path": "setup/onstart_pi05_libero.sh",
+          "bytes": 3856,
+          "sha256": "29b41bd495a0d5dd605a8344354ab1703ba62d69ecaaeb469e3eb51169a11ce8"
+        },
+        {
+          "path": "setup/onstart_scale.sh",
+          "bytes": 2378,
+          "sha256": "d23b7d1b34a358b99421ba2a2ddb8cd90ae387e97ca9d848a4aafd7a186ef487"
+        },
+        {
+          "path": "upstream/FastWAM/LICENSE",
+          "bytes": 1210,
+          "sha256": "8379dddfbbb1154ad9cc57f008f1f8d4a8d26c3de99bd6b36aa4d8067888aa92"
+        },
+        {
+          "path": "upstream/FastWAM/configs/data/libero_2cam.yaml",
+          "bytes": 2448,
+          "sha256": "d2ba368bd906992a2f3ca6229da9a5abd58163e2e64a8c4569d012efef039008"
+        },
+        {
+          "path": "upstream/FastWAM/configs/data/libero_2cam_lerobot_v30.yaml",
+          "bytes": 1935,
+          "sha256": "9c243358de9e978f210d827569cf8bf074fec6b7a3d47b079e8827342562edc1"
+        },
+        {
+          "path": "upstream/FastWAM/configs/data/robotwin.yaml",
+          "bytes": 4110,
+          "sha256": "f1ba509fac21fc59d5a210d6f68bcf94640729ce00dce695b7ca6df24c7b5aa7"
+        },
+        {
+          "path": "upstream/FastWAM/configs/model/fastwam.yaml",
+          "bytes": 1536,
+          "sha256": "0c9378106366d35f99ea3a82ef30afdfbab9a1d330af3e6de6c94c4490d24868"
+        },
+        {
+          "path": "upstream/FastWAM/configs/model/fastwam_idm.yaml",
+          "bytes": 1567,
+          "sha256": "7c95ab549c677ade48c7664beb85202aae15ad8c86dba99fbe4b14f2047aeb76"
+        },
+        {
+          "path": "upstream/FastWAM/configs/model/fastwam_joint.yaml",
+          "bytes": 1510,
+          "sha256": "ab2a243f7452478b6ba779cc2507e08d503874e7e7ae6ddcc3f081055b0730ad"
+        },
+        {
+          "path": "upstream/FastWAM/configs/model/fastwam_optional_idm.yaml",
+          "bytes": 1607,
+          "sha256": "f5c01951f483d453f7a0ef01bc7026eb8c2922b32361230a99e0d09d898904db"
+        },
+        {
+          "path": "upstream/FastWAM/configs/sim_libero.yaml",
+          "bytes": 1082,
+          "sha256": "005c4da6d40abc2304ff6f9a06feca1204f330c1ac7c3919f807d1b58dfd016c"
+        },
+        {
+          "path": "upstream/FastWAM/configs/sim_robotwin.yaml",
+          "bytes": 975,
+          "sha256": "b96b579a8f243c935f1e17f8f3d6e9b7cb6bf2f2a6823272f626ecc33d68056f"
+        },
+        {
+          "path": "upstream/FastWAM/configs/task/libero_idm_2cam224_1e-4.yaml",
+          "bytes": 409,
+          "sha256": "5df6cf62843806b0d9d2fb48b873945865bbfa74d135c58032651d54d6992c4e"
+        },
+        {
+          "path": "upstream/FastWAM/configs/task/libero_joint_2cam224_1e-4.yaml",
+          "bytes": 411,
+          "sha256": "1c46f34058c9c5363bab6814a0b86eb13be3a0077e944db7d39cf151da07636e"
+        },
+        {
+          "path": "upstream/FastWAM/configs/task/libero_optional_idm_2cam224_1e-4.yaml",
+          "bytes": 381,
+          "sha256": "367794491e728cba5fdb63929e69ab19f3c75b89eb6631754ae6a67d114d542c"
+        },
+        {
+          "path": "upstream/FastWAM/configs/task/libero_uncond_2cam224_1e-4.yaml",
+          "bytes": 405,
+          "sha256": "27bdc30545aa06bca81137690a241d469d5a67a433881976bd79da3d4171d1a0"
+        },
+        {
+          "path": "upstream/FastWAM/configs/task/robotwin_idm_3cam_384_1e-4.yaml",
+          "bytes": 405,
+          "sha256": "2e67c9f301105752962af825e57e5b46ef5e6ba4290e397e5efc7abb88652619"
+        },
+        {
+          "path": "upstream/FastWAM/configs/task/robotwin_joint_3cam_384_1e-4.yaml",
+          "bytes": 407,
+          "sha256": "daf4cb5246728ba60ae6903fbfd9d5e029d7172f30916b8143f81783450fa874"
+        },
+        {
+          "path": "upstream/FastWAM/configs/task/robotwin_uncond_3cam_384_1e-4.yaml",
+          "bytes": 401,
+          "sha256": "2f78a207415b452b05e0238f3e00eb9942d7960413076b5b3cdcf1ce09caef9f"
+        },
+        {
+          "path": "upstream/FastWAM/configs/train.yaml",
+          "bytes": 697,
+          "sha256": "42a60765bfdd842af01aacdde6066ce63be00698377fe7729110b795be684016"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/libero/action_ensembler.py",
+          "bytes": 1148,
+          "sha256": "13490f701ea9be8d618e199189648c5c3184b5d6a41b32665565e093c0209534"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/libero/eval_libero_single.py",
+          "bytes": 35502,
+          "sha256": "3854ba516fd0369eb538fea29eee2e4735fcccb19626a1009e29f782e00051f4"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/libero/libero_utils.py",
+          "bytes": 7116,
+          "sha256": "e7acb0656d3e3847f799065ffef40c5c4ede081fbd85e35e245c42a9f089df42"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/libero/run_libero_manager.py",
+          "bytes": 12360,
+          "sha256": "5076fa41771241b8dda679204bf7f536d6d4e4630506874498811fbb0599e2cb"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/libero/summarize_results.py",
+          "bytes": 12112,
+          "sha256": "52f780b16b15efbc1b0d1a214d3784f1b483b7910a1fa40669add8679dfef1b7"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/libero/worker_pool.py",
+          "bytes": 2900,
+          "sha256": "557f2f39f42b977935169eb4fd093c4c047223b865bc4ec97e840c5f785c4e40"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/robotwin/eval_robotwin_single.py",
+          "bytes": 9798,
+          "sha256": "0b100b74737916b50369159762553b2e53c0ef289b48b42dae8f8bcac63966f8"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/robotwin/fastwam_policy/__init__.py",
+          "bytes": 30,
+          "sha256": "f95d847740d78e88e41b5387dc5c6a9b858548a8898b2cd1f0bf00a78737e3eb"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/robotwin/fastwam_policy/deploy_policy.py",
+          "bytes": 15379,
+          "sha256": "57a34b527b6bc446a6f9e2e4a1b7098a449b7fc09275b20ee7e446e6ef0656ac"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/robotwin/fastwam_policy/deploy_policy.yml",
+          "bytes": 524,
+          "sha256": "6b551ed68cf76599cac3783cca436a3d0f784e4db86e9c013fc9a9b5f287bd17"
+        },
+        {
+          "path": "upstream/FastWAM/experiments/robotwin/run_robotwin_manager.py",
+          "bytes": 14130,
+          "sha256": "0bf9e26fba1126b67e849d778fee96cf121284a6ab9809f402a8d3cfe8d267cb"
+        },
+        {
+          "path": "upstream/FastWAM/pyproject.toml",
+          "bytes": 1026,
+          "sha256": "06b68d13368de5b05496726e8a36c448770ab8ada2ca17045d88218240e33eab"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/__init__.py",
+          "bytes": 23,
+          "sha256": "c4149c5ff0f9abd1517360daf761e692feb8570eb7a0caa2dfde52d4412c3e23"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/dataset_utils.py",
+          "bytes": 3735,
+          "sha256": "3bc17590049c7cb54061acf8d731b07892e7f530c5d7eeac2613fa77a285a392"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/base_lerobot_dataset.py",
+          "bytes": 19162,
+          "sha256": "c076b4028c5414d3c08199f1501698c3a4e15ac4fe09c6c7a67fa7f462a13b4a"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/constants.py",
+          "bytes": 1915,
+          "sha256": "11ac9260341e1560c5eb0dd7acb79ed63c74180b8ab4113c27622ff213db417f"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/lerobot/datasets/compute_stats.py",
+          "bytes": 7067,
+          "sha256": "7d7daab219332b5abdfd5ec67ccaf3502e8eb583a17a4e482c3f3d4f7a691e89"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/lerobot/datasets/utils.py",
+          "bytes": 33439,
+          "sha256": "40f1b94e6ceb50765fb8dfa3d498887c2a0fc2eb49f09770c5f36190e7110c98"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/lerobot/datasets/video_utils.py",
+          "bytes": 19421,
+          "sha256": "cb647a1e955c3279e39ce8d7af7a37ea7432bbd71534c183f9ceebc8557dd89f"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/lerobot/lerobot_dataset.py",
+          "bytes": 55233,
+          "sha256": "a71b26a73a0e460198b8316db2acb77b43a719d4ab9706150e2ba53773ffda64"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/processors/base_processor.py",
+          "bytes": 10811,
+          "sha256": "1f47bc85fee11e3d16714b2f1e3a2dc874f4609a1706a788617156d34b48b58e"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/processors/fastwam_processor.py",
+          "bytes": 13458,
+          "sha256": "3aa0e275b3815b67785c6e38ac5fc400472f9d09ac18b2ab269ea77bf574ade4"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/robot_video_dataset.py",
+          "bytes": 13058,
+          "sha256": "04f830e4c7dcc93be8e1d3514e502719aed94e62074364edbc1257e533a27de9"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/transforms/action_state_merger.py",
+          "bytes": 2522,
+          "sha256": "669d6991415fc5eca44b32b129d15fee1e06e2f17d59d90350c252598033b427"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/transforms/image.py",
+          "bytes": 725,
+          "sha256": "4d7ab61d0844918525244db653831f0f632730046b2714a6163ff57c441a16fa"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/transforms/misc.py",
+          "bytes": 422,
+          "sha256": "8b505bd9e3a54ab2db7efcd64f0929d2e0303f5db1123de1074fd01fa9887e2b"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/transforms/relative_action.py",
+          "bytes": 4032,
+          "sha256": "e555e0558e948c4eea3d1119e274fa5d923af30862eec4380fb8528f4a319c47"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/transforms/rotation.py",
+          "bytes": 5603,
+          "sha256": "0de34b252d60b956cda07c0c19baebbd3c8a28916face700c6664c5815e11e91"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/utils/normalizer.py",
+          "bytes": 11274,
+          "sha256": "5ac89a646cd6395e98feaa832f8fdf7c7e00857080af3d9c15710e243c43ad43"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot/utils/rotation.py",
+          "bytes": 21110,
+          "sha256": "6169162f98faf02a3fe5201e2b8a1069fe299840d036ee7cad8af5fa8f561542"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot3/__init__.py",
+          "bytes": 389,
+          "sha256": "26f0c3a4afdbd54f723cab81d2288781844e61ee367fd88bc0a821c7929cb79f"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot3/base_lerobot_dataset.py",
+          "bytes": 389,
+          "sha256": "7dc96f86caf8239795a0dce0161e25969ac002ebf037dfb9695608c40d89d769"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot3/lerobot_dataset.py",
+          "bytes": 14998,
+          "sha256": "4acae53b736c47c1ed6cb42ad41a68cb0a64cf6578791c5f9e50a8dd9f5541e1"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/datasets/lerobot3/robot_video_dataset.py",
+          "bytes": 310,
+          "sha256": "62230146222dfe0719c43f72d9f8e913cd4998d8f68a3f9d09b9b8d3db7441d5"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/__init__.py",
+          "bytes": 35,
+          "sha256": "ae4c5733f4bbf7caf31df2ae6f789516f6a10cd84a321f7d0375a7034253ac6d"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/action_dit.py",
+          "bytes": 14329,
+          "sha256": "631fdf598fbe06a95a41c1a27acd9de16f2187f3a2009e10690197527d18283b"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/fastwam.py",
+          "bytes": 54376,
+          "sha256": "154c339efd33fae119fe902d6efb91cde7475e3cfd0e7b50e606278c1c3eac09"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/fastwam_idm.py",
+          "bytes": 25404,
+          "sha256": "5ebdaabb42d4e6c0c6543760ad2ea9b3c8ef9415ebab44fbf845f73f52280bba"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/fastwam_joint.py",
+          "bytes": 10242,
+          "sha256": "a61aab79cfc607af02ab816849329a13c1dcd0bbcbf63c6584a345d8a67bb2b6"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/fastwam_optional_idm.py",
+          "bytes": 4420,
+          "sha256": "bd508293545895bae159a42998992cece9c1f1aca373e6f03521ea05f55749b2"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/helpers/__init__.py",
+          "bytes": 415,
+          "sha256": "f26116de229557a37a4812dc4ee75971f5f9e8b80240786ea4d0e5b0ff703cbf"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/helpers/gradient.py",
+          "bytes": 565,
+          "sha256": "ba5d8f7272eb029dc6cd2849ca99b70f6ad5abb838d21c818beb0590620dc793"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/helpers/io.py",
+          "bytes": 7751,
+          "sha256": "1c6c1bc8a975b47092912833194fce25e2e3ac886fbab72d73af3ff5a00b3c62"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/helpers/loader.py",
+          "bytes": 8279,
+          "sha256": "792f66bd0609c1365256aa24d43301340f81260c1651d89b04d2ae8224a08726"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/helpers/state_dict_converters.py",
+          "bytes": 5226,
+          "sha256": "81d213373e5056a8d8bf31768b9b04164138ea78d0b306e316334841499f4bf9"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/mot.py",
+          "bytes": 31234,
+          "sha256": "2383e4cfa00efa9cde889493e0b6c861bc7b17d24d731f5ff38d3ebf8ab7f541"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/schedulers/scheduler_continuous.py",
+          "bytes": 4068,
+          "sha256": "2ececce284f7b9fe876965fbf5e11ca7b69caaf693979266b0f63062a589f181"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/wan22.py",
+          "bytes": 16925,
+          "sha256": "b85349beeeb018d5be3f5b932bee3d640274d09c5e1e0fa0fa01e8ad0e02356e"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/wan_video_dit.py",
+          "bytes": 34764,
+          "sha256": "578712e83fac2815d3e3a3fd9134178028082deba361433122fe3c5764982dd6"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/wan_video_text_encoder.py",
+          "bytes": 11459,
+          "sha256": "aedf7f131556a39b99a273deec3a85d67f41b5367cef41f310f33a807ae60a87"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/models/wan22/wan_video_vae.py",
+          "bytes": 49604,
+          "sha256": "cb2b1b53f35a1a201c640ec52d12a7c4cb4ba1df322155addd3dc409e04dc07c"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/runtime.py",
+          "bytes": 22779,
+          "sha256": "230a814b7a42a3f74145513f5775a3c6cd56ffa244635c536b3d1f384c5f82d0"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/trainer.py",
+          "bytes": 36892,
+          "sha256": "71a0c1e82cedc89f7abb3dc9fd30e41270af729901edcd527d0f21c88af860d5"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/utils/__init__.py",
+          "bytes": 96,
+          "sha256": "2893c05b99b17162941c70a41859c2808f8ae390be367a26cac7d5ab93ee197b"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/utils/config_resolvers.py",
+          "bytes": 2526,
+          "sha256": "01c48cbd42b86e636b70ccc3e193a81147162ba890777102b2c61086fa415340"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/utils/fs.py",
+          "bytes": 76,
+          "sha256": "69e6df236b43360428a613686c8f37c531c0d16a3a2c5b06a725c46b49d657c5"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/utils/logging_config.py",
+          "bytes": 4679,
+          "sha256": "cadc4f6ad487c3f37171a6defad36d23d9ab8bf262f73a461cd9ee9b03b757e7"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/utils/misc.py",
+          "bytes": 1223,
+          "sha256": "05aa51247936a8d3faac27f90b78b65ff83a688259bed55d114b6a617ced532d"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/utils/pytorch_utils.py",
+          "bytes": 5049,
+          "sha256": "ffc483e7fb435cd654326750eaffdbfc9243837c3140dcc74e45b24abb751a33"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/utils/samplers.py",
+          "bytes": 1339,
+          "sha256": "4d3bd9b2d498f4ad8f2cf9765d60c4bf5368fa6fa2a7d42d0db6210f66899652"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/utils/video_io.py",
+          "bytes": 819,
+          "sha256": "9e9898b021a44e87aa1b4e6d13e3755a9869a2e27a7eb53c72a6802808d5bd80"
+        },
+        {
+          "path": "upstream/FastWAM/src/fastwam/utils/video_metrics.py",
+          "bytes": 3446,
+          "sha256": "aaa37e458cc9e4bb79a17923b5ff5900c97b4309f7abd50db44cf76e9143ffd6"
+        }
+      ],
+      "revision_note": "Schema-3 numerical gate: unchanged error threshold, direct CPU cache snapshots replace stale/fresh ratio requirement. Original schema-2 failure preserved separately."
+    }
+  },
+  "source_scope": "Recorded identity matched to independently hashed local archive.",
+  "collections": [
+    {
+      "collection": "original/smoke/seed42",
+      "variant": "original",
+      "phase": "smoke",
+      "seed": 42,
+      "valid": true,
+      "complete_500_state_comparison": false,
+      "tasks": 1,
+      "states_per_task": 2,
+      "n_paired_states": 2,
+      "identity": {
+        "runtime": {
+          "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+          "checkpoint_sha256": "1000437cfcf55c000094f79a2600634c502bcb5b492476b94bf8509883a49579",
+          "checkpoint_state_coverage": {
+            "verified": true,
+            "mot_keys": 1649,
+            "action_keys": 824,
+            "video_keys": 825,
+            "proprio_keys": 2
+          },
+          "dataset_stats_sha256": "30f81ad7d5076e97323e3328bce003e01a04cb21327b5bacd21bb72846768638",
+          "dataset_stats": "libero_uncond_2cam224_dataset_stats.json",
+          "sigma_shift_override": 5.0,
+          "effective_action_sigma_shift": 5.0,
+          "action_infer_mode": "first_frame",
+          "compile_action_infer": false,
+          "model_class": "fastwam.models.wan22.fastwam.FastWAM",
+          "mixed_precision": "bf16"
+        },
+        "provenance": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "host_tag": "f5ba8444",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "ckpt": "libero_uncond_2cam224.pt"
+        },
+        "initial_latent": "dbba7b13d98e9415"
+      },
+      "provenance_by_arm": {
+        "00_stock_a": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "dirty": null,
+          "loadavg_1_5_15": [
+            1.42041015625,
+            2.228515625,
+            2.17626953125
+          ],
+          "cpu_count": 48,
+          "ckpt": "libero_uncond_2cam224.pt",
+          "ckpt_sha256_16": "1c59ae80d1371089",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "host_tag": "f5ba8444",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "utc": "2026-09-22T17:26:16Z"
+        },
+        "01_whole_tau8": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "dirty": null,
+          "loadavg_1_5_15": [
+            1.66357421875,
+            2.0751953125,
+            2.126953125
+          ],
+          "cpu_count": 48,
+          "ckpt": "libero_uncond_2cam224.pt",
+          "ckpt_sha256_16": "1c59ae80d1371089",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "host_tag": "f5ba8444",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "utc": "2026-09-22T17:28:14Z"
+        },
+        "02_block_tau8": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "dirty": null,
+          "loadavg_1_5_15": [
+            1.56787109375,
+            1.86572265625,
+            2.0380859375
+          ],
+          "cpu_count": 48,
+          "ckpt": "libero_uncond_2cam224.pt",
+          "ckpt_sha256_16": "1c59ae80d1371089",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "host_tag": "f5ba8444",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "utc": "2026-09-22T17:30:16Z"
+        },
+        "03_stock_b": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "dirty": null,
+          "loadavg_1_5_15": [
+            1.4091796875,
+            1.71484375,
+            1.9580078125
+          ],
+          "cpu_count": 48,
+          "ckpt": "libero_uncond_2cam224.pt",
+          "ckpt_sha256_16": "1c59ae80d1371089",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "host_tag": "f5ba8444",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "utc": "2026-09-22T17:32:18Z"
+        }
+      },
+      "sources": [
+        {
+          "file": "00_stock_a.json",
+          "sha256": "f4e1abb0031675fa130148995cb83be2c184aa372a204031a60dfe9f9ea32913",
+          "bytes": 2434
+        },
+        {
+          "file": "01_whole_tau8.json",
+          "sha256": "2f83e1b7276598f0c5df92bb6868aac47c8126ffccd8ca87a871ea7f270a4de0",
+          "bytes": 2566
+        },
+        {
+          "file": "02_block_tau8.json",
+          "sha256": "eb1c8ff457cb528e8f17055856077bb515bdc121cf82f9298a6bd98b4b42b373",
+          "bytes": 2473
+        },
+        {
+          "file": "03_stock_b.json",
+          "sha256": "b7bdd2b6ccaca782daad0a4d9bc459c26bfd73241d3bba749b490472c4fd98bb",
+          "bytes": 2432
+        },
+        {
+          "file": "gate.json",
+          "sha256": "1a829c926c2b4e7c9c1eb51706861c37d7f0cc55e104d6b8704d483edd6a242b",
+          "bytes": 1539
+        }
+      ],
+      "gate": {
+        "identity_err": 0.0026374156485995076,
+        "stale_err": 0.004316370847067599,
+        "margin": 1.6365910505458752,
+        "schema_version": 3,
+        "runtime": {
+          "sigma_shift_override": 5.0,
+          "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+          "effective_action_sigma_shift": 5.0,
+          "action_infer_mode": "first_frame",
+          "compile_action_infer": false,
+          "model_class": "fastwam.models.wan22.fastwam.FastWAM",
+          "mixed_precision": "bf16",
+          "dataset_stats": "libero_uncond_2cam224_dataset_stats.json",
+          "dataset_stats_sha256": "30f81ad7d5076e97323e3328bce003e01a04cb21327b5bacd21bb72846768638",
+          "checkpoint_state_coverage": {
+            "verified": true,
+            "mot_keys": 1649,
+            "action_keys": 824,
+            "video_keys": 825,
+            "proprio_keys": 2
+          },
+          "checkpoint_sha256": "1000437cfcf55c000094f79a2600634c502bcb5b492476b94bf8509883a49579"
+        },
+        "cache_integrity": {
+          "old_block": {
+            "entries": 240,
+            "checks": 20,
+            "unchanged": true,
+            "finite": true
+          },
+          "old_stack": {
+            "entries": 8,
+            "checks": 20,
+            "unchanged": true,
+            "finite": true
+          },
+          "fresh_block": {
+            "entries": 240,
+            "checks": 12,
+            "unchanged": true,
+            "finite": true
+          },
+          "fresh_stack": {
+            "entries": 8,
+            "checks": 12,
+            "unchanged": true,
+            "finite": true
+          }
+        },
+        "repeat_full_err": 0.0,
+        "skip_identity_err": 0.0026374156485995076,
+        "whole_identity_err": 0.002584348776016414,
+        "whole_stale_err": 0.004468651010564392,
+        "whole_identity_counts": {
+          "hits": 8,
+          "misses": 0
+        },
+        "perblock_whole_stale_difference": 0.0018094367000675883,
+        "ckpt": "libero_uncond_2cam224.pt",
+        "compiled": false,
+        "cells": 240,
+        "pass": true,
+        "gpu": "NVIDIA RTX 6000 Ada Generation"
+      },
+      "arms": {
+        "00_stock_a": {
+          "config": "stock",
+          "label": "Stock, 10 steps",
+          "successes": 2,
+          "episodes": 2,
+          "success_pct": 100.0,
+          "success_ci95_pct": [
+            100.0,
+            100.0
+          ],
+          "latency_episode_mean_ms": 412.35,
+          "latency_episodes": 1,
+          "latency_ci95_ms": [
+            412.35,
+            412.35
+          ],
+          "all_episodes_cycles": {
+            "episodes": 2,
+            "cycles": 24,
+            "refresh_cycles": 24,
+            "reuse_cycles": 0,
+            "refresh_cycle_mean_ms": 415.95062499999995,
+            "refresh_cycle_p95_nearest_rank_ms": 420.452,
+            "reuse_cycle_mean_ms": null,
+            "reuse_cycle_p95_nearest_rank_ms": null
+          },
+          "nonwarmup_cycles": {
+            "episodes": 1,
+            "cycles": 12,
+            "refresh_cycles": 12,
+            "reuse_cycles": 0,
+            "refresh_cycle_mean_ms": 412.34983333333327,
+            "refresh_cycle_p95_nearest_rank_ms": 420.452,
+            "reuse_cycle_mean_ms": null,
+            "reuse_cycle_p95_nearest_rank_ms": null
+          }
+        },
+        "01_whole_tau8": {
+          "config": "whole_tau8",
+          "label": "Whole-stack, tau=8",
+          "successes": 2,
+          "episodes": 2,
+          "success_pct": 100.0,
+          "success_ci95_pct": [
+            100.0,
+            100.0
+          ],
+          "latency_episode_mean_ms": 177.435,
+          "latency_episodes": 1,
+          "latency_ci95_ms": [
+            177.435,
+            177.435
+          ],
+          "all_episodes_cycles": {
+            "episodes": 2,
+            "cycles": 24,
+            "refresh_cycles": 4,
+            "reuse_cycles": 20,
+            "refresh_cycle_mean_ms": 448.437,
+            "refresh_cycle_p95_nearest_rank_ms": 639.957,
+            "reuse_cycle_mean_ms": 135.944,
+            "reuse_cycle_p95_nearest_rank_ms": 136.963
+          },
+          "nonwarmup_cycles": {
+            "episodes": 1,
+            "cycles": 12,
+            "refresh_cycles": 2,
+            "reuse_cycles": 10,
+            "refresh_cycle_mean_ms": 384.427,
+            "refresh_cycle_p95_nearest_rank_ms": 384.698,
+            "reuse_cycle_mean_ms": 136.0362,
+            "reuse_cycle_p95_nearest_rank_ms": 136.963
+          }
+        },
+        "02_block_tau8": {
+          "config": "c3ache_tau8",
+          "label": "Blockwise, tau=8",
+          "successes": 2,
+          "episodes": 2,
+          "success_pct": 100.0,
+          "success_ci95_pct": [
+            100.0,
+            100.0
+          ],
+          "latency_episode_mean_ms": 386.845,
+          "latency_episodes": 1,
+          "latency_ci95_ms": [
+            386.845,
+            386.845
+          ],
+          "all_episodes_cycles": {
+            "episodes": 2,
+            "cycles": 24,
+            "refresh_cycles": 4,
+            "reuse_cycles": 20,
+            "refresh_cycle_mean_ms": 453.175,
+            "refresh_cycle_p95_nearest_rank_ms": 633.448,
+            "reuse_cycle_mean_ms": 385.2211,
+            "reuse_cycle_p95_nearest_rank_ms": 386.884
+          },
+          "nonwarmup_cycles": {
+            "episodes": 1,
+            "cycles": 12,
+            "refresh_cycles": 2,
+            "reuse_cycles": 10,
+            "refresh_cycle_mean_ms": 393.461,
+            "refresh_cycle_p95_nearest_rank_ms": 394.503,
+            "reuse_cycle_mean_ms": 385.5215,
+            "reuse_cycle_p95_nearest_rank_ms": 387.46
+          }
+        },
+        "03_stock_b": {
+          "config": "stock",
+          "label": "Stock repeat",
+          "successes": 2,
+          "episodes": 2,
+          "success_pct": 100.0,
+          "success_ci95_pct": [
+            100.0,
+            100.0
+          ],
+          "latency_episode_mean_ms": 381.974,
+          "latency_episodes": 1,
+          "latency_ci95_ms": [
+            381.974,
+            381.974
+          ],
+          "all_episodes_cycles": {
+            "episodes": 2,
+            "cycles": 24,
+            "refresh_cycles": 24,
+            "reuse_cycles": 0,
+            "refresh_cycle_mean_ms": 396.7606666666666,
+            "refresh_cycle_p95_nearest_rank_ms": 405.542,
+            "reuse_cycle_mean_ms": null,
+            "reuse_cycle_p95_nearest_rank_ms": null
+          },
+          "nonwarmup_cycles": {
+            "episodes": 1,
+            "cycles": 12,
+            "refresh_cycles": 12,
+            "reuse_cycles": 0,
+            "refresh_cycle_mean_ms": 381.9736666666667,
+            "refresh_cycle_p95_nearest_rank_ms": 382.92,
+            "reuse_cycle_mean_ms": null,
+            "reuse_cycle_p95_nearest_rank_ms": null
+          }
+        }
+      },
+      "paired_contrasts": [
+        {
+          "left": "01_whole_tau8",
+          "right": "00_stock_a",
+          "n_paired_states": 2,
+          "success_difference_pp": 0.0,
+          "success_ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "left_only_successes": 0,
+          "right_only_successes": 0,
+          "latency_paired_episodes": 1,
+          "latency_difference_ms": -234.91500000000002,
+          "latency_ci95_ms": [
+            -234.91500000000002,
+            -234.91500000000002
+          ]
+        },
+        {
+          "left": "02_block_tau8",
+          "right": "00_stock_a",
+          "n_paired_states": 2,
+          "success_difference_pp": 0.0,
+          "success_ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "left_only_successes": 0,
+          "right_only_successes": 0,
+          "latency_paired_episodes": 1,
+          "latency_difference_ms": -25.504999999999995,
+          "latency_ci95_ms": [
+            -25.504999999999995,
+            -25.504999999999995
+          ]
+        },
+        {
+          "left": "01_whole_tau8",
+          "right": "02_block_tau8",
+          "n_paired_states": 2,
+          "success_difference_pp": 0.0,
+          "success_ci95_pp": [
+            0.0,
+            0.0
+          ],
+          "left_only_successes": 0,
+          "right_only_successes": 0,
+          "latency_paired_episodes": 1,
+          "latency_difference_ms": -209.41000000000003,
+          "latency_ci95_ms": [
+            -209.41000000000003,
+            -209.41000000000003
+          ]
+        }
+      ],
+      "stock_repeat": {
+        "pass": true,
+        "compared_fields": [
+          "success",
+          "steps",
+          "cycles",
+          "init_state",
+          "refresh_cycles",
+          "reuse_cycles"
+        ],
+        "matched_states": 2,
+        "mismatches": [],
+        "scope": "Recorded episode outcomes and lengths; not action-tensor equality."
+      }
+    },
+    {
+      "collection": "original/pilot/seed42",
+      "variant": "original",
+      "phase": "pilot",
+      "seed": 42,
+      "valid": true,
+      "complete_500_state_comparison": false,
+      "tasks": 10,
+      "states_per_task": 5,
+      "n_paired_states": 50,
+      "identity": {
+        "runtime": {
+          "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+          "checkpoint_sha256": "1000437cfcf55c000094f79a2600634c502bcb5b492476b94bf8509883a49579",
+          "checkpoint_state_coverage": {
+            "verified": true,
+            "mot_keys": 1649,
+            "action_keys": 824,
+            "video_keys": 825,
+            "proprio_keys": 2
+          },
+          "dataset_stats_sha256": "30f81ad7d5076e97323e3328bce003e01a04cb21327b5bacd21bb72846768638",
+          "dataset_stats": "libero_uncond_2cam224_dataset_stats.json",
+          "sigma_shift_override": 5.0,
+          "effective_action_sigma_shift": 5.0,
+          "action_infer_mode": "first_frame",
+          "compile_action_infer": true,
+          "model_class": "fastwam.models.wan22.fastwam.FastWAM",
+          "mixed_precision": "bf16"
+        },
+        "provenance": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "host_tag": "f5ba8444",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "ckpt": "libero_uncond_2cam224.pt"
+        },
+        "initial_latent": "dbba7b13d98e9415"
+      },
+      "provenance_by_arm": {
+        "00_stock_a": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "dirty": null,
+          "loadavg_1_5_15": [
+            1.32080078125,
+            1.3828125,
+            1.4638671875
+          ],
+          "cpu_count": 48,
+          "ckpt": "libero_uncond_2cam224.pt",
+          "ckpt_sha256_16": "1c59ae80d1371089",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "host_tag": "f5ba8444",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "utc": "2026-09-22T17:56:55Z"
+        },
+        "01_whole_tau8": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "dirty": null,
+          "loadavg_1_5_15": [
+            1.05859375,
+            1.109375,
+            1.22998046875
+          ],
+          "cpu_count": 48,
+          "ckpt": "libero_uncond_2cam224.pt",
+          "ckpt_sha256_16": "1c59ae80d1371089",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "host_tag": "f5ba8444",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "utc": "2026-09-22T18:11:30Z"
+        },
+        "02_block_tau8": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "dirty": null,
+          "loadavg_1_5_15": [
+            1.07861328125,
+            1.08740234375,
+            1.11962890625
+          ],
+          "cpu_count": 48,
+          "ckpt": "libero_uncond_2cam224.pt",
+          "ckpt_sha256_16": "1c59ae80d1371089",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "host_tag": "f5ba8444",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "utc": "2026-09-22T18:33:52Z"
+        },
+        "03_stock_b": {
+          "commit": "f9d707f0b3152f281e84f40567b78d3bfab9f951",
+          "dirty": null,
+          "loadavg_1_5_15": [
+            1.431640625,
+            1.28564453125,
+            1.1982421875
+          ],
+          "cpu_count": 48,
+          "ckpt": "libero_uncond_2cam224.pt",
+          "ckpt_sha256_16": "1c59ae80d1371089",
+          "gpu": "NVIDIA RTX 6000 Ada Generation",
+          "host_tag": "f5ba8444",
+          "python": "3.11.13",
+          "torch": "2.7.1+cu128",
+          "mujoco": "3.3.2",
+          "utc": "2026-09-22T18:40:38Z"
+        }
+      },
+      "sources": [
+        {
+          "file": "00_stock_a.json",
+          "sha256": "b547b0221f7cbf032d3e21a6a83c5452effdb8d73a45e06da84754169d497224",
+          "bytes": 27332
+        },
+        {
+          "file": "01_whole_tau8.json",
+          "sha256": "1e7196c4c80929798f1a1c2f46df7ed849771d00af85c720c0d1fe06cc447fa3",
+          "bytes": 30427
+        },
+        {
+          "file": "02_block_tau8.json",
+          "sha256": "8a447661dbfdc26db802512c1e7477dacd1a6f4e81f8de013d068203d29c71a1",
+          "bytes": 28139
+        },
+        {
+          "file": "03_stock_b.json",
+          "sha256": "a8cddd1e38973843f887d1b3ed730405ba6c29234186add31998e2b017de5f75",
+          "bytes": 27337
+        },
+        {
+          "file": "gate.json",
+          "sha256": "2e43dc10fbf864447347f280b0a968517c35de841c794ab2563fa506fe9f0904",
+          "bytes": 1536
+        }
+      ],
+      "gate": {
+        "identity_err": 0.0022203589929232644,
+        "stale_err": 0.0040196794572745186,
+        "margin": 1.810373669341784,
+        "schema_version": 3,
+        "runtime": {
+          "sigma_shift_override": 5.0,
+          "source_bundle_sha256": "4bfff6c98b1364861799fe799337c65515df5ed453bc2f9b7eabae4421f8a02d",
+          "effective_action_sigma_shift": 5.0,
+          "action_infer_mode": "first_frame",
+          "compile_action_infer": true,
+          "model_class": "fastwam.models.wan22.fastwam.FastWAM",
+          "mixed_precision": "bf16",
+          "dataset_stats": "libero_uncond_2cam224_dataset_stats.json",
+          "dataset_stats_sha256": "30f81ad7d5076e97323e3328bce003e01a04cb21327b5bacd21bb72846768638",
+          "checkpoint_state_coverage": {
+            "verified": true,
+            "mot_keys": 1649,
+            "action_keys": 824,
+            "video_keys": 825,
+            "proprio_keys": 2
+          },
+          "checkpoint_sha256": "1000437cfcf55c000094f79a2600634c502bcb5b492476b94bf8509883a49579"
+        },
+        "cache_integrity": {
+          "old_block": {
+            "entries": 240,
+            "checks": 20,
+            "unchanged": true,
+            "finite": true
+          },
+          "old_stack": {
+            "entries": 8,
+            "checks": 20,
+            "unchanged": true,
+            "finite": true
+          },
+          "fresh_block": {
+            "entries": 240,
+            "checks": 12,
+            "unchanged": true,
+            "finite": true
+          },
+          "fresh_stack": {
+            "entries": 8,
+            "checks": 12,
+            "unchanged": true,
+            "finite": true
+          }
+        },
+        "repeat_full_err": 0.0,
+        "skip_identity_err": 0.0022203589929232644,
+        "whole_identity_err": 0.0023438657087220907,
+        "whole_stale_err": 0.003831786756952344,
+        "whole_identity_counts": {
+          "hits": 8,
+          "misses": 0
+        },
+        "perblock_whole_stale_difference": 0.00223515007925535,
+        "ckpt": "libero_uncond_2cam224.pt",
+        "compiled": true,
+        "cells": 240,
+        "pass": true,
+        "gpu": "NVIDIA RTX 6000 Ada Generation"
+      },
+      "arms": {
+        "00_stock_a": {
+          "config": "stock",
+          "label": "Stock, 10 steps",
+          "successes": 47,
+          "episodes": 50,
+          "success_pct": 94.0,
+          "success_ci95_pct": [
+            86.0,
+            100.0
+          ],
+          "latency_episode_mean_ms": 167.40275000000003,
+          "latency_episodes": 40,
+          "latency_ci95_ms": [
+            166.50429062499998,
+            168.408794375
+          ],
+          "all_episodes_cycles": {
+            "episodes": 50,
+            "cycles": 623,
+            "refresh_cycles": 623,
+            "reuse_cycles": 0,
+            "refresh_cycle_mean_ms": 286.457544141252,
+            "refresh_cycle_p95_nearest_rank_ms": 176.487,
+            "reuse_cycle_mean_ms": null,
+            "reuse_cycle_p95_nearest_rank_ms": null
+          },
+          "nonwarmup_cycles": {
+            "episodes": 40,
+            "cycles": 494,
+            "refresh_cycles": 494,
+            "reuse_cycles": 0,
+            "refresh_cycle_mean_ms": 167.43475910931176,
+            "refresh_cycle_p95_nearest_rank_ms": 176.753,
+            "reuse_cycle_mean_ms": null,
+            "reuse_cycle_p95_nearest_rank_ms": null
+          }
+        },
+        "01_whole_tau8": {
+          "config": "whole_tau8",
+          "label": "Whole-stack, tau=8",
+          "successes": 46,
+          "episodes": 50,
+          "success_pct": 92.0,
+          "success_ci95_pct": [
+            84.0,
+            98.0
+          ],
+          "latency_episode_mean_ms": 97.13677500000001,
+          "latency_episodes": 40,
+          "latency_ci95_ms": [
+            96.079398125,
+            98.2256375
+          ],
+          "all_episodes_cycles": {
+            "episodes": 50,
+            "cycles": 648,
+            "refresh_cycles": 102,
+            "reuse_cycles": 546,
+            "refresh_cycle_mean_ms": 3549.6210392156863,
+            "refresh_cycle_p95_nearest_rank_ms": 182.505,
+            "reuse_cycle_mean_ms": 108.73195787545787,
+            "reuse_cycle_p95_nearest_rank_ms": 86.741
+          },
+          "nonwarmup_cycles": {
+            "episodes": 40,
+            "cycles": 520,
+            "refresh_cycles": 83,
+            "reuse_cycles": 437,
+            "refresh_cycle_mean_ms": 173.59351807228916,
+            "refresh_cycle_p95_nearest_rank_ms": 181.792,
+            "reuse_cycle_mean_ms": 81.72618535469108,
+            "reuse_cycle_p95_nearest_rank_ms": 86.143
+          }
+        },
+        "02_block_tau8": {
+          "config": "c3ache_tau8",
+          "label": "Blockwise, tau=8",
+          "successes": 47,
+          "episodes": 50,
+          "success_pct": 94.0,
+          "success_ci95_pct": [
+            86.0,
+            100.0
+          ],
+          "latency_episode_mean_ms": 148.051625,
+          "latency_episodes": 40,
+          "latency_ci95_ms": [
+            147.316380625,
+            148.797468125
+          ],
+          "all_episodes_cycles": {
+            "episodes": 50,
+            "cycles": 620,
+            "refresh_cycles": 99,
+            "reuse_cycles": 521,
+            "refresh_cycle_mean_ms": 3761.753727272727,
+            "refresh_cycle_p95_nearest_rank_ms": 188.127,
+            "reuse_cycle_mean_ms": 651.3321535508637,
+            "reuse_cycle_p95_nearest_rank_ms": 149.938
+          },
+          "nonwarmup_cycles": {
+            "episodes": 40,
+            "cycles": 491,
+            "refresh_cycles": 80,
+            "reuse_cycles": 411,
+            "refresh_cycle_mean_ms": 179.861075,
+            "refresh_cycle_p95_nearest_rank_ms": 186.958,
+            "reuse_cycle_mean_ms": 141.90797566909976,
+            "reuse_cycle_p95_nearest_rank_ms": 149.913
+          }
+        },
+        "03_stock_b": {
+          "config": "stock",
+          "label": "Stock repeat",
+          "successes": 47,
+          "episodes": 50,
+          "success_pct": 94.0,
+          "success_ci95_pct": [
+            86.0,
+            100.0
+          ],
+          "latency_episode_mean_ms": 165.46985,
+          "latency_episodes": 40,
+          "latency_ci95_ms": [
+            164.69413812499997,
+            166.33220125
+          ],
+          "all_episodes_cycles": {
+            "episodes": 50,
+            "cycles": 623,
+            "refresh_cycles": 623,
+            "reuse_cycles": 0,
+            "refresh_cycle_mean_ms": 190.66522150882827,
+            "refresh_cycle_p95_nearest_rank_ms": 172.755,
+            "reuse_cycle_mean_ms": null,
+            "reuse_cycle_p95_nearest_rank_ms": null
+          },
+          "nonwarmup_cycles": {
+            "episodes": 40,
+            "cycles": 494,
+            "refresh_cycles": 494,
+            "reuse_cycles": 0,
+            "refresh_cycle_mean_ms": 165.4351052631579,
+            "refresh_cycle_p95_nearest_rank_ms": 172.941,
+            "reuse_cycle_mean_ms": null,
+            "reuse_cycle_p95_nearest_rank_ms": null
+          }
+        }
+      },
+      "paired_contrasts": [
+        {
+          "left": "01_whole_tau8",
+          "right": "00_stock_a",
+          "n_paired_states": 50,
+          "success_difference_pp": -2.0,
+          "success_ci95_pp": [
+            -6.0,
+            0.0
+          ],
+          "left_only_successes": 0,
+          "right_only_successes": 1,
+          "latency_paired_episodes": 40,
+          "latency_difference_ms": -70.265975,
+          "latency_ci95_ms": [
+            -71.78390187500001,
+            -68.77049625
+          ]
+        },
+        {
+          "left": "02_block_tau8",
+          "right": "00_stock_a",
+          "n_paired_states": 50,
+          "success_difference_pp": 0.0,
+          "success_ci95_pp": [
+            -6.0,
+            6.0
+          ],
+          "left_only_successes": 1,
+          "right_only_successes": 1,
+          "latency_paired_episodes": 40,
+          "latency_difference_ms": -19.351125000000003,
+          "latency_ci95_ms": [
+            -20.712059999999997,
+            -18.101771875000004
+          ]
+        },
+        {
+          "left": "01_whole_tau8",
+          "right": "02_block_tau8",
+          "n_paired_states": 50,
+          "success_difference_pp": -2.0,
+          "success_ci95_pp": [
+            -6.0,
+            0.0
+          ],
+          "left_only_successes": 0,
+          "right_only_successes": 1,
+          "latency_paired_episodes": 40,
+          "latency_difference_ms": -50.91484999999999,
+          "latency_ci95_ms": [
+            -51.938663749999996,
+            -49.923466874999995
+          ]
+        }
+      ],
+      "stock_repeat": {
+        "pass": true,
+        "compared_fields": [
+          "success",
+          "steps",
+          "cycles",
+          "init_state",
+          "refresh_cycles",
+          "reuse_cycles"
+        ],
+        "matched_states": 50,
+        "mismatches": [],
+        "scope": "Recorded episode outcomes and lengths; not action-tensor equality."
+      }
+    }
+  ],
+  "errors": [],
+  "valid": true
+}

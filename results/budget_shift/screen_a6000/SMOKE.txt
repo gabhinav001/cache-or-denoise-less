@@ -1,0 +1,4 @@
+first call, uncached vs refresh:        max |difference| = 0
+first reuse call, replay vs closed loop: max |difference| = 0
+(the uncached action there differs from the cache's by up to 0.0403; d = 0.0192)
+screen smoke check: PASS

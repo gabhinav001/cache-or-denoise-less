@@ -1,0 +1,109 @@
+[
+ {
+  "label": "FW",
+  "n": 190800,
+  "episodes": 52,
+  "cells": 300,
+  "hold": 0.6604052601073077,
+  "hold_heldout": 0.6530341528904033,
+  "alpha_median": -0.13609567883728468,
+  "alpha_frac_neg": 0.7391037735849056,
+  "rows": [
+   [
+    "alpha (published family)",
+    0.6381920602781004,
+    null
+   ],
+   [
+    "shrink1 [tap1]",
+    0.589464571873402,
+    0.6025275935705817
+   ],
+   [
+    "lin2 [tap1+tap2]",
+    0.5764597269565206,
+    0.6001162719416531
+   ],
+   [
+    "lin3 [tap1+tap2+tap3]",
+    0.5666928518099498,
+    0.5977453301680911
+   ],
+   [
+    "lin4 [tap1+tap2+tap3+tap4]",
+    0.5576017988364554,
+    0.5960431631030347
+   ],
+   [
+    "level [tap1+mean8]",
+    0.5707361508465923,
+    0.5952029328654649
+   ],
+   [
+    "ema1 [ema09]",
+    0.7156262737501015,
+    0.7313055575518347
+   ],
+   [
+    "ema2 [tap1+ema09+ema06]",
+    0.5564362305751644,
+    0.5923761163028899
+   ],
+   [
+    "full7 [tap1+tap2+tap3+tap4+mean8+ema09+ema06]",
+    0.5283524111777108,
+    0.5904170493560476
+   ],
+   [
+    "chan1 (oracle, per-slice rescale)",
+    0.4816415764868945,
+    null
+   ],
+   [
+    "tok1 (oracle, per-slice rescale)",
+    0.5710405236855247,
+    null
+   ],
+   [
+    "chan2 (oracle, per-slice rescale)",
+    0.39607352871344015,
+    null
+   ],
+   [
+    "shrink1 + obs-change quartile",
+    null,
+    0.6029296672532093
+   ],
+   [
+    "lin2 + obs-change quartile",
+    null,
+    0.6005910703157082
+   ],
+   [
+    "full7 + obs-change quartile",
+    null,
+    0.5906137521384283
+   ],
+   [
+    "shrink1 one coefficient set for all cells",
+    null,
+    0.6326498265533331
+   ],
+   [
+    "full7 one coefficient set for all cells",
+    null,
+    0.6051100561696604
+   ],
+   [
+    "shrink1 fit and scored on disjoint tasks",
+    null,
+    0.6341791750243918
+   ],
+   [
+    "full7 fit and scored on disjoint tasks",
+    null,
+    0.6197329194220028
+   ]
+  ]
+ }
+]

@@ -1,0 +1,23 @@
+[10:05:44] instance=50613972 experiment=staleness 11 args=
+[10:05:44] waiting for setup
+[10:11:46]   ...provisioning (300s) addr=ssh://root@<rented-host>:<port>
+[10:18:09]   ...provisioning (600s) addr=ssh://root@<rented-host>:<port>
+[10:21:59] setup done (780s)
+[10:21:59] shipping repo
+[10:22:03] starting staleness 11 detached
+launched
+[10:22:05] polling
+[10:22:11] finished: EXIT=2
+rsync: [sender] change_dir "/workspace/out" failed: No such file or directory (2)
+rsync(61722): warning: receiver has empty file list: exiting
+[10:22:13]   pull attempt 1 failed
+rsync: [sender] change_dir "/workspace/out" failed: No such file or directory (2)
+rsync(61805): warning: receiver has empty file list: exiting
+[10:22:26]   pull attempt 2 failed
+rsync: [sender] change_dir "/workspace/out" failed: No such file or directory (2)
+rsync(61888): warning: receiver has empty file list: exiting
+[10:22:39]   pull attempt 3 failed
+total 0
+drwxr-xr-x@  2 user  staff   64 11 Sep 10:22 .
+drwxr-xr-x@ 24 user  staff  768 11 Sep 10:22 ..
+[10:22:49] done. Instance 50613972 left running -- destroy it yourself.

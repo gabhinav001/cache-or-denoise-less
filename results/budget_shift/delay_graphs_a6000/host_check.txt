@@ -1,0 +1,8 @@
+== before any arm
+64
+Model name:                           Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+0, NVIDIA RTX A6000, 0 %, 0 MiB
+loadavg: 43.82 36.64 28.82 2/3181 3492
+== after the runs
+0, NVIDIA RTX A6000, 0 %, 0 MiB
+loadavg: 8.87 11.34 11.60 4/2573 6990

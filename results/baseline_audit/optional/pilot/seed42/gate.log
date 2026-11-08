@@ -1,0 +1,35 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[2026-09-22 18:40:45,650][robosuite_logs][WARNING] - No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[2026-09-22 18:40:45,650][robosuite_logs][WARNING] - It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[2026-09-22 18:40:45,650][robosuite_logs][WARNING] - To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py
+[2026-09-22 18:40:45,676][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+[2026-09-22 18:40:45,677][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-09-22 18:40:45,685][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[2026-09-22 18:40:47,267][fastwam.models.wan22.helpers.loader][INFO] - Loading Wan2.2-TI2V-5B components...
+[2026-09-22 18:40:47,267][fastwam.models.wan22.helpers.loader][INFO] - Skipping pretrained video DiT load (`skip_dit_load_from_pretrain=True`); initializing video expert randomly and expecting checkpoint override.
+[2026-09-22 18:42:05,719][fastwam.models.wan22.helpers.loader][INFO] - Finished loading Wan2.2-TI2V-5B components in 78.45 seconds.
+[2026-09-22 18:42:05,720][fastwam.models.wan22.action_dit][INFO] - Skipping ActionDiT pretrained load (`skip_dit_load_from_pretrain=True`); initializing action expert randomly and expecting checkpoint override.
+[2026-09-22 18:42:09,546][fastwam.models.wan22.mot][INFO] - Initialized MoT with experts: ['video', 'action'], num_layers=30
+[2026-09-22 18:42:09,548][fastwam.models.wan22.mot][INFO] -   Expert 'video': num_params=5.00 B
+[2026-09-22 18:42:09,549][fastwam.models.wan22.mot][INFO] -   Expert 'action': num_params=1.02 B
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+
+=== cache identity gate ===
+  selected block cells  240 of 300 (record coverage checked)
+  identity error        1.386e-03   (must be < 5e-03)
+  stale-cache control   5.963e-02   (4 cycles old)
+  stale/fresh ratio     43.006325736995734 (diagnostic only)
+  cache integrity       {'old_block': {'entries': 240, 'checks': 20, 'unchanged': True, 'finite': True}, 'old_stack': {'entries': 8, 'checks': 20, 'unchanged': True, 'finite': True}, 'fresh_block': {'entries': 240, 'checks': 12, 'unchanged': True, 'finite': True}, 'fresh_stack': {'entries': 8, 'checks': 12, 'unchanged': True, 'finite': True}}
+  repeat-full error     0.000e+00
+  skip identity error   1.386e-03
+  whole identity error  1.161e-03; actual hits/misses {'hits': 8, 'misses': 0}
+
+  PASS -- cached residuals survive the call that produced them.
+

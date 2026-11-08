@@ -1,0 +1,8 @@
+# Python packages for the CPU checks (repro/verify_workshop.sh, probes/report_budget_shift.py,
+# probes/paper_numbers.py, probes/check_regeneration.py). No GPU is needed: a CPU build of
+# PyTorch is enough for the unit tests that import it. Tested with Python 3.12, numpy 2.1,
+# matplotlib 3.9 and torch 2.14 (CPU).
+#   python3 -m pip install -r repro/requirements-cpu.txt
+numpy>=1.26
+matplotlib>=3.8
+torch>=2.3

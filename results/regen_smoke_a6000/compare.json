@@ -1,0 +1,360 @@
+{
+ "comparisons": [
+  {
+   "run": "smoke/smoke_cam0015_idm_stock2.json",
+   "shipped": "results/budget_shift/followup_a6000/cam0015_idm_stock2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "8d0571f0"
+  },
+  {
+   "run": "smoke/smoke_idm_s1_whole_tau8_rn.json",
+   "shipped": "results/budget_shift/noise_a6000/idm_s1_whole_tau8_rn.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3d9b66a4"
+  },
+  {
+   "run": "smoke/smoke_idm_s3_p9_tau8.json",
+   "shipped": "results/budget_shift/followup_a6000/idm_s3_p9_tau8.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "8d0571f0"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/budget_shift/followup_a6000/tm1_idm_stock2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "8d0571f0"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/budget_shift/followup_a6000/tm2_idm_stock2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "8d0571f0"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/budget_shift/followup_a6000/tm3_idm_stock2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "8d0571f0"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/budget_shift/frontier100_a6000/idm_stock_2step.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3a362c72"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/budget_shift/repeats_a6000/idm_s1_stock2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "f66c276d"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/budget_shift/shift_a6000/idm_s1_stock2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3d9b66a4"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/matched100_a6000/causal_idm_s1_stock2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "e2423eb6"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/matched100_a6000/idm_stock_2step.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "e2423eb6"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/matched50_a6000/idm_stock_2step.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "1220e547"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/matched_composed/idm_stock_2step.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "33e036cd"
+  },
+  {
+   "run": "smoke/smoke_idm_stock_2step.json",
+   "shipped": "results/statescale/s2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "ac5f9eba"
+  },
+  {
+   "run": "smoke/smoke_idm_whole_agg_tau8.json",
+   "shipped": "results/budget_shift/frontier100_a6000/idm_whole_agg_tau8.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3a362c72"
+  },
+  {
+   "run": "smoke/smoke_idm_whole_agg_tau8.json",
+   "shipped": "results/matched100_a6000/idm_whole_agg_tau8.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "e2423eb6"
+  },
+  {
+   "run": "smoke/smoke_idm_whole_agg_tau8.json",
+   "shipped": "results/matched50_a6000/idm_whole_agg_tau8.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "1220e547"
+  },
+  {
+   "run": "smoke/smoke_idm_whole_plain_tau8.json",
+   "shipped": "results/budget_shift/followup_a6000/tm1_idm_tau8.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "8d0571f0"
+  },
+  {
+   "run": "smoke/smoke_idm_whole_plain_tau8.json",
+   "shipped": "results/budget_shift/frontier100_a6000/idm_whole_plain_tau8.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3a362c72"
+  },
+  {
+   "run": "smoke/smoke_idm_whole_plain_tau8.json",
+   "shipped": "results/budget_shift/shift_a6000/idm_s1_whole_tau8.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "f66c276d"
+  },
+  {
+   "run": "smoke/smoke_idm_whole_plain_tau8.json",
+   "shipped": "results/matched100_a6000/causal_idm_s1_whole_tau8.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "e2423eb6"
+  },
+  {
+   "run": "smoke/smoke_idm_whole_plain_tau8.json",
+   "shipped": "results/matched50_a6000/idm_whole_plain_tau8.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "1220e547"
+  },
+  {
+   "run": "smoke/smoke_lat_uncond_stock2_cg.json",
+   "shipped": "results/budget_shift/latency_a6000/lat_uncond_stock2_cg.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3a362c72"
+  },
+  {
+   "run": "smoke/smoke_lat_uncond_stock2_cg.json",
+   "shipped": "results/budget_shift/latency_a6000/lat_uncond_stock2_cg_r2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3a362c72"
+  },
+  {
+   "run": "smoke/smoke_long_uncond_stock2.json",
+   "shipped": "results/budget_shift/long_a6000/long_uncond_stock2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3d9b66a4"
+  },
+  {
+   "run": "smoke/smoke_tm_idm_comp4.json",
+   "shipped": "results/budget_shift/followup_a6000/tm1_idm_comp4.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "8d0571f0"
+  },
+  {
+   "run": "smoke/smoke_tm_idm_comp4.json",
+   "shipped": "results/budget_shift/followup_a6000/tm2_idm_comp4.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "8d0571f0"
+  },
+  {
+   "run": "smoke/smoke_tm_idm_comp4.json",
+   "shipped": "results/budget_shift/followup_a6000/tm3_idm_comp4.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "8d0571f0"
+  },
+  {
+   "run": "smoke/smoke_tm_idm_comp4.json",
+   "shipped": "results/composed2step/idm_whole_2step_p1_tau4.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "e0895931"
+  },
+  {
+   "run": "smoke/smoke_tm_idm_comp4.json",
+   "shipped": "results/matched_composed/idm_whole_2step_p1_tau4.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "33e036cd"
+  },
+  {
+   "run": "smoke/smoke_uncond_stock_10step.json",
+   "shipped": "results/budget_shift/frontier100_a6000/uncond_stock_10step.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3a362c72"
+  },
+  {
+   "run": "smoke/smoke_uncond_stock_10step.json",
+   "shipped": "results/budget_shift/latency_a6000/lat_uncond_stock10_r2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "3a362c72"
+  },
+  {
+   "run": "smoke/smoke_uncond_stock_10step.json",
+   "shipped": "results/budget_shift/shift_a6000/uncond_s5_stock10.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "f66c276d"
+  },
+  {
+   "run": "smoke/smoke_uncond_stock_10step.json",
+   "shipped": "results/matched100_a6000/uncond_stock_10step.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "e2423eb6"
+  },
+  {
+   "run": "smoke/smoke_uncond_stock_10step.json",
+   "shipped": "results/matched50_a6000/uncond_stock_10step.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "1220e547"
+  },
+  {
+   "run": "smoke/smoke_uncond_whole_4step_tau4.json",
+   "shipped": "results/budget_shift/frontier100_a6000/uncond_whole_4step_tau4.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 1,
+   "latency_ratio": null,
+   "shipped_host": "3a362c72"
+  },
+  {
+   "run": "smoke/smoke_uncond_whole_4step_tau4.json",
+   "shipped": "results/budget_shift/latency_a6000/lat_uncond_whole_4step_tau4_r2.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 1,
+   "latency_ratio": null,
+   "shipped_host": "3a362c72"
+  },
+  {
+   "run": "smoke/smoke_uncond_whole_4step_tau4.json",
+   "shipped": "results/matched100_a6000/uncond_whole_4step_tau4.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 1,
+   "latency_ratio": null,
+   "shipped_host": "e2423eb6"
+  },
+  {
+   "run": "smoke/smoke_uncond_whole_4step_tau4.json",
+   "shipped": "results/matched50_a6000/uncond_whole_4step_tau4.json",
+   "paired": 10,
+   "outcome_changes": 0,
+   "length_changes": 0,
+   "latency_ratio": null,
+   "shipped_host": "1220e547"
+  }
+ ],
+ "unmatched": [],
+ "same_path": {},
+ "paired": 390,
+ "outcome_changes": 0,
+ "length_changes": 3
+}

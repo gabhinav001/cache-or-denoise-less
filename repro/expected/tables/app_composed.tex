@@ -1,0 +1,16 @@
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Host & success (\%) & reuse (ms) & refresh (ms) & reuse/refresh & saving (\%) & vs.\ 2 steps \\
+\midrule
+quiet A6000, IDM & 94 & 83 & 95 & 0.870 & 10 & -- \\
+quiet A6000, orig. & 95 & 83 & 95 & 0.869 & 10 & -- \\
+shared A6000, IDM & 94 & 165 & 197 & 0.838 & 12 & 0.93 \\
+shared A6000, orig. & 95 & 163 & 196 & 0.835 & 12 & 0.91 \\
+follow-up A6000, IDM, round 1 & -- & 178 & 211 & 0.843 & 12 & 0.98 \\
+follow-up A6000, IDM, round 2 & -- & 154 & 184 & 0.835 & 12 & 0.80 \\
+follow-up A6000, IDM, round 3 & -- & 175 & 210 & 0.835 & 12 & 0.98 \\
+idle A6000, IDM, round 1 & -- & 119 & 143 & 0.837 & 12 & 0.88 \\
+idle A6000, IDM, round 2 & -- & 122 & 146 & 0.831 & 13 & 0.95 \\
+idle A6000, IDM, round 3 & -- & 116 & 139 & 0.832 & 13 & 0.86 \\
+\bottomrule
+\end{tabular}

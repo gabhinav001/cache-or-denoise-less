@@ -1,0 +1,18 @@
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Ckpt. & Contrast (A vs.\ B) & A (\%) & B (\%) & A$-$B & Tango 90\% & $p$ & Holm $p$ \\
+\midrule
+IDM & 2 vs.\ 10 steps & 95 & 95 & 0 & $[-4.1, 4.1]$ & 1.00 & 1.00 \\
+IDM & 2 steps vs.\ cache $\tau{=}8$ & 95 & 63 & +32 & $[23.3, 40.8]$ & $<10^{-4}$ & $<10^{-4}$ \\
+IDM & 2 steps vs.\ attenuated $\tau{=}8$ & 95 & 81 & +14 & $[7.2, 21.6]$ & 0.0026 & 0.023 \\
+IDM & 2 steps vs.\ cache $\tau{=}2$ & 95 & 97 & -2 & $[-6.9, 2.5]$ & 0.69 & 1.00 \\
+IDM & 2 steps vs.\ 4-step cache $\tau{=}4$ & 95 & 96 & -1 & $[-4.4, 1.7]$ & 1.00 & 1.00 \\
+IDM & attenuated vs.\ plain $\tau{=}8$ & 81 & 63 & +18 & $[9.1, 27.0]$ & 0.0021 & 0.021 \\
+\midrule
+orig. & 2 vs.\ 10 steps & 96 & 95 & +1 & $[-2.6, 5.0]$ & 1.00 & 1.00 \\
+orig. & 2 steps vs.\ cache $\tau{=}8$ & 96 & 94 & +2 & $[-1.7, 6.4]$ & 0.62 & 1.00 \\
+orig. & 2 steps vs.\ never refreshed & 96 & 93 & +3 & $[-0.9, 7.8]$ & 0.38 & 1.00 \\
+orig. & 2 steps vs.\ 4-step cache $\tau{=}4$ & 96 & 95 & +1 & $[-3.3, 5.6]$ & 1.00 & 1.00 \\
+orig. & 1 vs.\ 10 steps & 93 & 95 & -2 & $[-6.4, 1.7]$ & 0.62 & 1.00 \\
+\bottomrule
+\end{tabular}

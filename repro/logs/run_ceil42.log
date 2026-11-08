@@ -1,0 +1,15 @@
+[10:05:44] instance=50613728 experiment=ceiling_beta args=42
+[10:05:44] waiting for setup
+[10:11:37]   ...provisioning (300s) addr=ssh://root@<rented-host>:<port>
+[10:15:02] setup done (460s)
+[10:15:02] shipping repo
+[10:15:05] starting ceiling_beta detached
+launched
+[12:49:38] polling
+[12:49:44] finished: EXIT=0
+[12:49:47] pulled -> $REPO/repro/out/ceiling_beta_s42
+drwxr-xr-x@  4 user  staff    128 11 Sep 10:53 .
+drwxr-xr-x@ 26 user  staff    832 11 Sep 12:49 ..
+-rw-r--r--@  1 user  staff  69063 11 Sep 12:48 ceilbeta_seed42.json
+-rw-r--r--@  1 user  staff    172 11 Sep 10:30 gate.json
+[12:49:47] done. Instance 50613728 left running -- destroy it yourself.

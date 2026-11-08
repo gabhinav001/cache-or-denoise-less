@@ -1,0 +1,28 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[2026-09-22 17:28:21,458][robosuite_logs][WARNING] - No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[2026-09-22 17:28:21,458][robosuite_logs][WARNING] - It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[2026-09-22 17:28:21,458][robosuite_logs][WARNING] - To setup, run: python /opt/conda/lib/python3.11/site-packages/robosuite/scripts/setup_macros.py
+[2026-09-22 17:28:21,483][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+[2026-09-22 17:28:21,485][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[2026-09-22 17:28:21,492][OpenGL.platform.ctypesloader][INFO] - Failed to load library ( 'libOpenGL.so.0' ): libOpenGL.so.0: cannot open shared object file: No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[2026-09-22 17:28:23,018][fastwam.models.wan22.helpers.loader][INFO] - Loading Wan2.2-TI2V-5B components...
+[2026-09-22 17:28:23,019][fastwam.models.wan22.helpers.loader][INFO] - Skipping pretrained video DiT load (`skip_dit_load_from_pretrain=True`); initializing video expert randomly and expecting checkpoint override.
+[2026-09-22 17:29:40,914][fastwam.models.wan22.helpers.loader][INFO] - Finished loading Wan2.2-TI2V-5B components in 77.90 seconds.
+[2026-09-22 17:29:40,915][fastwam.models.wan22.action_dit][INFO] - Skipping ActionDiT pretrained load (`skip_dit_load_from_pretrain=True`); initializing action expert randomly and expecting checkpoint override.
+[2026-09-22 17:29:44,785][fastwam.models.wan22.mot][INFO] - Initialized MoT with experts: ['video', 'action'], num_layers=30
+[2026-09-22 17:29:44,786][fastwam.models.wan22.mot][INFO] -   Expert 'video': num_params=5.00 B
+[2026-09-22 17:29:44,787][fastwam.models.wan22.mot][INFO] -   Expert 'action': num_params=1.02 B
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[libero] suite=libero_goal tasks=1 eps=2 perturb=none configs=['c3ache_tau8']
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[Warning]: datasets path /libero/libero/libero/../datasets does not exist!
+[libero] task 0 c3ache_tau8    SR=1.00  (0.3 min)
+
+=== success rate by config ===
+  c3ache_tau8      100.0%  (n=2)
+[libero] DONE 2 episodes in 0.3 min

@@ -1,0 +1,44 @@
+[10:39:28] instance=50613943 experiment=ceiling_beta args=7
+[10:39:28] waiting for setup
+[10:39:32] setup done (20s)
+[10:39:32] shipping repo
+[10:39:33] starting ceiling_beta detached
+launched
+Read from remote host <rented-host>: Operation timed out
+client_loop: send disconnect: Broken pipe
+[11:25:34] polling
+[11:27:40]   [libero] task 2 c3ache_tau4_oracle SR=0.90  (31.1 min)
+[11:28:45]   [libero] task 3 full           SR=1.00  (33.4 min)
+[11:31:57]   [libero] task 3 c3ache_tau4    SR=0.30  (36.3 min)
+[11:34:09]   [libero] task 3 c3ache_tau4_shrink SR=0.40  (39.0 min)
+[11:37:24]   [libero] task 3 c3ache_tau4_oracle SR=0.50  (41.8 min)
+[11:38:29]   [libero] task 4 full           SR=1.00  (43.5 min)
+[11:40:38]   [libero] task 4 c3ache_tau4    SR=1.00  (45.1 min)
+[11:41:42]   [libero] task 4 c3ache_tau4_shrink SR=1.00  (46.7 min)
+[11:43:50]   [libero] task 4 c3ache_tau4_oracle SR=1.00  (48.4 min)
+[11:45:59]   [libero] task 5 full           SR=1.00  (50.4 min)
+[11:48:08]   [libero] task 5 c3ache_tau4    SR=0.70  (52.8 min)
+[11:50:22]   [libero] task 5 c3ache_tau4_shrink SR=0.80  (54.9 min)
+[11:52:30]   [libero] task 5 c3ache_tau4_oracle SR=0.70  (57.2 min)
+[11:54:39]   [libero] task 6 full           SR=1.00  (58.9 min)
+[11:56:46]   [libero] task 6 c3ache_tau4    SR=0.90  (61.0 min)
+[11:57:51]   [libero] task 6 c3ache_tau4_shrink SR=1.00  (62.7 min)
+[11:59:59]   [libero] task 6 c3ache_tau4_oracle SR=1.00  (64.4 min)
+[12:01:03]   [libero] task 7 full           SR=1.00  (65.9 min)
+[12:03:11]   [libero] task 7 c3ache_tau4    SR=1.00  (67.5 min)
+[12:04:15]   [libero] task 7 c3ache_tau4_shrink SR=1.00  (69.0 min)
+[12:06:24]   [libero] task 7 c3ache_tau4_oracle SR=1.00  (70.6 min)
+[12:07:28]   [libero] task 8 full           SR=1.00  (72.2 min)
+[12:09:37]   [libero] task 8 c3ache_tau4    SR=0.80  (74.1 min)
+[12:10:41]   [libero] task 8 c3ache_tau4_shrink SR=1.00  (75.6 min)
+[12:12:49]   [libero] task 8 c3ache_tau4_oracle SR=1.00  (77.3 min)
+[12:14:57]   [libero] task 9 full           SR=1.00  (79.3 min)
+[12:17:06]   [libero] task 9 c3ache_tau4    SR=1.00  (81.4 min)
+[12:19:15]   [libero] task 9 c3ache_tau4_shrink SR=0.80  (83.6 min)
+[12:21:22] finished: EXIT=0
+[12:21:23] pulled -> $REPO/repro/out/ceiling_beta_s7
+drwxr-xr-x@  4 user  staff    128 11 Sep 11:11 .
+drwxr-xr-x@ 25 user  staff    800 11 Sep 12:21 ..
+-rw-r--r--@  1 user  staff  69061 11 Sep 12:20 ceilbeta_seed7.json
+-rw-r--r--@  1 user  staff    165 11 Sep 10:52 gate.json
+[12:21:23] done. Instance 50613943 left running -- destroy it yourself.

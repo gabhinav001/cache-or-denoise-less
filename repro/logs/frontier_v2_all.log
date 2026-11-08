@@ -1,0 +1,24 @@
+[13:55:14] instance=50641249 experiment=frontier args=42 7 11 23 3
+[13:55:14] waiting for setup
+[14:00:35]   ...provisioning (300s) addr=ssh://root@<rented-host>:<port>
+[14:06:24]   ...provisioning (600s) addr=ssh://root@<rented-host>:<port>
+[14:12:14]   ...provisioning (900s) addr=ssh://root@<rented-host>:<port>
+[14:18:07]   ...provisioning (1200s) addr=ssh://root@<rented-host>:<port>
+[14:18:55] setup done (1240s)
+[14:18:55] shipping repo
+[14:18:56] starting frontier detached
+launched
+Read from remote host <rented-host>: Operation timed out
+client_loop: send disconnect: Broken pipe
+[02:11:06] polling
+[02:26:25] finished: EXIT=0
+Read from remote host <rented-host>: Operation timed out
+client_loop: send disconnect: Broken pipe
+rsync(12777): error: poll: hangup on receiver idx 0
+[03:00:47]   pull attempt 1 failed
+[03:33:51] pulled -> $REPO/repro/out/frontier_s42_7_11_23_3
+-rw-r--r--@  1 user  staff  86119 12 Sep 01:39 frontier_seed3.json
+-rw-r--r--@  1 user  staff  86110 11 Sep 17:15 frontier_seed42.json
+-rw-r--r--@  1 user  staff  86110 11 Sep 19:20 frontier_seed7.json
+-rw-r--r--@  1 user  staff    159 11 Sep 14:44 gate.json
+[03:33:51] done. Instance 50641249 left running -- destroy it yourself.

@@ -1,0 +1,19 @@
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+ & & \multicolumn{2}{c}{path cached (\%)} & \multicolumn{2}{c}{success (\%)} & \multicolumn{2}{c}{mean latency (ms)} & \multicolumn{2}{c}{p95 latency (ms)} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(l){9-10}
+Configuration & $K$ & IDM & orig. & IDM & orig. & IDM & orig. & IDM & orig. \\
+\midrule
+Uncached & 1 & -- & -- & 88 & 93 & 81 & 81 & 82 & 82 \\
+Uncached & 2 & -- & -- & 95 & 96 & 94 & 92 & 96 & 95 \\
+Uncached & 4 & -- & -- & 95 & 95 & 119 & 118 & 125 & 122 \\
+Uncached & 10 & -- & -- & 95 & 95 & 202 & 202 & 209 & 209 \\
+\midrule
+Cache, $\tau{=}4$ & 4 & 50 & 17 & 96 & 95 & 104 & 105 & 123 & 124 \\
+Cache, $\tau{=}2$ & 10 & 80 & 44 & 97 & 94 & 158 & 156 & 212 & 208 \\
+Cache, $\tau{=}4$ & 10 & 80 & 44 & 89 & 94 & 132 & 132 & 214 & 212 \\
+Cache, $\tau{=}8$ & 10 & 80 & 44 & 63 & 94 & 116 & 120 & 209 & 214 \\
+Cache, never refreshed & 10 & 80 & 44 & 9 & 93 & 103 & 109 & 106 & 208 \\
+Attenuated cache, $\tau{=}8$ & 10 & 80 & 44 & 81 & -- & 118 & -- & 221 & -- \\
+\bottomrule
+\end{tabular}

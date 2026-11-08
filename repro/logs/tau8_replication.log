@@ -1,0 +1,14 @@
+[12:53:05] instance=50789913 experiment=attenuation args=q_object_seed7:libero_object:10:10:7:full,c3ache:8,c3ache:8:s q_spatial_seed7:libero_spatial:10:10:7:full,c3ache:8,c3ache:8:s q_libero10_seed7:libero_10:10:10:7:full,c3ache:8,c3ache:8:s
+[12:53:05] waiting for setup
+[12:53:08] setup done (20s)
+[12:53:08] shipping repo
+[12:53:10] starting attenuation detached
+launched
+[19:58:15] polling
+[19:58:18] finished: EXIT=0
+[19:58:21] pulled -> repro/out/attenuation_sq_object_seed7_libero_object_10_10_7_full,c3ache_8,c3ache_8_s_q_spatial_seed7_libero_spatial_10_10_7_full,c3ache_8,c3ache_8_s_q_libero10_seed7_libero_10_10_10_7_full,c3ache_8,c3ache_8_s
+         159  gate.json
+       59959  q_libero10_seed7.json
+       57345  q_object_seed7.json
+       63768  q_spatial_seed7.json
+[19:58:21] done. Instance 50789913 left running -- destroy it yourself.

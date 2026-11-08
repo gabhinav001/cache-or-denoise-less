@@ -1,0 +1,13 @@
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Host and checkpoint & 1 step & 2 steps & 4 steps & 10 steps & cache $\tau{=}8$ & $F/a$ \\
+\midrule
+Table~1 host, IDM & 81 & 94 & 119 & 202 & 116 & 4.9 \\
+Table~1 host, orig. & 81 & 92 & 118 & 202 & 120 & 4.8 \\
+Table~1 host, orig., CUDA graphs & 79 & 86 & 100 & 143 & -- & 10.0 \\
+Follow-up host, IDM (round 1) & 186 & 192 & -- & 477 & 240 & 3.4 \\
+Shared host, IDM & 173 & 185 & -- & -- & -- & -- \\
+Shared host, orig. & 158 & 190 & -- & -- & -- & -- \\
+Idle host, IDM (3 rounds) & -- & 140 & -- & -- & -- & -- \\
+\bottomrule
+\end{tabular}
